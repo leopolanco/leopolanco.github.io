@@ -6,16 +6,13 @@ cache: npm
 branches:
   only:
     - src # build from src branch
-script:
-  - chmod +x ./build.sh
-  - ./build.sh
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GH_TOKEN
   keep-history: true
   target_branch: master
-  fqdn: leopolanco.github.io
+  fqdn: leopolanco.com
   on:
     branch: src
   local-dir: public
