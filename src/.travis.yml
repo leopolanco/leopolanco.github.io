@@ -15,7 +15,7 @@ deploy:
   github-token: $GH_TOKEN
   keep-history: true
   target_branch: master
-  fqdn: leopolanco.com
+  fqdn: leopolanco.github.io
   on:
     branch: src
   local-dir: public
