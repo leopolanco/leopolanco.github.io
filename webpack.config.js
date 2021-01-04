@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
     entry: './src/app.js',
     output: {
-        path: path.join(__dirname, 'public'), //dirname se utiliza para indicar el directorio del archivo, el public para especificar una carpeta en especifica, que es public
+        path: path.join(__dirname, 'build'), //dirname se utiliza para indicar el directorio del archivo, el public para especificar una carpeta en especifica, que es public
         filename: 'bundle.js'
     },
     module: {
