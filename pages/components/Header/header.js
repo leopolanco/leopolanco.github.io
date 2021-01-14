@@ -5,7 +5,7 @@ const Header = () => (
     <header>
         <Head>
         <title>Leo Polanco</title>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/images/favicon.png" />
       </Head>
         <Link href="/" exact={true}>Home</Link>
         <Link href="/projects">Projects</Link>
