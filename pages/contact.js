@@ -65,10 +65,6 @@ const onSubmit = (e) =>{
 
 return (
     <>
-
-        
-        <Header/>
-
         <h3>Contact Me</h3>
         <form onSubmit={onSubmit} method="GET">
             <input placeholder="Your Email" value={email} onChange={(e)=> setEmail(e.target.value)}/>

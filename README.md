@@ -1,3 +1,1 @@
-Portfolio Page
-
-In works.
+Personal page
