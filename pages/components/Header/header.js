@@ -8,12 +8,12 @@ const Header = () => (
     <header>
       <Head>
         <title>Leo Polanco</title>
-        <link rel="icon" href="/images/favicon.png" />
+        <link rel="icon" href="/assets/images/favicon.png" />
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1"></meta>
       </Head>
 
       <Particles/>
-      
+
       <div className={styles.header}>
         <Link  href="/" exact={true}><span className={styles.navlink}> Leo</span></Link>
         <div className={styles.showForDesktop}>

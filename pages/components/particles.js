@@ -12,7 +12,7 @@ const Particles =  () => (
             }
           },
           "color": {
-            "value": "#f0dcd3"
+            "value": "#fff"
           },
           "shape": {
             "type": "circle",
@@ -25,7 +25,7 @@ const Particles =  () => (
             },
           },
           "opacity": {
-            "value": 0.8,
+            "value": 1,
             "random": true,
             "anim": {
               "enable": false,
@@ -53,7 +53,7 @@ const Particles =  () => (
           },
           "move": {
             "enable": true,
-            "speed": 0.2,
+            "speed": 0.05,
             "direction": "top",
             "random": true,
             "straight": false,
@@ -105,7 +105,7 @@ const Particles =  () => (
             }
           }
         },
-        "retina_detect": false
+        "retina_detect": true
       }} />
 
 
