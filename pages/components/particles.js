@@ -45,15 +45,15 @@ const Particles =  () => (
             }
           },
           "line_linked": {
-            "enable": false,
-            "distance": 0,
+            "enable": true,
+            "distance": 15,
             "color": "#f0f0f0",
             "opacity": 0.4,
             "width": 1
           },
           "move": {
             "enable": true,
-            "speed": 0.05,
+            "speed": 0.3,
             "direction": "top",
             "random": true,
             "straight": false,
@@ -71,7 +71,7 @@ const Particles =  () => (
           "events": {
             "onhover": {
               "enable": false,
-              "mode": "repulse"
+              "mode": "grab"
             },
             "onclick": {
               "enable": true,
@@ -81,7 +81,7 @@ const Particles =  () => (
           },
           "modes": {
             "grab": {
-              "distance": 400,
+              "distance": 100,
               "line_linked": {
                 "opacity": 1
               }
