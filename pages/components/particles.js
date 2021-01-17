@@ -18,7 +18,7 @@ const Particles =  () => (
             "type": "circle",
             "stroke": {
               "width": 0,
-              "color": "#fcfcfc"
+              "color": "#000"
             },
             "polygon": {
               "nb_sides": 6
@@ -45,7 +45,7 @@ const Particles =  () => (
             }
           },
           "line_linked": {
-            "enable": true,
+            "enable": false,
             "distance": 15,
             "color": "#f0f0f0",
             "opacity": 0.4,
@@ -53,10 +53,10 @@ const Particles =  () => (
           },
           "move": {
             "enable": true,
-            "speed": 0.3,
+            "speed": 0.2,
             "direction": "top",
             "random": true,
-            "straight": false,
+            "straight": true,
             "out_mode": "out",
             "bounce": false,
             "attract": {

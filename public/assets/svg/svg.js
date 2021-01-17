@@ -20,7 +20,7 @@ export const Close = () => (
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 24 24"
   fill="currentColor"
-  color="#fff"
+  color="#3d3d3d"
 >
   <path d="M0 0h24v24H0z" fill="none" />
   <path
@@ -28,4 +28,5 @@ export const Close = () => (
   />
 </svg>
 )
+
 // 

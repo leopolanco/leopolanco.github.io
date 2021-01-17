@@ -4,10 +4,11 @@ import Particles from '../particles'
 import styles from './header.module.scss'
 import {Hamburger, Close} from '../../../public/assets/svg/svg.js'
 import {useState} from 'react'
-
+import {CSSTransition} from 'react-transition-group';
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
+  const [mobileMenuButton, setMobileMenuButton] = useState(<Hamburger/>)
   const mobileMenu = () => (
     setShowMobileMenu(!showMobileMenu)
   )
@@ -30,6 +31,8 @@ const Header = () => {
           <Link href="/blog/BlogHome"><span className={styles.navlink}> Blog </span></Link>
           <Link href="/contact"><span className={styles.navlink}> Contact </span></Link>
         </div>
+
+
 
 
         <div className={styles.showForMobile}>
@@ -65,32 +68,40 @@ const Header = () => {
 
 
 
+        
+      <CSSTransition
+        classNames={{
+          enter:styles.mobileMenuEnter,
+          enterActive:styles.mobileMenuEnterActive,
+          enterDone:styles.mobileMenuAppear,
+          exit:styles.mobileMenuLeave,
+          exitActive:styles.mobileMenuLeaveActive
+        }}
+        in={showMobileMenu}
+        timeout={350}
+        onEntering={() => setMobileMenuButton(<Close/>)}
+        onExit={() => setMobileMenuButton(<Hamburger/>)}
+        unmountOnExit
+        >
+            
+
+        
+          
 
 
 
+            <ul className={styles.mobileLinks}>
+            <li><Link href="/projects"><span onClick={mobileMenu} className={styles.mobileLink} >Projects</span></Link></li>
+            <li><Link href="/blog/BlogHome"><span onClick={mobileMenu} className={styles.mobileLink} >Blog</span></Link></li>
+            <li><Link href="/contact"><span onClick={mobileMenu} className={styles.mobileLink} >Contact</span></Link></li>
+            </ul>
 
-        <div className={styles.mobileMenu}>
 
-          {showMobileMenu ? 
-          <div className={styles.mobileMenuButton} onClick={mobileMenu}><Close/></div> :
-          <div className={styles.mobileMenuButton} onClick={mobileMenu}><Hamburger/>
           
-          
-          
-          
-          
-          </div> 
-          }
 
-          <div className={styles.mobileLinks}>
-          <div className={showMobileMenu ? undefined : styles.shouldHide}>
-            <Link href="/projects"><span onClick={mobileMenu} className={styles.mobileLink} >Projects</span></Link>
-            <Link href="/blog/BlogHome"><span onClick={mobileMenu} className={styles.mobileLink} >Blog</span></Link>
-            <Link href="/contact"><span onClick={mobileMenu} className={styles.mobileLink} >Contact</span></Link>
-            </div>
-          
-            </div>
-        </div>
+
+        </CSSTransition>
+        <div className={styles.mobileMenuButton} onClick={mobileMenu}>{mobileMenuButton}</div>
         </div>
 
 
