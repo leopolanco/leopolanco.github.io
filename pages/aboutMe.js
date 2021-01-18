@@ -6,7 +6,8 @@ const AboutMe = () => {
     <div>
       {/* Some tacky css */}
       <style global jsx>{`
-      .header_navlink__9NPTf:nth-of-type(1)
+      .header_navlink__9NPTf:nth-of-type(1),
+      li:nth-child(1)
        {
         color: #ff2020;
       }

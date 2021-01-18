@@ -66,7 +66,8 @@ const onSubmit = (e) =>{
 return (
     <>
     <style global jsx>{`
-        .header_navlink__9NPTf:nth-of-type(4)
+        .header_navlink__9NPTf:nth-of-type(4),
+        li:nth-child(4)
          {
             color: #ff2020;
         }
