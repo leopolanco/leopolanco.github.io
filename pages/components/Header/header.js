@@ -19,17 +19,20 @@ const Header = () => {
       <Head>
         <title>Leo Polanco</title>
         <link rel="icon" href="/assets/images/favicon.png" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet"/> 
+        <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1"></meta>
       </Head>
 
       <Particles/>
 
       <div className={styles.header}>
-        <Link  href="/" exact={true}><span onClick={()=>setShowMobileMenu(false)} className={styles.navlink}> Leo</span></Link>
+        <Link  href="/" exact={true}><span onClick={()=>setShowMobileMenu(false)} className={styles.mainLink}>Leo <span>Polanco</span></span></Link>
         <div className={styles.showForDesktop}>
-          <Link href="/projects" ><span className={styles.navlink}> Projects</span></Link>
-          <Link href="/blog/BlogHome"><span className={styles.navlink}> Blog </span></Link>
-          <Link href="/contact"><span className={styles.navlink}> Contact </span></Link>
+          <Link href="/aboutMe" ><span className={styles.navlink}>ABOUT ME</span></Link>
+          <Link href="/projects" ><span className={styles.navlink}>PROJECTS</span></Link>
+          <Link href="/blog/BlogHome"><span className={styles.navlink}> BLOG </span></Link>
+          <Link href="/contact"><span className={styles.navlink}> CONTACT </span></Link>
         </div>
 
 
@@ -38,62 +41,28 @@ const Header = () => {
         <div className={styles.showForMobile}>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         
       <CSSTransition
         classNames={{
           enter:styles.mobileMenuEnter,
           enterActive:styles.mobileMenuEnterActive,
-          enterDone:styles.mobileMenuAppear,
+          enterDone:styles.mobileMenuDone,
           exit:styles.mobileMenuLeave,
-          exitActive:styles.mobileMenuLeaveActive
+          exitActive:styles.mobileMenuLeaveActive,
         }}
         in={showMobileMenu}
-        timeout={350}
+        timeout={250}
         onEntering={() => setMobileMenuButton(<Close/>)}
         onExit={() => setMobileMenuButton(<Hamburger/>)}
         unmountOnExit
         >
             
 
-        
-          
-
-
-
             <ul className={styles.mobileLinks}>
-            <li><Link href="/projects"><span onClick={mobileMenu} className={styles.mobileLink} >Projects</span></Link></li>
-            <li><Link href="/blog/BlogHome"><span onClick={mobileMenu} className={styles.mobileLink} >Blog</span></Link></li>
-            <li><Link href="/contact"><span onClick={mobileMenu} className={styles.mobileLink} >Contact</span></Link></li>
+            <li><Link href="/aboutMe" ><span onClick={mobileMenu} className={styles.mobileLink}>ABOUT ME</span></Link></li>
+            <li><Link href="/projects"><span onClick={mobileMenu} className={styles.mobileLink} >PROJECTS</span></Link></li>
+            <li><Link href="/blog/BlogHome"><span onClick={mobileMenu} className={styles.mobileLink} >BLOG</span></Link></li>
+            <li><Link href="/contact"><span onClick={mobileMenu} className={styles.mobileLink} >CONTACT</span></Link></li>
             </ul>
 
 
@@ -103,32 +72,6 @@ const Header = () => {
         </CSSTransition>
         <div className={styles.mobileMenuButton} onClick={mobileMenu}>{mobileMenuButton}</div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       </div>
       

@@ -1,8 +1,15 @@
-import React from 'react'
+import _JSXStyle from 'styled-jsx/style'
 
 const projects = () => (
+    
     <div>
-        projects page
+        <style global jsx>{`
+      .header_navlink__9NPTf:nth-of-type(2)
+      {
+        color: #ff2020;
+      }
+    `}</style>
+        In works
     </div>
 )
 

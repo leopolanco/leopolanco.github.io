@@ -1,7 +1,13 @@
 import React from 'react'
+import _JSXStyle from 'styled-jsx/style'
 
 const BlogHome = () => (
     <div>
+        <style global jsx>{`
+      .header_navlink__9NPTf:nth-of-type(3) {
+        color: #ff2020;
+      }
+    `}</style>
         blog home page
     </div>
 )

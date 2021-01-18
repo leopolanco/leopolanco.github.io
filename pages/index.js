@@ -1,12 +1,9 @@
-import React from "react"
 
 const Index = () => {
   return (
     <div>
-      <p>WWWWWWWWWWWWWWWWWWWW</p>
+      <p>In Works</p>
     </div> 
-      
-     
   )
 }
 export default Index;

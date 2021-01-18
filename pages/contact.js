@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Header from './components/Header/header'
 import axios from 'axios'
+import _JSXStyle from 'styled-jsx/style'
 
 
 const contact = () => {
@@ -65,6 +65,12 @@ const onSubmit = (e) =>{
 
 return (
     <>
+    <style global jsx>{`
+        .header_navlink__9NPTf:nth-of-type(4)
+         {
+            color: #ff2020;
+        }
+    `}</style>
         <h3>Contact Me</h3>
         <form onSubmit={onSubmit} method="GET">
             <input placeholder="Your Email" value={email} onChange={(e)=> setEmail(e.target.value)}/>
