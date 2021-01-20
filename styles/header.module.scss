@@ -1,5 +1,5 @@
-@import '../../../styles/settings.scss';
-@import '../../../styles/visibility.scss';
+@import './settings.scss';
+@import './visibility.scss';
 
 .header {
   display: flex;
@@ -9,8 +9,8 @@
   max-width: 80rem;
   color: white;
   font-family: 'Poppins', sans-serif;
-  letter-spacing: 4px;
-  font-size: 13.2px;
+  letter-spacing: 3.5px;
+  font-size: 12.5px;
   font-weight: 300;
   text-decoration: none;
   @media (max-width: $desktop-breakpoint) {
@@ -44,7 +44,7 @@
 }
 
 .navlink {
-  padding: 0 2rem 0 0;
+  padding: 0 1.8rem 0 0;
   &:visited {
     color: $red;
   }

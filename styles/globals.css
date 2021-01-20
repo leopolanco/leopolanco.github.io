@@ -10,6 +10,8 @@
   width: 100vw;
   height: 100vh;
   z-index: -99;
+  /* background: linear-gradient(180deg, black, #7646ff, #20cef5); */
+  /* background-size: 400% 400%; */
   background: black;
 }
 

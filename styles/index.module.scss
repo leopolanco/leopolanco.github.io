@@ -1,0 +1,16 @@
+@import './settings.scss';
+@import './visibility.scss';
+
+.contactButton {
+  text-decoration: none;
+  width: 15%;
+  background: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 2px;
+  &:hover {
+    background: $red;
+    color: white;
+    transition: background 500ms, color 500ms ease-in;
+  }
+}
