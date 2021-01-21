@@ -19,8 +19,9 @@ const Header = () => {
       <Head>
         <title>Leo Polanco</title>
         <link rel="icon" href="/assets/images/favicon.png" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet"/> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/> 
         <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet"></link>
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1"></meta>
         <meta name="Description" content="Leo's personal page"></meta>
         <meta name="language" content="en_EN"></meta>

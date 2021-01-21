@@ -1,25 +1,26 @@
-import style from 'styled-jsx/style';
 import styles from '../styles/index.module.scss'
-import Link from 'next/link'
-import {LinkedIn, Mail, GitHub} from '../public/assets/svg/svg'
+import {LinkedIn, Mail, GitHub, MainImage} from '../public/assets/svg/svg'
 
 
-const Greetings = 'Hello I am Leo' //we're defining these for when we'll have to make a spanish version
-const Description = 'A Fullstack developer specialized in creating experiences and quality products'
-const smallDescription = 'Based in Venezuela'
-const contact = <Link href="/contact"><button className={styles.contactButton}>Get in touch</button></Link>
+const greetings = 'Hello, I am Leo,' //we're defining these for when we'll have to make a spanish version
+const description = 'a fullstack developer'
+const smallDescription = 'Specialized in creating experiences and quality products with attention to the minimum detail.'
 const Index = () => {
   return (
-    <div >
-      <div>{Greetings}</div>
-      <div>{Description}</div>
-      <div>{smallDescription}</div>
-      <div>{contact}</div>
-      <div><LinkedIn/></div>
-      <div><GitHub/></div>
-      <div><Mail/></div>
-
-
+    <div className={styles.mainDiv}>
+      <div className={styles.leftContainer}>
+        <div className={styles.greetings}>{greetings}</div>
+        <div className={styles.description}>{description}</div>
+        <div className={styles.smallDescription}>{smallDescription}</div>
+      </div>
+      <div className={`${styles.rightContainer} ${styles.showForDesktop}`}> {/*Please fix the double classname*/}
+         <div className={styles.mainImage}><MainImage/></div> {/*This image is called source code, it is a placeholder */}
+      <div className={styles.icons}>
+        <a className={styles.githubIcon} target="_blank" rel="noopener" href='https://github.com/leopolanco'><GitHub/></a>
+        <a className={styles.linkedInIcon} target="_blank" rel="noopener" href='https://www.linkedin.com/in/leo-polanco-b7ba74144/'><LinkedIn/></a>
+        <a className={styles.mailIcon} target="_blank" rel="noopener" href='mailto:leo@leopolanco.com'><Mail/></a>
+      </div>
+      </div> 
     </div> 
   )
 }

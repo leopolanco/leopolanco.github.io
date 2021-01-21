@@ -2,14 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+}
+::selection {
+  background: hsla(0, 100%, 55%, 0.6);
 }
 
-#tsparticles {
-  position: absolute;
-  width: 100vw;
+canvas {
+  position: fixed;
   height: 100vh;
-  z-index: -99;
+  width: 100vw;
+  z-index: -100;
   /* background: linear-gradient(180deg, black, #7646ff, #20cef5); */
   /* background-size: 400% 400%; */
   background: black;
