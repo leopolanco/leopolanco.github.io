@@ -103,3 +103,78 @@
     padding: 1.2rem 1.2rem 0 1.2rem;
   }
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.secondDiv {
+  color: white;
+  max-width: 80rem;
+  margin: 18rem auto 0 auto;
+  @media (max-width: $desktop-breakpoint) {
+    //para separar las vistas, esta es especifica a movil
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.aboutMeTitle {
+  margin: 0 0 3.2rem 4.2rem;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+.aboutMe {
+  font-family: 'Poppins', sans-serif;
+  margin: 0 2.4rem 2.4rem 2.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.aboutMeText {
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0 4.8rem 0 4rem;
+  width: 45%;
+  letter-spacing: 1px;
+}
+
+.aboutMeIcons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: black;
+  > .aboutMeIcon {
+    flex-basis: 33%;
+  }
+  // > .aboutMeIcon {
+  //   &:hover {
+  //     color: white;
+  //   }
+  // }
+}
+
+.aboutMeIcon {
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding: 0 1rem 1rem 1rem;
+  color: black;
+  text-align: center;
+  &:hover {
+    color: white;
+  }
+
+  opacity: 0.75;
+  &:hover {
+    filter: invert(26%) sepia(95%) saturate(7447%) hue-rotate(358deg)
+      brightness(100%) contrast(114%);
+    opacity: 1;
+    transition: filter 300ms, opacity 300ms ease-in;
+  }
+  &:not(:hover) {
+    //for when you stop hovering
+    transition: filter 300ms ease-in;
+  }
+}
