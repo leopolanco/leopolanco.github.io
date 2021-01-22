@@ -6,6 +6,10 @@ import {Hamburger, Close} from '../../../public/assets/svg/svg.js'
 import {useState} from 'react'
 import {CSSTransition} from 'react-transition-group';
 
+
+//Todo:
+// Optimize the header, make only one list of links.
+
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
   const [mobileMenuButton, setMobileMenuButton] = useState(<Hamburger/>)
