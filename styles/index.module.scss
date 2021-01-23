@@ -105,7 +105,7 @@
 .aboutMe {
   color: white;
   max-width: 80rem;
-  margin: 16rem auto 0 auto; //separator between presentation and aboutme
+  margin: 8rem auto 0 auto; //separator between presentation and aboutme
   @media (max-width: $desktop-breakpoint) {
     //para separar las vistas, esta es especifica a movil
     margin: 0 0 0 0;
@@ -129,8 +129,11 @@
   font-weight: 300;
   text-align: center;
   font-size: 14px;
-  margin: 0 16rem 16rem 16rem; //separator between about me and langs
+  margin: 0 16rem 12rem 16rem; //separator between about me and langs
   letter-spacing: 1px;
+  @media (max-width: $desktop-breakpoint) {
+    display: none; // FIX THIS WHEN APPLICATING THE CORRECT TEXT
+  }
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -178,12 +181,12 @@
 
 .recentProjects {
   color: white;
-  margin: 0 0 0 0;
   text-align: center;
 }
 
 .recentProjectsTitle {
   margin: 0 0 4.2rem 0;
+  font-size: 28px;
   font-weight: 600;
   letter-spacing: 1px;
   font-family: 'Open Sans', sans-serif;
@@ -196,8 +199,18 @@
 }
 
 .recentProject {
-  border: 1px solid white;
+  // border: 1px solid white;
   margin: 0 0 2.4rem 0;
   flex-basis: 33%;
-  padding: 0 0 6rem 0;
+  filter: grayscale(100%);
+  opacity: 0.6;
+
+  &:hover {
+    filter: none;
+    opacity: 1;
+    transition: opacity 300ms, filter 300ms ease-in;
+  }
+  @media (max-width: $desktop-breakpoint) {
+    //para separar las vistas, esta es especifica a movil
+  }
 }

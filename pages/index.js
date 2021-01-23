@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from '../styles/index.module.scss'
 import {
   LinkedIn, 
@@ -14,6 +13,7 @@ import {
   JSIcon,
   AngularIcon,
   } from '../public/assets/svg/svg'
+import RecentProjects from './components/Index/RecentProjects'
 {/*To do, make the icons travel trough the whole page */}
 //we're defining these for when we'll have to make a spanish version
 const greetings = 'Hello. I am Leo,'; 
@@ -69,25 +69,7 @@ const Index = () => {
     </div>
     
     {/* Fourth section todo: responsive imagens; replace next image library*/}
-    <div className={styles.recentProjects}>
-      <div className={styles.recentProjectsTitle}>Recent Projects</div>
-        <div className={styles.recentProjectsContent}>
-        <div className={styles.recentProject}>
-          <Image
-            src='/assets/images/project1.jpg'
-            alt='Picture of a first project'
-            width={240}
-            height={240}
-          /></div>
-        <div className={styles.recentProject}><Image
-            src='/assets/images/project2.jpg'
-            alt='Picture of a first project'
-            width={240}
-            height={240}
-          /></div>
-        <div className={styles.recentProject}>Recent Projects</div>
-        </div>
-    </div>
+    <RecentProjects/>
 
     
     </>
