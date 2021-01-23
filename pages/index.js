@@ -68,7 +68,7 @@ const Index = () => {
           <div className={styles.langIcon}><AngularIcon/><div>ANGULAR</div></div>
     </div>
     
-    {/* Fourth section */}
+    {/* Fourth section todo: responsive imagens; replace next image library*/}
     <div className={styles.recentProjects}>
       <div className={styles.recentProjectsTitle}>Recent Projects</div>
         <div className={styles.recentProjectsContent}>
@@ -79,7 +79,12 @@ const Index = () => {
             width={240}
             height={240}
           /></div>
-        <div className={styles.recentProject}>Recent Projects</div>
+        <div className={styles.recentProject}><Image
+            src='/assets/images/project2.jpg'
+            alt='Picture of a first project'
+            width={240}
+            height={240}
+          /></div>
         <div className={styles.recentProject}>Recent Projects</div>
         </div>
     </div>
