@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from '../styles/index.module.scss'
 import {
   LinkedIn, 
@@ -8,7 +9,10 @@ import {
   NodeIcon,
   MongoIcon,
   SassIcon,
-  NextIcon
+  NextIcon,
+  GitIcon,
+  JSIcon,
+  AngularIcon,
   } from '../public/assets/svg/svg'
 {/*To do, make the icons travel trough the whole page */}
 //we're defining these for when we'll have to make a spanish version
@@ -44,21 +48,41 @@ const Index = () => {
 
 
         {/* Second section */}
-    <div className={styles.secondDiv}>
+    <div className={styles.aboutMe}>
       <div className={styles.aboutMeTitle}>About Me</div>
-      <div className={styles.aboutMe}>
         <div className={styles.aboutMeText}>{descriptiveText}</div>
-        <div className={styles.aboutMeIcons}>
-          <div className={styles.aboutMeIcon}><NodeIcon/><div>NODEJS</div></div>
-          <div className={styles.aboutMeIcon}><ReactIcon/><div>REACT</div></div>
-          <div className={styles.aboutMeIcon}><MongoIcon/><div>MONGODB</div></div>
-          <div className={styles.aboutMeIcon}><NextIcon/><div>NEXTJS</div></div>
-          <div className={styles.aboutMeIcon}><SassIcon/><div>SASS</div></div>
-        </div>
-      </div>
+    </div>
+
+
+      {/* Third section */}
+      <div className={styles.langsTitle}>Working with  </div>
+    <div className={styles.langs}>
+    
+          <div className={styles.langIcon}><NodeIcon/><div>NODEJS</div></div>
+          <div className={styles.langIcon}><ReactIcon/><div>REACT</div></div>
+          <div className={styles.langIcon}><MongoIcon/><div>MONGODB</div></div>
+          <div className={styles.langIcon}><NextIcon/><div>NEXTJS</div></div>
+          <div className={styles.langIcon}><SassIcon/><div>SASS</div></div>
+          <div className={styles.langIcon}><GitIcon/><div>GIT</div></div>
+          <div className={styles.langIcon}><JSIcon/><div>JAVASCRIPT</div></div>
+          <div className={styles.langIcon}><AngularIcon/><div>ANGULAR</div></div>
     </div>
     
-    
+    {/* Fourth section */}
+    <div className={styles.recentProjects}>
+      <div className={styles.recentProjectsTitle}>Recent Projects</div>
+        <div className={styles.recentProjectsContent}>
+        <div className={styles.recentProject}>
+          <Image
+            src='/assets/images/project1'
+            alt='Picture of a first project'
+            width={240}
+            height={240}
+          /></div>
+        <div className={styles.recentProject}>Recent Projects</div>
+        <div className={styles.recentProject}>Recent Projects</div>
+        </div>
+    </div>
 
     
     </>

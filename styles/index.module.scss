@@ -1,10 +1,6 @@
 @import './settings.scss';
 @import './visibility.scss';
 
-.test {
-  background: red;
-}
-
 .mainDiv {
   display: flex;
   justify-content: space-between;
@@ -106,10 +102,10 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-.secondDiv {
+.aboutMe {
   color: white;
   max-width: 80rem;
-  margin: 18rem auto 0 auto;
+  margin: 16rem auto 0 auto; //separator between presentation and aboutme
   @media (max-width: $desktop-breakpoint) {
     //para separar las vistas, esta es especifica a movil
     margin: 0 0 0 0;
@@ -120,61 +116,88 @@
 }
 
 .aboutMeTitle {
-  margin: 0 0 3.2rem 4.2rem;
+  margin: 0 0 3.2rem 0;
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
   font-size: 36px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
-.aboutMe {
-  font-family: 'Poppins', sans-serif;
-  margin: 0 2.4rem 2.4rem 2.4rem;
-  display: flex;
-  justify-content: space-between;
-}
 .aboutMeText {
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
+  text-align: center;
   font-size: 14px;
-  margin: 0 4.8rem 0 4rem;
-  width: 45%;
+  margin: 0 16rem 16rem 16rem; //separator between about me and langs
   letter-spacing: 1px;
 }
 
-.aboutMeIcons {
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.langs {
+  margin: 0 0 16rem 0; //separator between langs and recent projects
+  font-family: 'Poppins', sans-serif;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; //important for flex basis
   justify-content: space-between;
   color: black;
-  > .aboutMeIcon {
-    flex-basis: 33%;
-  }
-  // > .aboutMeIcon {
-  //   &:hover {
-  //     color: white;
-  //   }
-  // }
+}
+.langsTitle {
+  margin: 0 0 3rem 3.6rem;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 24px;
 }
 
-.aboutMeIcon {
+.langIcon {
   font-size: 10px;
   letter-spacing: 2px;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 3rem 1rem;
   color: black;
   text-align: center;
+  flex-basis: 25%;
   &:hover {
     color: white;
   }
 
-  opacity: 0.75;
+  opacity: 0.6;
   &:hover {
-    filter: invert(26%) sepia(95%) saturate(7447%) hue-rotate(358deg)
-      brightness(100%) contrast(114%);
     opacity: 1;
-    transition: filter 300ms, opacity 300ms ease-in;
+    transition: opacity 300ms ease-in;
   }
   &:not(:hover) {
     //for when you stop hovering
     transition: filter 300ms ease-in;
   }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.recentProjects {
+  color: white;
+  margin: 0 0 0 0;
+  text-align: center;
+}
+
+.recentProjectsTitle {
+  margin: 0 0 4.2rem 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.recentProjectsContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recentProject {
+  border: 1px solid white;
+  margin: 0 0 2.4rem 0;
+  flex-basis: 33%;
+  padding: 0 0 6rem 0;
 }
