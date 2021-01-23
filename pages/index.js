@@ -74,7 +74,7 @@ const Index = () => {
         <div className={styles.recentProjectsContent}>
         <div className={styles.recentProject}>
           <Image
-            src='/assets/images/project1'
+            src='/assets/images/project1.jpg'
             alt='Picture of a first project'
             width={240}
             height={240}
