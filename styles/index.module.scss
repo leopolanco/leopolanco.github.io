@@ -4,7 +4,7 @@
 .mainDiv {
   display: flex;
   justify-content: space-between;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: $OpenSans;
   margin: 3.2rem 3.2rem 0 2.4rem;
   color: white;
   @media (max-width: $desktop-breakpoint) {
@@ -118,14 +118,14 @@
 .aboutMeTitle {
   margin: 0 0 3.2rem 0;
   font-weight: 700;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $OpenSans;
   font-size: 36px;
   letter-spacing: 1px;
   text-align: center;
 }
 
 .aboutMeText {
-  font-family: 'Poppins', sans-serif;
+  font-family: $Poppins;
   font-weight: 300;
   text-align: center;
   font-size: 14px;
@@ -140,7 +140,7 @@
 
 .langs {
   margin: 0 0 16rem 0; //separator between langs and recent projects
-  font-family: 'Poppins', sans-serif;
+  font-family: $Poppins;
   display: flex;
   flex-wrap: wrap; //important for flex basis
   justify-content: space-between;
@@ -149,7 +149,7 @@
 .langsTitle {
   margin: 0 0 3rem 3.6rem;
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $OpenSans;
   font-weight: 600;
   letter-spacing: 2px;
   font-size: 24px;
@@ -189,7 +189,7 @@
   font-size: 28px;
   font-weight: 600;
   letter-spacing: 1px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $OpenSans;
 }
 
 .recentProjectsContent {
