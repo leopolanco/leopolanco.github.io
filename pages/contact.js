@@ -59,7 +59,7 @@ const onSubmit = (e) =>{
     setEmail('')
     setMessage('')
     //Sending
-    setUserMessage('Sending') 
+    setUserMessage('Sending...') 
     sendFormToGoogleForms()
 }
 
