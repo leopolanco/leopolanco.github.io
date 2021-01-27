@@ -1,5 +1,6 @@
 @import './settings.scss';
 @import './visibility.scss';
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -11,8 +12,6 @@
   letter-spacing: 3.5px;
   font-size: 12.5px;
   font-weight: 300;
-  text-decoration: none;
-
   @media (max-width: $desktop-breakpoint) {
     //para separar las vistas, esta es especifica a movil
     padding: 1.2rem 1.6rem 0 1.6rem;

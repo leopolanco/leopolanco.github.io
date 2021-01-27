@@ -12,7 +12,6 @@ export const Hamburger = () => (
       <path d="M20 5H4v2h16V9zM4 15h16v-2H4v2z" />
     </svg>
 )
-
 export const Close = () => (
   <svg
   width="42px"
@@ -28,7 +27,6 @@ export const Close = () => (
   />
 </svg>
 )
-
 export const LinkedIn = () => (
   <svg
   width="24px"
@@ -45,7 +43,6 @@ export const LinkedIn = () => (
   />
 </svg>
 )
-
 export const GitHub = () => (
   <svg
   width="24px"
@@ -62,7 +59,6 @@ export const GitHub = () => (
   />
 </svg>
 )
-
 export const Mail = () => (
 <svg
   width="24px"
@@ -77,9 +73,7 @@ export const Mail = () => (
     d="M1.75 3A1.75 1.75 0 000 4.75v14c0 .966.784 1.75 1.75 1.75h20.5A1.75 1.75 0 0024 18.75v-14A1.75 1.75 0 0022.25 3H1.75zM1.5 4.75a.25.25 0 01.25-.25h20.5a.25.25 0 01.25.25v.852l-10.36 7a.25.25 0 01-.28 0l-10.36-7V4.75zm0 2.662V18.75c0 .138.112.25.25.25h20.5a.25.25 0 00.25-.25V7.412l-9.52 6.433c-.592.4-1.368.4-1.96 0L1.5 7.412z"
   />
 </svg>
-
 )
-
 export const WhatsApp = () => (
   <svg
   width="24px"
@@ -98,7 +92,6 @@ export const WhatsApp = () => (
 </svg>
 
 )
-
 export const Telegram = () => (
   <svg
   width="24px"
@@ -115,7 +108,6 @@ export const Telegram = () => (
   />
 </svg>
 )
-
 export const MainImage = () => (
 <svg 
  width='450' 
@@ -267,10 +259,7 @@ export const MainImage = () => (
         </g>
     </g>
 </svg>
-
 )
-
-
 export const ReactIcon = () => (
     <svg
   width="48"
@@ -292,7 +281,6 @@ export const ReactIcon = () => (
   />
 </svg>
 )
-
 export const NodeIcon = () => (
     <svg
   width="48"
@@ -309,7 +297,6 @@ export const NodeIcon = () => (
   />
 </svg>
 )
-
 export const MongoIcon = () => (
 <svg width="48" height="48" viewBox="0 0 32 32">
 
@@ -325,8 +312,8 @@ export const MongoIcon = () => (
     d="M15.487 26.569S9.366 22.4 9.72 15.025a15.54 15.54 0 015.519-11.648A1.725 1.725 0 0015.846 2c.381.82.319 12.243.359 13.579.155 5.197-.289 10.009-.718 10.99z"
     fill="#ebebeb"
   />
-</svg>)
-
+</svg>
+)
 export const SassIcon = () => (
 <svg
   width="48"
@@ -339,8 +326,6 @@ export const SassIcon = () => (
   />
 </svg>
 )
-
-
 export const NextIcon = () => (
     <svg
   width="48"
@@ -353,7 +338,6 @@ export const NextIcon = () => (
   />
 </svg>
 )
-
 export const GitIcon = () => (
   <svg
   width="48"
@@ -371,7 +355,6 @@ export const GitIcon = () => (
   />
 </svg>
 )
-
 export const JSIcon= () => (
   <svg
   width="42"
@@ -385,7 +368,6 @@ export const JSIcon= () => (
   />
 </svg>
 )
-
 export const AngularIcon = () => (
 <svg
   width="48"
@@ -404,6 +386,25 @@ export const AngularIcon = () => (
     d="M16 5.094l-8.148 18.27h3.038l1.638-4.088h6.916l1.638 4.088h3.038L16 5.094zm2.38 11.662h-4.76L16 11.03z"
     fill="#000"
   />
+</svg>
+
+)
+export const Phone = () => (
+  <svg width="24" height="24" viewBox="0 0 23 37">
+  <g id="phone_white" transform="translate(-206 -296.274)">
+    <rect id="Rectángulo_1131" data-name="Rectángulo 1131" width="21" height="35" rx="5" transform="translate(207 297.274)" fill="none" stroke="#f7f7f7" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+    <line id="Línea_51" data-name="Línea 51" x2="21" transform="translate(207 325.274)" fill="none" stroke="#f7f7f7" strokeMiterlimit="10" strokeWidth="2"/>
+    <line id="Línea_52" data-name="Línea 52" x2="3" transform="translate(216 329.274)" fill="none" stroke="#f7f7f7" strokeMiterlimit="10" strokeWidth="2"/>
+  </g>
+</svg>
+)
+export const Location = () => (
+  <svg width="24" height="24" viewBox="0 0 27.155 36.904">
+  <g id="location_white" transform="translate(-803.953 -312.667)">
+    <path id="Trazado_975" data-name="Trazado 975" d="M3445,399.577a12.577,12.577,0,1,1,25.155,0c0,7.47-12.535,19.457-12.577,19.457S3445,407.216,3445,399.577Z" transform="translate(-2640.047 -73.333)" fill="none" stroke="#f7f7f7" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+    <path id="Trazado_976" data-name="Trazado 976" d="M3471.917,737.022c-3.238.5-5.417,1.424-5.417,2.488,0,1.585,4.837,2.87,10.8,2.87s10.8-1.285,10.8-2.87c0-1.059-2.16-1.984-5.373-2.482" transform="translate(-2659.733 -393.809)" fill="none" stroke="#f7f7f7" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+    <circle id="Elipse_68" data-name="Elipse 68" cx="7.175" cy="7.175" r="7.175" transform="translate(810.355 318.816)" fill="none" stroke="#f7f7f7" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+  </g>
 </svg>
 
 )

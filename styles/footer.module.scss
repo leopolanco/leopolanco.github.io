@@ -1,0 +1,49 @@
+@import './settings.scss';
+@import './visibility.scss';
+@import './header.module.scss';
+
+.footer {
+  margin: 10rem auto 8.6rem auto;
+  border-top: 1px solid gray;
+  color: white;
+  padding: 3.2rem 1.6rem;
+
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 3.5px;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.footerLinks {
+  color: $grey;
+  > span {
+    //this targets each link
+    padding: 0 1.8rem 0 0;
+    &:hover {
+      cursor: pointer;
+      color: $red;
+      transition: color 300ms ease-in;
+    }
+    &:not(:hover) {
+      //for when you stop hovering
+      transition: color 250ms ease-in;
+    }
+  }
+}
+.footerContactInfo {
+  display: flex;
+  justify-content: space-evenly;
+  > div {
+    display: row;
+    > svg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    > span {
+      color: $grey;
+      text-align: center;
+    }
+  }
+}

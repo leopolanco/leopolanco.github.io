@@ -10,6 +10,7 @@ import {CSSTransition} from 'react-transition-group';
 //Todo:
 // Optimize the header, make only one list of links.
 
+
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
   const [mobileMenuButton, setMobileMenuButton] = useState(<Hamburger/>)
@@ -32,7 +33,7 @@ const Header = () => {
       <Particles/>
 
       <div className={styles.header}>
-        <Link  href="/" exact={true}><span onClick={()=>setShowMobileMenu(false)} className={styles.mainLink}>Leo <span>Polanco</span></span></Link>
+        <Link href="/" exact={true} ><span  className={styles.mainLink}>Leo <span>Polanco</span></span></Link>
         <div className={styles.showForDesktop}>
           <Link href="/projects" ><span className={styles.navlink}>PROJECTS</span></Link>
           <Link href="/contact"><span className={styles.navlink}> CONTACT </span></Link>

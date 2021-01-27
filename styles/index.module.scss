@@ -162,18 +162,15 @@
   color: black;
   text-align: center;
   flex-basis: 25%;
-  &:hover {
-    color: white;
-  }
-
   opacity: 0.6;
   &:hover {
+    color: white;
     opacity: 1;
     transition: opacity 300ms ease-in;
   }
   &:not(:hover) {
     //for when you stop hovering
-    transition: filter 300ms ease-in;
+    transition: opacity 300ms, color 300ms ease-in;
   }
 }
 
@@ -196,10 +193,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (max-width: $desktop-breakpoint) {
+    justify-content: space-around;
+    //para separar las vistas, esta es especifica a movil
+  }
 }
 
 .recentProject {
-  // border: 1px solid white;
   margin: 0 0 2.4rem 0;
   flex-basis: 33%;
   filter: grayscale(100%);
@@ -210,7 +210,7 @@
     opacity: 1;
     transition: opacity 300ms, filter 300ms ease-in;
   }
-  @media (max-width: $desktop-breakpoint) {
-    //para separar las vistas, esta es especifica a movil
+  &:not(:hover) {
+    transition: opacity 300ms, filter 300ms ease-in;
   }
 }
