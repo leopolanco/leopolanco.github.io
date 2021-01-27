@@ -13,19 +13,19 @@ return (
                 <div className={styles.recentProject}>
                 <img 
                 srcSet='/assets/images/BudgetApp1280.webp 1920w,
-                        /assets/images/BudgetApp760.webp 1280w'
+                        /assets/images/BudgetApp760.webp 1920w'
                 sizes={sizes} loading='lazy' alt='First Project'/></div>
 
                 <div className={styles.recentProject}>
                 <img 
                 srcSet='/assets/images/Proyup1280.webp 1920w,
-                        /assets/images/Proyup760.webp 1280w' 
+                        /assets/images/Proyup760.webp 1920w' 
                 sizes={sizes} loading='lazy' alt='Second Project'/></div>
                 
                 <div className={styles.recentProject}>
                 <img 
                 srcSet='/assets/images/REMock1280.webp 1920w,
-                        /assets/images/REMock760.webp 1280w' 
+                        /assets/images/REMock760.webp 1920w' 
                 sizes={sizes} loading='lazy' alt='Third Project'/></div>
         </div>
     </div>

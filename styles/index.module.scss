@@ -1,6 +1,5 @@
 @import './settings.scss';
 @import './visibility.scss';
-
 .mainDiv {
   display: flex;
   justify-content: space-between;
@@ -60,10 +59,10 @@
 .rightContainer {
   display: flex;
   justify-content: space-between;
-}
-
-.mainImage {
-  margin: 0 5rem 0 0;
+  > div:nth-child(1) {
+    //Image in presentation
+    margin: 0 5rem 0 0;
+  }
 }
 
 .icons {
@@ -77,37 +76,40 @@
     margin: auto;
     width: 50%;
   }
-}
-
-.githubIcon,
-.linkedInIcon,
-.mailIcon {
-  margin: 1.2rem 0 0 0;
-  opacity: 0.75;
-  &:hover {
-    filter: invert(26%) sepia(95%) saturate(7447%) hue-rotate(358deg)
-      brightness(100%) contrast(114%);
-    opacity: 1;
-    transition: filter 300ms, opacity 300ms ease-in;
-  }
-  &:not(:hover) {
-    //for when you stop hovering
-    transition: filter 300ms ease-in;
-  }
-  @media (max-width: $desktop-breakpoint) {
-    margin: 2.4rem 0 0 0;
-    padding: 1.2rem 1.2rem 0 1.2rem;
+  > a {
+    @media (max-width: $desktop-breakpoint) {
+      padding: 1.2rem; //separating each icon on mobile
+    }
+    > svg {
+      //actual icons
+      margin: 2.4rem 0 0 0;
+      color: $grey; //we don't use opacity here because
+      //when it will transition from 0.7 to 1, the color red
+      //will change with it too making a weird red changing transition
+      &:hover {
+        color: $red;
+        transition: color 250ms ease-in;
+      }
+      &:not(:hover) {
+        //for when you stop hovering
+        transition: color 300ms ease-in;
+      }
+      @media (max-width: $desktop-breakpoint) {
+        margin: 2.4rem 0 0 0;
+      }
+    }
   }
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .aboutMe {
+  letter-spacing: 1px;
   color: white;
   max-width: 80rem;
-  margin: 8rem auto 0 auto; //separator between presentation and aboutme
+  text-align: center;
+  margin: 6rem auto 0 auto; //separator between presentation and aboutme
   @media (max-width: $desktop-breakpoint) {
-    //para separar las vistas, esta es especifica a movil
     margin: 0 0 0 0;
     display: flex;
     justify-content: center;
@@ -120,57 +122,77 @@
   font-weight: 700;
   font-family: $OpenSans;
   font-size: 36px;
-  letter-spacing: 1px;
-  text-align: center;
+  @media (max-width: $desktop-breakpoint) {
+    border-top: 1px solid $grey;
+    padding: 3.2rem 0;
+    margin: 4.8rem 0 0 0;
+    font-size: 24px;
+  }
 }
 
 .aboutMeText {
   font-family: $Poppins;
   font-weight: 300;
-  text-align: center;
   font-size: 14px;
   margin: 0 16rem 12rem 16rem; //separator between about me and langs
-  letter-spacing: 1px;
   @media (max-width: $desktop-breakpoint) {
-    display: none; // FIX THIS WHEN APPLICATING THE CORRECT TEXT
+    margin: 0 0 7.2rem 0; //separator between about me and langs
+    text-align: left;
+    font-size: 11px;
   }
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .langs {
-  margin: 0 0 16rem 0; //separator between langs and recent projects
+  margin: 0 0 12rem 0; //separator between langs and recent projects
   font-family: $Poppins;
   display: flex;
   flex-wrap: wrap; //important for flex basis
   justify-content: space-between;
   color: black;
+  > div {
+    //icons
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 0 1rem 3rem 1rem;
+    text-align: center;
+    flex-basis: 25%;
+    opacity: 0.6;
+    &:hover {
+      color: white;
+      opacity: 1;
+      transition: opacity 300ms ease-in;
+    }
+    &:not(:hover) {
+      //for when you stop hovering
+      transition: opacity 300ms, color 5000ms ease-in;
+    }
+    @media (max-width: $desktop-breakpoint) {
+      color: $grey;
+    }
+    &:nth-child(7),
+    &:nth-child(8) {
+      @media (max-width: $desktop-breakpoint) {
+        display: none; //angular and js icons don't appear on mobile.
+      }
+    }
+  }
+  @media (max-width: $desktop-breakpoint) {
+    margin: 0 0 8rem 0; //separator between langs and recent projects in mobile
+  }
 }
+
 .langsTitle {
   margin: 0 0 3rem 3.6rem;
   color: white;
   font-family: $OpenSans;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 2px;
   font-size: 24px;
-}
-
-.langIcon {
-  font-size: 10px;
-  letter-spacing: 2px;
-  padding: 0 1rem 3rem 1rem;
-  color: black;
-  text-align: center;
-  flex-basis: 25%;
-  opacity: 0.6;
-  &:hover {
-    color: white;
-    opacity: 1;
-    transition: opacity 300ms ease-in;
-  }
-  &:not(:hover) {
-    //for when you stop hovering
-    transition: opacity 300ms, color 300ms ease-in;
+  @media (max-width: $desktop-breakpoint) {
+    margin: 0 0 3rem 0;
+    font-size: 20px;
   }
 }
 
@@ -179,6 +201,10 @@
 .recentProjects {
   color: white;
   text-align: center;
+
+  @media (max-width: $desktop-breakpoint) {
+    border-top: 1px solid $grey;
+  }
 }
 
 .recentProjectsTitle {
@@ -187,6 +213,11 @@
   font-weight: 600;
   letter-spacing: 1px;
   font-family: $OpenSans;
+
+  @media (max-width: $desktop-breakpoint) {
+    font-size: 24px;
+    margin: 4.2rem 0;
+  }
 }
 
 .recentProjectsContent {
@@ -194,17 +225,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   @media (max-width: $desktop-breakpoint) {
-    justify-content: space-around;
-    //para separar las vistas, esta es especifica a movil
+    justify-content: space-around; //finally centered the projects
   }
 }
 
 .recentProject {
-  margin: 0 0 2.4rem 0;
   flex-basis: 33%;
   filter: grayscale(100%);
   opacity: 0.6;
-
   &:hover {
     filter: none;
     opacity: 1;
@@ -212,5 +240,8 @@
   }
   &:not(:hover) {
     transition: opacity 300ms, filter 300ms ease-in;
+  }
+  @media (max-width: $desktop-breakpoint) {
+    margin: 0 0 3.2rem 0;
   }
 }

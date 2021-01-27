@@ -7,19 +7,19 @@ import {
 } from '../../../public/assets/svg/svg'
 
 const Footer = () => {  
-
-
 return (
     <div className={styles.footer}>
         <div className={styles.footerLinks}>
-        <Link href='/projects'><span>PROJECTS</span></Link>
-        <Link href='/contact'><span>CONTACT</span></Link>
+            <Link href='/projects'><span>PROJECTS</span></Link>
+            <Link href='/contact'><span>CONTACT</span></Link>
         </div>
         <div className={styles.footerContactInfo}>
-    <div><Mail/><span>leo@leopolanco.com</span></div>
-    <div><Phone/><span>+58 424 651 9234</span></div>
-    <div><Location/><span>Coro, Venezuela</span></div>
-    </div>
+            <a target="_blank" rel="noopener"href="mailto:leo@leopolanco.com"><Mail/><span>leo@leopolanco.com</span></a>
+            <div><Phone/><span>+58 424 651 9234</span></div>
+            <div><Location/><span>Coro, Venezuela</span></div>
+            
+        </div>
+        
     </div>
 )}
 

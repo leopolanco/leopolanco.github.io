@@ -1,25 +1,34 @@
 @import './settings.scss';
 @import './visibility.scss';
-@import './header.module.scss';
 
 .footer {
-  margin: 10rem auto 8.6rem auto;
+  margin: 10rem auto 0 auto;
   border-top: 1px solid gray;
-  color: white;
+  color: $grey;
   padding: 3.2rem 1.6rem;
-
   font-family: 'Poppins', sans-serif;
-  letter-spacing: 3.5px;
-  font-size: 15px;
+  letter-spacing: 2px;
+  font-size: 14px;
   font-weight: 300;
   text-align: center;
+  background: linear-gradient(
+    180deg,
+    rgb(0, 0, 0, 0.45),
+    rgb(118, 70, 255, 0.45),
+    rgb(32, 206, 245, 0.45)
+  );
+  background-size: 500% 500%;
+  @media (max-width: $desktop-breakpoint) {
+    margin: 3.6rem 0 0 0;
+    background-size: 800% 800%;
+  }
 }
 
 .footerLinks {
-  color: $grey;
+  margin: 0 0 3.2rem 0;
   > span {
     //this targets each link
-    padding: 0 1.8rem 0 0;
+    padding: 0 2.4rem 0 2.4rem;
     &:hover {
       cursor: pointer;
       color: $red;
@@ -30,20 +39,35 @@
       transition: color 250ms ease-in;
     }
   }
+  @media (max-width: $desktop-breakpoint) {
+    margin: 0 0 2.4rem 0;
+  }
 }
+
 .footerContactInfo {
   display: flex;
-  justify-content: space-evenly;
-  > div {
-    display: row;
+  justify-content: space-around;
+  > div,
+  a {
+    text-decoration: none;
+    color: $grey;
+    display: grid; //make a grid
+
     > svg {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      margin: auto; //then center the svg
+      @media (max-width: $desktop-breakpoint) {
+        display: none; //no icons on mobile, would like to keep experimenting with this
+      }
     }
     > span {
-      color: $grey;
+      margin: 1rem 0 0 0;
       text-align: center;
+      @media (max-width: $desktop-breakpoint) {
+        margin: 1.6rem 0 0 0; //no icons on mobile, would like to keep experimenting with this
+      }
     }
+  }
+  @media (max-width: $desktop-breakpoint) {
+    display: inline; //negates the display flex from desktop
   }
 }

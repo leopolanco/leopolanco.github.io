@@ -1,14 +1,16 @@
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap);
 
-//colors
+//please order this
 $mobileMenuBackground: hsla(3, 3%, 100%, 0.8);
 
 $red: #ff2020;
 $grey: rgb(170, 170, 170);
 $OpenSans: 'Open Sans', sans-serif;
 $Poppins: 'Poppins', sans-serif;
-//dimensions
+
+$GreyToRed: invert(26%) sepia(95%) saturate(7447%) hue-rotate(358deg)
+  brightness(100%) contrast(114%);
 
 $desktop-breakpoint: 45rem;
 //this is used with @media(max-width: $desktop-breakpoint){} to set styling for mobile

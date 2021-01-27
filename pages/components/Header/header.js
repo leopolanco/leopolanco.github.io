@@ -46,7 +46,6 @@ const Header = () => {
         <div className={styles.showForMobile}>
 
 
-        
       <CSSTransition
         classNames={{
           enter:styles.mobileMenuEnter,
@@ -61,8 +60,7 @@ const Header = () => {
         onExit={() => setMobileMenuButton(<Hamburger/>)}
         unmountOnExit
         >
-            
-
+    
             <ul className={styles.mobileLinks}>
               <li><Link href="/projects"><span onClick={mobileMenu} className={styles.mobileLink} >PROJECTS</span></Link></li>
               <li><Link href="/contact"><span onClick={mobileMenu} className={styles.mobileLink} >CONTACT</span></Link></li>

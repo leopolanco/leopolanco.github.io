@@ -18,11 +18,11 @@ const Presentation = () => (
       </div>
       <div >
         <div className={styles.rightContainer}>
-          <div className={`${styles.mainImage} ${styles.showForDesktop}`}><MainImage/></div> {/*This image is called source code, it is a placeholder */}
+          <div className={styles.showForDesktop}><MainImage/></div> {/*This image is called source code, it is a placeholder */}
           <div className={styles.icons}>
-            <a className={styles.githubIcon} target="_blank" rel="noopener" alt='github' href='https://github.com/leopolanco'><GitHub/></a>
-            <a className={styles.linkedInIcon} target="_blank" rel="noopener"  alt='linkedin' href='https://www.linkedin.com/in/leo-polanco-b7ba74144/'><LinkedIn/></a>
-            <a className={styles.mailIcon} target="_blank" rel="noopener"  alt='mail' href='mailto:leo@leopolanco.com'><Mail/></a>
+            <a target="_blank" rel="noopener" alt='github' href='https://github.com/leopolanco'><GitHub/></a>
+            <a target="_blank" rel="noopener"  alt='linkedin' href='https://www.linkedin.com/in/leo-polanco-b7ba74144/'><LinkedIn/></a>
+            <a target="_blank" rel="noopener"  alt='mail' href='mailto:leo@leopolanco.com'><Mail/></a>
           </div>
         </div>
       </div>
