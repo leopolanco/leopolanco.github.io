@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Particles from '../particles'
 import styles from '../../../styles/header.module.scss'
-import {Hamburger, Close} from '../../../public/assets/svg/svg.js'
+import {Hamburger} from '../../../public/assets/svg/svg.js'
 import {useState} from 'react'
 import {CSSTransition} from 'react-transition-group';
 
@@ -13,7 +13,7 @@ import {CSSTransition} from 'react-transition-group';
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
-  const [mobileMenuButton, setMobileMenuButton] = useState(<Hamburger/>)
+  const [mobileMenuButton, setMobileMenuButton] = useState(<span className={styles.Hamburger}><Hamburger/></span>)
   const mobileMenu = () => (
     setShowMobileMenu(!showMobileMenu)
   )
@@ -33,7 +33,7 @@ const Header = () => {
       <Particles/>
 
       <div className={styles.header}>
-        <Link href="/" exact={true} ><span  className={styles.mainLink}>Leo <span>Polanco</span></span></Link>
+        <Link href="/" exact={true} ><span  className={styles.mainLink} onClick={()=>setShowMobileMenu(false)}>Leo <span>Polanco</span></span></Link>
         <div className={styles.showForDesktop}>
           <Link href="/projects" ><span className={styles.navlink}>PROJECTS</span></Link>
           <Link href="/contact"><span className={styles.navlink}> CONTACT </span></Link>
@@ -56,8 +56,8 @@ const Header = () => {
         }}
         in={showMobileMenu}
         timeout={250}
-        onEntering={() => setMobileMenuButton(<Close/>)}
-        onExit={() => setMobileMenuButton(<Hamburger/>)}
+        onEntering={() => setMobileMenuButton(<span className={styles.HamburgerClose}><Hamburger/></span>)}
+        onExit={() => setMobileMenuButton(<span className={styles.Hamburger}><Hamburger/></span>)}
         unmountOnExit
         >
     

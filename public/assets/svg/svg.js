@@ -1,32 +1,3 @@
-
-export const Hamburger = () => (
-      <svg
-      width="42px"
-      height="42px"
-      
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      color="#fff"
-    >
-      <path fill="none" d="M0 0h24v24H0z" />
-      <path d="M20 5H4v2h16V9zM4 15h16v-2H4v2z" />
-    </svg>
-)
-export const Close = () => (
-  <svg
-  width="42px"
-  height="42px"
-  
-  viewBox="0 0 24 24"
-  fill="currentColor"
-  color="#3d3d3d"
->
-  <path d="M0 0h24v24H0z" fill="none" />
-  <path
-    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-  />
-</svg>
-)
 export const LinkedIn = () => (
   <svg
   width="24px"
@@ -406,4 +377,37 @@ export const Location = () => (
   </g>
 </svg>
 
+)
+//menu button taken from https://uxdesign.cc/the-menu-210bec7ad80c
+export const Hamburger = () => (
+  <svg width="42" height="42" viewBox="0 0 100 100"fill="currentColor"
+  color="#fff">
+        <path d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path d="M 20,50 H 80" />
+        <path d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+</svg>
+)
+export const Loading = () => (
+<svg width="32px" height="32px" viewBox="0 0 38 38" color="#fff">
+  <defs>
+    <linearGradient x1="8.042%" y1="0%" x2="65.682%" y2="23.865%" id="tail-spin_svg__a">
+      <stop stopColor="currentColor" stopOpacity="0" offset="0%"></stop>
+      <stop stopColor="currentColor" stopOpacity=".631" offset="63.146%"></stop>
+      <stop stopColor="currentColor" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+  <g transform="translate(1 1)" fill="none" fillRule="evenodd">
+    <path d="M36 18c0-9.94-8.06-18-18-18" stroke="url(#tail-spin_svg__a)" strokeWidth="2">
+      <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="1.2s" repeatCount="indefinite">
+      </animateTransform>
+    </path>
+    <circle fill="#fff" cx="36" cy="18" r="1">
+      <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="1.2s" repeatCount="indefinite">
+      </animateTransform>
+    </circle>
+  </g>
+</svg>
+)
+export const SendIcon = () => (
+  <svg width="24" height="24"viewBox="0 0 24 24" fill="currentColor" color="#fff"><path d="M0 0h24v24H0z" fill="none"></path><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
 )

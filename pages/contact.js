@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import _JSXStyle from 'styled-jsx/style'
-
+import {Loading} from '../public/assets/svg/svg'
+import styles from '../styles/contact.module.scss'
 
 const contact = () => {
 
@@ -59,27 +60,28 @@ const onSubmit = (e) =>{
     setEmail('')
     setMessage('')
     //Sending
-    setUserMessage('Sending...') 
+    setUserMessage(<Loading/>) 
     sendFormToGoogleForms()
 }
 
 return (
-    <>
+    <div className={styles.contactPage}>
     <style global jsx>{`
         .header_navlink__1wJsj:nth-of-type(2),
-        li:nth-child(2)
+        li:nth-child(2),
+        .footer_footerLinks__3_Agy>span:nth-child(2)
          {
             color: #ff2020;
         }
     `}</style>
-        <h3>Contact Me</h3>
+        <h3>Contact me</h3>
         <form onSubmit={onSubmit} method="GET">
             <input placeholder="Your Email" value={email} onChange={(e)=> setEmail(e.target.value)}/>
             <textarea placeholder="Your Message" value={message} onChange={(e)=> setMessage(e.target.value)}></textarea>
             <button type="submit">Send Message</button>
         </form>
         {error ? <p>{error}</p> : <p>{userMessage}</p>}
-    </>
+    </div>
 )}
 
 
