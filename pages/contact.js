@@ -14,7 +14,7 @@ const [userMessage, setUserMessage] = useState('')
 //we a use a loading part
 //because we're sending the data through a third party proxy
 //and it takes a bit to send it correctly and can fail for connection issues
-//this is registered in usermessage
+//this is registered in usermesssage
 
 const [error, setError] = useState('')
 
