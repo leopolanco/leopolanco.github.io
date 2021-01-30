@@ -40,7 +40,7 @@ useEffect(() => {
         setUserMessage('Sent')
     })
     .catch((e)=>{
-        setError('There was an error, please send your message again')
+        setError('There was an error, please send your message again!')
     })
 }
 
