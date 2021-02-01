@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import _JSXStyle from 'styled-jsx/style'
-import {Loading} from '../public/assets/svg/svg'
+import {Loading, SendIcon, DoneIcon} from '../public/assets/svg/svg'
 import styles from '../styles/contact.module.scss'
 
 const contact = () => {
-
 const [form, setForm] = useState({});
 const [message, setMessage] = useState('')
 const [email, setEmail] = useState('')
@@ -37,7 +36,7 @@ useEffect(() => {
     formData.append(GOOGLE_FORM_EMAIL_ID, form.email);
     axios.post(CORS_PROXY+GOOGLE_FORM_ACTION_URL, formData)
     .then(()=>{
-        setUserMessage('Sent')
+        setUserMessage(<span>Message sent <DoneIcon/></span>)
     })
     .catch((e)=>{
         setError('There was an error, please send your message again')
@@ -60,11 +59,15 @@ const onSubmit = (e) =>{
     setEmail('')
     setMessage('')
     //Sending
-    setUserMessage(<Loading/>) 
+    setUserMessage(<span>Sending your message <Loading/></span>) 
     sendFormToGoogleForms()
 }
 
 return (
+    <>
+
+
+
     <div className={styles.contactPage}>
     <style global jsx>{`
         .header_navlink__1wJsj:nth-of-type(2),
@@ -76,12 +79,19 @@ return (
     `}</style>
         <h3>Contact me</h3>
         <form onSubmit={onSubmit} method="GET">
-            <input placeholder="Your Email" value={email} onChange={(e)=> setEmail(e.target.value)}/>
-            <textarea placeholder="Your Message" value={message} onChange={(e)=> setMessage(e.target.value)}></textarea>
-            <button type="submit">Send Message</button>
+            <label className={styles.emailLabel}>Email</label>
+            <input value={email} onChange={(e)=> setEmail(e.target.value)}/>
+            <label className={styles.messageLabel}>Message</label>
+            <textarea value={message} onChange={(e)=> setMessage(e.target.value)}></textarea>
+            <button type="submit">Send your message<SendIcon/></button>
         </form>
         {error ? <p>{error}</p> : <p>{userMessage}</p>}
-    </div>
+    
+    
+    
+    
+        </div>
+    </>
 )}
 
 

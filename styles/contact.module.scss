@@ -3,4 +3,77 @@
 
 .contactPage {
   color: white;
+
+  margin: auto;
+  width: 50%;
+  > form {
+    margin: 2.4rem 0 1.2rem 0;
+    //style the form
+    display: flex;
+    flex-direction: column;
+    > input {
+      color: white;
+      margin: 0 0 1.2rem 0;
+      background: transparent;
+      padding: 10px 0 10px 10px;
+      border: 1px solid white;
+      width: 40%;
+      opacity: 0.6;
+      outline: none;
+      &:hover {
+        opacity: 1;
+        border-width: 1px;
+        transition: opacity 200ms, border-width 200ms ease-in;
+      }
+      &:not(:hover) {
+        transition: opacity 200ms ease-in;
+      }
+      &:focus {
+        opacity: 1;
+        transition: opacity 200ms ease-in;
+      }
+    }
+
+    > textarea {
+      color: white;
+      margin: 0 0 1.2rem 0;
+      background: transparent;
+      padding: 10px 0 10px 10px;
+      border: 1px solid white;
+      outline: none;
+      opacity: 0.6;
+      &:hover {
+        opacity: 1;
+        border-width: 1px;
+        transition: opacity 200ms, border-width 200ms ease-in;
+      }
+      &:not(:hover) {
+        transition: opacity 200ms ease-in;
+      }
+      &:focus {
+        opacity: 1;
+        transition: opacity 200ms ease-in;
+      }
+    }
+    > button {
+      text-align: left;
+      color: white;
+      opacity: 0.6;
+      background: transparent;
+      cursor: pointer;
+      border: none;
+      width: 40%;
+      &:hover {
+        opacity: 1;
+        transition: opacity 200ms ease-in;
+      }
+      &:not(:hover) {
+        transition: opacity 200ms ease-in;
+      }
+      &:focus {
+        opacity: 1;
+        outline: none;
+      }
+    }
+  }
 }
