@@ -47,11 +47,11 @@
   &:hover {
     cursor: pointer;
     color: $red;
-    transition: color 300ms ease-in;
+    transition: color 250ms ease-in;
   }
   &:not(:hover) {
     //for when you stop hovering
-    transition: color 250ms ease-in;
+    transition: color 200ms ease-in;
   }
 }
 

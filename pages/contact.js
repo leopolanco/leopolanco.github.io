@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import _JSXStyle from 'styled-jsx/style'
-import {Loading, SendIcon, DoneIcon} from '../public/assets/svg/svg'
+import {Loading, DoneIcon} from '../public/assets/svg/svg'
 import styles from '../styles/contact.module.scss'
 
 const contact = () => {
@@ -36,7 +36,7 @@ useEffect(() => {
     formData.append(GOOGLE_FORM_EMAIL_ID, form.email);
     axios.post(CORS_PROXY+GOOGLE_FORM_ACTION_URL, formData)
     .then(()=>{
-        setUserMessage(<span>Message sent <DoneIcon/></span>)
+        setUserMessage(<DoneIcon/>)
     })
     .catch((e)=>{
         setError('There was an error, please send your message again')
@@ -59,16 +59,16 @@ const onSubmit = (e) =>{
     setEmail('')
     setMessage('')
     //Sending
-    setUserMessage(<span>Sending your message <Loading/></span>) 
+    setUserMessage(<Loading/>) 
     sendFormToGoogleForms()
 }
 
 return (
     <>
 
+<h3 className={styles.contactTitle}>Contact </h3>
 
-
-    <div className={styles.contactPage}>
+    <div className={styles.contactForm}>
     <style global jsx>{`
         .header_navlink__1wJsj:nth-of-type(2),
         li:nth-child(2),
@@ -77,15 +77,25 @@ return (
             color: #ff2020;
         }
     `}</style>
-        <h3>Contact me</h3>
+        <span className={styles.contactFormTitle}>Send a message</span>
         <form onSubmit={onSubmit} method="GET">
+            <div className={styles.emailInput}>
+        
+            <input value={email} onChange={(e)=> setEmail(e.target.value)} required/>
             <label className={styles.emailLabel}>Email</label>
-            <input value={email} onChange={(e)=> setEmail(e.target.value)}/>
+            </div>
+            <div className={styles.messageInput} >
+            
+            <textarea value={message} onChange={(e)=> setMessage(e.target.value)} required></textarea>
             <label className={styles.messageLabel}>Message</label>
-            <textarea value={message} onChange={(e)=> setMessage(e.target.value)}></textarea>
-            <button type="submit">Send your message<SendIcon/></button>
+            </div>
+            <div className={styles.contactFormBottom}>
+            {error ? <span>{error}</span> : <span>{userMessage}</span>}
+            <button className={styles.button} type="submit">Send</button>
+
+            </div>
         </form>
-        {error ? <p>{error}</p> : <p>{userMessage}</p>}
+        
     
     
     

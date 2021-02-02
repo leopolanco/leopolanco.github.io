@@ -1,79 +1,136 @@
 @import './settings.scss';
 @import './visibility.scss';
 
-.contactPage {
+.contactTitle {
+  font-family: $OpenSans;
   color: white;
-
+}
+.contactForm {
+  font-family: tahoma;
+  color: white;
   margin: auto;
-  width: 50%;
+  background: black;
+  width: 40%;
+  border: 1px solid $grey;
+  box-shadow: 0 0 36px 0 $grey;
+  border-radius: 6px;
+  padding: 1.6rem 2.8rem 4.8rem 2.8rem;
+
   > form {
     margin: 2.4rem 0 1.2rem 0;
-    //style the form
-    display: flex;
-    flex-direction: column;
-    > input {
-      color: white;
-      margin: 0 0 1.2rem 0;
-      background: transparent;
-      padding: 10px 0 10px 10px;
-      border: 1px solid white;
-      width: 40%;
-      opacity: 0.6;
-      outline: none;
-      &:hover {
-        opacity: 1;
-        border-width: 1px;
-        transition: opacity 200ms, border-width 200ms ease-in;
-      }
-      &:not(:hover) {
-        transition: opacity 200ms ease-in;
-      }
-      &:focus {
-        opacity: 1;
-        transition: opacity 200ms ease-in;
-      }
-    }
+  }
+}
+.contactFormTitle {
+  font-size: 20px;
+  font-family: $OpenSans;
+  margin: 2.4rem 0 1.2rem 0;
+  letter-spacing: 1px;
+}
+.emailInput {
+  display: flex;
+  flex-direction: column;
 
-    > textarea {
-      color: white;
-      margin: 0 0 1.2rem 0;
-      background: transparent;
-      padding: 10px 0 10px 10px;
-      border: 1px solid white;
-      outline: none;
-      opacity: 0.6;
-      &:hover {
-        opacity: 1;
-        border-width: 1px;
-        transition: opacity 200ms, border-width 200ms ease-in;
-      }
-      &:not(:hover) {
-        transition: opacity 200ms ease-in;
-      }
-      &:focus {
-        opacity: 1;
-        transition: opacity 200ms ease-in;
-      }
-    }
-    > button {
-      text-align: left;
-      color: white;
-      opacity: 0.6;
-      background: transparent;
-      cursor: pointer;
-      border: none;
-      width: 40%;
-      &:hover {
-        opacity: 1;
-        transition: opacity 200ms ease-in;
-      }
-      &:not(:hover) {
-        transition: opacity 200ms ease-in;
-      }
-      &:focus {
-        opacity: 1;
-        outline: none;
+  .emailLabel {
+    font-family: $OpenSans;
+    color: white;
+    background: black;
+    position: relative;
+    left: 28px;
+    top: -75px;
+    width: 14%;
+    text-align: center; //center in itself
+    letter-spacing: 1px;
+    font-size: 12.5px;
+  }
+  > input {
+    letter-spacing: 1px;
+    border-radius: 2px;
+    border: 1px solid $grey;
+    color: white;
+    margin: 0.2rem 0 1.2rem 0;
+    background: transparent;
+    padding: 15px 18px;
+    outline: none;
+    &:focus {
+      border: 1px solid $red;
+      & ~ .emailLabel {
+        //paint the label
+        color: red;
       }
     }
+  }
+}
+
+.messageInput {
+  display: flex;
+  flex-direction: column;
+
+  .messageLabel {
+    font-family: $OpenSans;
+    border: none;
+    background: black;
+    position: relative;
+    top: -228px;
+    left: 28px;
+    width: 20%;
+    text-align: center; //center in itself
+    letter-spacing: 1.5px;
+    font-size: 12.5px;
+  }
+
+  > textarea {
+    letter-spacing: 1px;
+    font-family: tahoma;
+    color: white;
+    margin: 0 0 1.2rem 0;
+    background: transparent;
+    padding: 24px 18px;
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid $grey;
+    height: 200px;
+    resize: none;
+    &:focus {
+      border: 1px solid $red;
+      & ~ .messageLabel {
+        //paint the label
+        color: red;
+      }
+    }
+  }
+}
+
+.contactFormBottom {
+  display: flex;
+  justify-content: space-between;
+  > span {
+    //targetting the sending message, too lazy to make another classname
+    font-size: 14px;
+    font-weight: 300;
+    font-family: $Poppins;
+  }
+}
+
+.button {
+  padding: 15px 32px;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid $red;
+  box-shadow: 0 0 8px 0 $red;
+  color: white;
+  opacity: 0.6;
+  background: transparent;
+  cursor: pointer;
+  letter-spacing: 1px;
+  &:hover {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+  }
+  &:not(:hover) {
+    transition: opacity 200ms ease-in;
+  }
+  &:focus {
+    opacity: 1;
+    outline: none;
   }
 }
