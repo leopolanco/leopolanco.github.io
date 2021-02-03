@@ -844,50 +844,50 @@ export const ContactImage = () => (
         <g transform='translate(334.626 318.6592)'>
           <path
             d='M 292 197.6479 L 0 197.6479 L 0 0 L 292 0 Z M 2 195.6479 L 290 195.6479 L 290 2 L 2 2 Z'
-            fill-rule='nonzero'
+            fillRule='nonzero'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#3f3d56'
           />
         </g>
         <g transform='translate(360.133 335.1804)'>
           <path
             d='M 0 137.2394 L 240.986 137.2394 L 240.986 0 L 0 0 Z'
-            fill-rule='nonzero'
+            fillRule='nonzero'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#e6e6e6'
           />
         </g>
         <g transform='translate(406.8726 372.2021)'>
           <path
             d='M 0 24.153 C 0 10.7722 10.7723 0 24.153 0 C 37.5339 0 48.3061 10.7722 48.3061 24.153 C 48.3061 37.5338 37.5339 48.3061 24.153 48.3061 C 10.7723 48.3061 0 37.5338 0 24.153 Z'
-            fill-rule='nonzero'
+            fillRule='nonzero'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#ff0008'
           />
         </g>
         <g transform='translate(387.8365 371.6913)'>
           <path
             d='M 118.9304 99.0948 L 0.4427 99.0948 C 0.2944 99.0967 0.1462 99.0849 0 99.0597 L 56.0392 1.9916 C 56.7355 0.7609 58.0402 0 59.4542 0 C 60.8683 0 62.173 0.7609 62.8693 1.9916 L 100.4786 67.1318 L 102.2804 70.2488 Z'
-            fill-rule='nonzero'
+            fillRule='nonzero'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#3f3d56'
           />
         </g>
         <g transform='translate(466.312 438.823)'>
           <path
             d='M 40.455 31.963 L 0 31.963 L 19.859 3.117 L 21.289 1.039 L 22.004 0 L 23.805 3.117 L 40.455 31.963 Z'
-            fill-rule='nonzero'
+            fillRule='nonzero'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#000000'
             opacity='0.2'
           />
@@ -895,70 +895,70 @@ export const ContactImage = () => (
         <g transform='translate(470.2579 400.2969)'>
           <path
             d='M 102.4821 70.4891 L 0 70.4891 L 19.859 41.6431 L 21.2881 39.5651 L 47.1662 1.9733 C 48.0916 0.8119 49.4666 0.098 50.949 0.0093 C 52.4314 -0.0793 53.8817 0.4657 54.9388 1.5086 C 55.0728 1.6554 55.1973 1.8106 55.3115 1.9733 Z'
-            fill-rule='nonzero'
+            fillRule='nonzero'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#3f3d56'
           />
         </g>
         <g transform='translate(463.1569 163.9918)'>
           <path
             d='M 0 21.3385 C 0 9.517 9.517 0 21.3385 0 C 33.16 0 42.6769 9.517 42.6769 21.3385 C 42.6769 33.16 33.16 42.6769 21.3385 42.6769 C 9.517 42.6769 0 33.16 0 21.3385 Z'
-            fill-rule='nonzero'
+            fillRule='nonzero'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#e6e6e6'
           />
         </g>
         <g transform='translate(530.2206 171.1046)'>
           <path
             d='M 3.5564 0 C 1.5923 0 0 1.5923 0 3.5564 C 0 5.5206 1.5923 7.1128 3.5564 7.1128 L 171.2158 7.1128 C 173.1766 7.1082 174.7638 5.5173 174.7638 3.5564 C 174.7638 1.5956 173.1766 0.0047 171.2158 0 Z'
-            fill-rule='nonzero'
+            fillRule='nonzero'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#e6e6e6'
           />
         </g>
         <g transform='translate(530.2092 192.443)'>
           <path
             d='M 3.5677 0 C 2.2963 -0.004 1.1193 0.671 0.4809 1.7706 C -0.1576 2.8702 -0.1605 4.227 0.4734 5.3292 C 1.1072 6.4315 2.2812 7.1115 3.5528 7.1128 L 75.7121 7.1128 C 76.9827 7.1128 78.1567 6.435 78.792 5.3346 C 79.4273 4.2343 79.4273 2.8786 78.792 1.7782 C 78.1567 0.6779 76.9827 0 75.7121 0 Z'
-            fill-rule='nonzero'
+            fillRule='nonzero'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#e6e6e6'
           />
         </g>
         <g transform='translate(463.2214 226.5571)'>
           <path
             d='M 4.9067 0 C 2.2015 0 0 1.5956 0 3.5564 C 0 5.5172 2.2015 7.1128 4.9067 7.1128 L 236.2251 7.1128 C 238.9304 7.1128 241.1318 5.5172 241.1318 3.5564 C 241.1318 1.5956 238.9304 0 236.2251 0 Z'
-            fill-rule='nonzero'
+            fillRule='nonzero'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#e6e6e6'
           />
         </g>
         <g transform='translate(463.2214 247.8955)'>
           <path
             d='M 4.9067 0 C 2.2015 0 0 1.5956 0 3.5564 C 0 5.5172 2.2015 7.1128 4.9067 7.1128 L 236.2251 7.1128 C 238.9304 7.1128 241.1318 5.5172 241.1318 3.5564 C 241.1318 1.5956 238.9304 0 236.2251 0 Z'
-            fill-rule='nonzero'
+            fillRule='nonzero'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#e6e6e6'
           />
         </g>
         <g transform='translate(433.571 135)'>
           <path
             d='M 301 149 L 0 149 L 0 0 L 301 0 Z M 6 143 L 295 143 L 295 6 L 6 6 Z'
-            fill-rule='nonzero'
+            fillRule='nonzero'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#e6e6e6'
           />
         </g>
@@ -970,286 +970,286 @@ export const ContactImage = () => (
           <path
             d='M 330.0195 165.0013 C 330.0638 208.7756 312.6943 250.7698 281.741 281.7229 C 250.7879 312.6761 208.7937 330.0457 165.0194 330.0013 Q 163.6094 330.0013 162.1994 329.9713 C 158.2394 329.9113 154.3294 329.7113 150.4394 329.3713 C 61.5517 321.4903 -4.9652 244.3704 0.2912 155.289 C 5.5476 66.2076 80.6726 -2.5545 169.8703 0.0728 C 259.068 2.7002 330.0154 75.7649 330.0195 165.0013 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#ff0000'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(469.9722 488.1041)'>
           <path
             d='M 0 0 L 265 0 L 265 296 L 0 296 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#2f2e41'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(496.5521 304.9241)'>
           <path
             d='M 323.29 83.78 C 302.4833 132.6242 259.4685 168.4915 207.68 180.18 L 244.42 180.18 L 244.42 476.1801 L 0 476.1801 L 137.17 238.59 L 168.6 184.15 L 170.89 180.18 L 274.92 0 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#000000'
             opacity='0.1'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(529.972 306.924)'>
           <path
             d='M 275.4999 0 L 413.2499 238.59 L 551.0001 477.18 L 275.4999 477.18 L 0 477.18 L 137.75 238.59 L 275.4999 0 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#3f3d56'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(36.9722 782.1041)'>
           <path
             d='M 0 0 L 1044 0 L 1044 2 L 0 2 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#2f2e41'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(137.435 727.1)'>
           <path
             d='M 34.07 9.735 L 32.245 24.945 L 21.902 29.812 L 10.342 26.161 L 2.433 29.812 L 0 15.819 L 13.993 0 L 34.07 9.735 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#9f616a'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(120.2629 738.5101)'>
           <path
             d='M 43.9412 9.884 C 43.9412 9.884 53.3737 -1.1124 53.5246 4.3858 C 53.6755 9.884 74.361 28.7443 74.361 28.7443 C 74.361 28.7443 106.606 38.4787 81.6618 44.5627 C 56.7175 50.6467 1.9618 33.0031 0.1366 29.3527 C -1.6886 25.7024 15.3465 -2.2839 17.1717 0.1497 C 18.9969 2.5833 28.1229 11.1008 43.9412 9.884 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#2f2e41'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(141.8633 567.7002)'>
           <path
             d='M 45.4598 0 C 45.4598 0 49.1102 28.5947 45.4598 32.8535 C 41.8095 37.1122 43.6347 45.6298 45.4598 46.8466 C 47.285 48.0634 43.0263 52.9306 39.9843 55.3641 C 36.9423 57.7977 32.6835 68.7489 32.6835 68.7489 C 32.6835 68.7489 16.2568 111.9451 16.2568 116.2039 C 16.2568 120.4627 8.956 129.5886 9.5644 132.6306 C 10.1728 135.6726 5.3056 145.407 5.914 147.2322 C 6.5224 149.0574 -1.9951 165.4841 0.4385 167.9177 C 2.872 170.3513 36.3339 178.8688 34.5087 173.3932 C 32.6835 167.9177 31.4667 161.2253 32.6835 161.2253 C 33.9003 161.2253 39.3759 154.533 38.1591 152.0994 C 36.9423 149.6658 74.6629 85.7841 74.6629 85.7841 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#2f2e41'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(120.2629 738.5101)'>
           <path
             d='M 43.9412 9.884 C 43.9412 9.884 53.3737 -1.1124 53.5246 4.3858 C 53.6755 9.884 74.361 28.7443 74.361 28.7443 C 74.361 28.7443 106.606 38.4787 81.6618 44.5627 C 56.7175 50.6467 1.9618 33.0031 0.1366 29.3527 C -1.6886 25.7024 15.3465 -2.2839 17.1717 0.1497 C 18.9969 2.5833 28.1229 11.1008 43.9412 9.884 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#000000'
             opacity='0.1'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(141.8633 567.7002)'>
           <path
             d='M 45.4598 0 C 45.4598 0 49.1102 28.5947 45.4598 32.8535 C 41.8095 37.1122 43.6347 45.6298 45.4598 46.8466 C 47.285 48.0634 43.0263 52.9306 39.9843 55.3641 C 36.9423 57.7977 32.6835 68.7489 32.6835 68.7489 C 32.6835 68.7489 16.2568 111.9451 16.2568 116.2039 C 16.2568 120.4627 8.956 129.5886 9.5644 132.6306 C 10.1728 135.6726 5.3056 145.407 5.914 147.2322 C 6.5224 149.0574 -1.9951 165.4841 0.4385 167.9177 C 2.872 170.3513 36.3339 178.8688 34.5087 173.3932 C 32.6835 167.9177 31.4667 161.2253 32.6835 161.2253 C 33.9003 161.2253 39.3759 154.533 38.1591 152.0994 C 36.9423 149.6658 74.6629 85.7841 74.6629 85.7841 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#000000'
             opacity='0.1'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(222.61 729.282)'>
           <path
             d='M 26.77 0 L 33.462 17.035 L 30.42 40.762 L 10.951 39.546 L 0 29.811 L 0 9.126 L 26.77 0 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#9f616a'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(213.7762 733.0812)'>
           <path
             d='M 31.9531 16.886 C 31.9531 16.886 38.6455 -5.0163 42.2959 1.0677 C 44.6083 4.9751 46.6414 9.0412 48.3799 13.2356 C 50.1184 17.43 78.1913 32.7043 86.1005 32.7043 C 94.0097 32.7043 101.3104 42.4387 90.9677 46.0891 C 80.6249 49.7394 1.5333 54.6066 0.3165 46.0891 C -0.9003 37.5715 1.5333 10.1936 5.1837 13.2356 C 8.8341 16.2776 27.6943 22.97 31.9531 16.886 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#2f2e41'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(246.3377 480.4473)'>
           <path
             d='M 14.6015 0 C 14.6015 0 41.4176 18.2231 42.6344 20.6567 C 43.8512 23.0903 59.4108 30.5728 46.6344 36.6567 C 33.8581 42.7408 0 4.2587 0 4.2587 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#9f616a'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(238.4286 445.1603)'>
           <path
             d='M 9.1259 0 C 9.1259 0 28.5946 37.7206 24.9442 38.9374 C 21.2939 40.1542 6.6924 47.455 6.6924 47.455 L 0 9.126 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#575a88'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(238.4286 445.1603)'>
           <path
             d='M 9.1259 0 C 9.1259 0 28.5946 37.7206 24.9442 38.9374 C 21.2939 40.1542 6.6924 47.455 6.6924 47.455 L 0 9.126 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#000000'
             opacity='0.1'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(161.1266 476.5025)'>
           <path
             d='M 85.2111 0.2944 C 85.2111 0.2944 89.4699 31.9311 87.6447 38.6234 C 85.8195 45.3158 88.8615 145.7013 86.4279 151.1769 C 83.9943 156.6524 82.1691 191.9394 82.1691 196.1982 C 82.1691 200.457 87.0363 235.1357 88.2531 238.1777 C 89.4699 241.2197 93.1203 251.5624 91.2951 256.4296 C 89.4699 261.2968 64.5256 273.4647 60.8752 269.2059 C 57.2249 264.9471 60.2668 251.5624 57.2249 250.954 C 54.1829 250.3456 50.5325 221.7509 50.5325 221.7509 L 30.4554 109.8059 C 30.4554 109.8059 -7.2652 16.1128 1.2523 6.9868 C 9.7699 -2.1391 85.2111 0.2944 85.2111 0.2944 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#2f2e41'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(194.0156 201.1931)'>
           <path
             d='M 0 29.8114 C 0 13.2959 13.2959 0 29.8115 0 C 46.327 0 59.6229 13.2959 59.6229 29.8114 C 59.6229 46.327 46.327 59.6229 29.8115 59.6229 C 13.2959 59.6229 0 46.327 0 29.8114 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#9f616a'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(197.6037 237.3326)'>
           <path
             d='M 37.1744 18.0078 C 37.1744 18.0078 27.4401 43.5605 28.6569 49.0361 C 29.8737 54.5116 0.0622 39.3017 0.0622 39.3017 C 0.0622 39.3017 1.8874 9.4903 0.0622 1.5811 C -1.763 -6.328 37.1744 18.0078 37.1744 18.0078 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#9f616a'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(151.6992 264.4664)'>
           <path
             d='M 1.3348 157.3375 C 1.4685 162.442 1.5537 165.484 1.5537 165.484 C 1.5537 165.484 -0.2715 193.4702 2.7705 202.5961 C 5.8125 211.7221 5.8125 218.4145 7.6377 224.4984 C 8.173 226.2689 15.4557 227.218 25.6827 227.6378 C 35.0643 228.0211 46.9219 227.9663 58.305 227.7047 C 77.1531 227.2667 94.7237 226.2567 97.6804 225.7152 C 104.3728 224.4984 96.4636 214.1557 98.8972 208.6801 C 101.3308 203.2045 94.6385 133.2389 94.6385 133.2389 C 94.6385 133.2389 95.2468 93.6931 92.2049 78.4832 C 89.1629 63.2733 77.6033 38.9374 75.1698 35.8954 C 72.7362 32.8534 74.5614 31.0282 80.0369 27.3779 C 85.5125 23.7275 80.0369 9.7343 80.0369 9.7343 C 69.6942 1.2168 43.5331 0 43.5331 0 C 43.5331 0 3.3789 41.371 0.9453 49.8885 C -0.527 55.0356 0.0023 96.151 0.6472 127.8972 C 0.8966 139.84 1.1583 150.4626 1.3348 157.3375 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#575a88'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(181.8476 497.4824)'>
           <path
             d='M 22.5107 0 C 22.5107 0 45.6298 47.455 27.3779 50.4969 C 9.126 53.5389 0 7.3008 0 7.3008 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#9f616a'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(181.4371 192.1047)'>
           <path
             d='M 70.2647 23.7892 C 71.3189 18.6763 67.4113 13.8966 63.2958 10.6846 C 54.333 3.7334 43.3061 -0.0268 31.9637 0.0001 C 23.9852 0.0435 15.7509 2.154 9.7206 7.3783 C 2.6868 13.4719 -0.5217 23.2439 0.0688 32.5314 C 0.6594 41.8189 4.6986 50.6277 10.1468 58.1724 C 12.7617 61.7935 16.9614 65.542 21.1398 63.9638 C 22.7748 63.1983 24.1778 62.0133 25.2059 60.5294 C 27.886 57.2038 30.2214 53.6147 32.1761 49.8171 C 33.6715 46.9111 34.9669 43.8482 37.0864 41.3605 C 39.2058 38.8727 42.3911 37.0017 45.6287 37.4485 C 48.3029 37.8174 50.9262 39.7 53.4769 38.8156 C 56.3145 37.8316 57.0005 34.2029 57.2262 31.208 C 57.4735 27.9253 57.2983 24.1226 58.2099 21.019 C 59.2068 21.5513 69.7747 26.2391 70.2647 23.7892 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#2f2e41'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(149.8886 311.1245)'>
           <path
             d='M 3.1454 110.6794 C 9.9594 135.2525 25.5891 176.6661 26.4834 178.4487 C 26.7086 178.905 27.0614 179.7993 27.4933 180.9796 C 36.8749 181.3629 48.7326 181.3082 60.1157 181.0465 C 58.3512 176.4349 56.2949 171.9815 56.2949 170.5396 C 56.2949 167.4975 41.6934 89.0143 41.6934 89.0143 C 41.6934 89.0143 53.2529 54.3357 63.5957 25.1327 C 73.9384 -4.0704 32.8717 1.7094 32.8717 1.7094 C 10.9694 -3.7662 7.0148 5.664 7.0148 5.664 C 7.0148 5.664 5.0862 56.9518 2.4579 81.239 C 1.7825 87.463 1.0647 91.9103 0.3224 93.2731 C -0.6511 95.0558 0.6631 101.7603 3.1454 110.6794 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#000000'
             opacity='0.1'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(145.6305 292.3226)'>
           <path
             d='M 45.9515 0.7385 C 45.9515 0.7385 73.9378 12.298 63.595 41.5011 C 53.2522 70.7041 41.6927 105.3828 41.6927 105.3828 C 41.6927 105.3828 56.2942 183.866 56.2942 186.908 C 56.2942 189.95 65.4202 206.3767 61.7698 209.4187 C 58.1194 212.4606 33.7836 218.5446 33.1752 215.5026 C 32.5668 212.4606 27.6996 197.2507 26.4828 194.8172 C 25.266 192.3836 -3.3287 116.3339 0.3217 109.6416 C 3.008 104.7167 5.3648 59.5971 6.4223 36.1073 C 6.9195 22.4733 14.5732 10.1131 26.5567 3.5916 C 32.2291 0.5853 38.8332 -1.0411 45.9515 0.7385 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#575a88'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(267.9722 471.1041)'>
           <path
             d='M 0 0 L 36 0 L 36 36 L 0 36 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#ff0000'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(274.9722 449.1041)'>
           <path
             d='M 0 11 C 0 4.906 4.906 0 11 0 C 17.094 0 22 4.906 22 11 C 22 17.094 17.094 22 11 22 C 4.906 22 0 17.094 0 11 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#3f3d56'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(440.4343 431.3063)'>
           <path
             d='M 15.9906 16.6976 C 12.6189 22.076 8.2443 21.9495 4.3001 19.4769 C 0.356 17.0043 -1.6641 13.1219 1.7076 7.7435 C 5.0793 2.3652 16.5101 0 16.5101 0 C 16.5101 0 19.3624 11.3192 15.9906 16.6976 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#ff0000'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(422.498 316.7597)'>
           <path
             d='M 15.9906 16.6976 C 12.6189 22.076 8.2442 21.9495 4.3001 19.4769 C 0.356 17.0043 -1.6641 13.1219 1.7076 7.7436 C 5.0793 2.3652 16.5102 0 16.5102 0 C 16.5102 0 19.3623 11.3192 15.9906 16.6976 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#ff0000'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
         <g transform='translate(499.4633 162.1001)'>
           <path
             d='M 258.1288 105.294 C 268.4725 87.0531 275.2238 66.9985 278.0171 46.2158 C 233.2664 3.0737 168.0671 -11.2572 109.3498 9.1425 C 50.6324 29.5422 8.3627 81.2102 0 142.8052 C 27.0999 169.0025 62.3798 185.0906 99.9287 188.374 C 103.8188 188.714 107.7287 188.914 111.6887 188.974 Q 113.0988 189.004 114.5088 189.004 C 173.9818 189.0674 228.8729 157.0737 258.1288 105.294 Z'
             stroke='none'
-            stroke-linejoin='miter'
-            stroke-linecap='butt'
+            strokeLinejoin='miter'
+            strokeLinecap='butt'
             fill='#000000'
             opacity='0.1'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
       </g>
