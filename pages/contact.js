@@ -15,7 +15,7 @@ const contact = () => {
   const [form, setForm] = useState({})
   const [message, setMessage] = useState('')
   const [email, setEmail] = useState('')
-  const [userMessage, setUserMessage] = useState('')
+  const [notification, setNotification] = useState('')
 
   //we a use a loading part
   //because we're sending the data through a third party proxy
@@ -45,7 +45,7 @@ const contact = () => {
     axios
       .post(CORS_PROXY + GOOGLE_FORM_ACTION_URL, formData)
       .then(() => {
-        setUserMessage(<DoneIcon />)
+        setNotification(<DoneIcon />)
       })
       .catch((e) => {
         setError('There was an error, please send your message again')
@@ -69,7 +69,7 @@ const contact = () => {
     setEmail('')
     setMessage('')
     //Sending
-    setUserMessage(<Loading />)
+    setNotification(<Loading />)
     sendFormToGoogleForms()
   }
 
@@ -105,7 +105,7 @@ const contact = () => {
               <label className={styles.messageLabel}>Message</label>
             </div>
             <div className={styles.contactFormBottom}>
-              {error ? <span>{error}</span> : <span>{userMessage}</span>}
+              {error ? <span>{error}</span> : <span>{notification}</span>}
               <button className={styles.button} type='submit'>
                 Send
               </button>

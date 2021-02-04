@@ -1,0 +1,15 @@
+@import './settings.scss';
+@import './visibility.scss';
+
+.projectsTitle {
+  font-family: $OpenSans;
+  color: white;
+  text-align: center;
+  margin: 1.2rem 0;
+  font-size: 36px;
+  font-weight: 300;
+  @media (max-width: $desktop-breakpoint) {
+    font-size: 24px;
+    margin: 3.2rem 0;
+  }
+}
