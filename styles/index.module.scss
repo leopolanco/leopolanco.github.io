@@ -159,14 +159,14 @@
     text-align: center;
     flex-basis: 25%;
     opacity: 0.6;
+    color: white;
     &:hover {
-      color: white;
       opacity: 1;
       transition: opacity 300ms ease-in;
     }
     &:not(:hover) {
       //for when you stop hovering
-      transition: opacity 300ms, color 5000ms ease-in;
+      transition: opacity 3000ms ease-in;
     }
     @media (max-width: $desktop-breakpoint) {
       color: $grey;
