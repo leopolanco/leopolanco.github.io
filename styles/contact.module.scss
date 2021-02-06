@@ -83,7 +83,15 @@
       border: 1px solid $red;
       & ~ .emailLabel {
         //color the label when the input is focused
-        color: red;
+      transition:color 200ms ease-in;
+      color: red;
+      }
+      transition:border 200ms ease-in;
+    }
+    &:not(:focus) {
+      transition:border 200ms ease-in;
+      & ~ .emailLabel {
+      transition:color 200ms ease-in;
       }
     }
     @media (max-width: $desktop-breakpoint) {
@@ -100,7 +108,7 @@
     border: none;
     background: black;
     position: relative;
-    top: -228px;
+    top: -234px;
     left: 28px;
     width: 20%;
     text-align: center; //center in itself
@@ -126,7 +134,15 @@
       border: 1px solid $red;
       & ~ .messageLabel {
         //color the label when the input is focused
-        color: red;
+      transition:color 200ms ease-in;
+      color: red;
+      }
+      transition:border 200ms ease-in;
+    }
+    &:not(:focus) {
+      transition:border 200ms ease-in;
+      & ~ .messageLabel {
+      transition:color 200ms ease-in;
       }
     }
     @media (max-width: $desktop-breakpoint) {

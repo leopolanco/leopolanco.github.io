@@ -13,3 +13,98 @@
     margin: 3.2rem 0;
   }
 }
+.projectsContent {
+  margin: 12rem 0 0 0;
+  color: white;
+}
+
+.projectCard {
+  margin: 4.8rem 0;
+  display: flex;
+}
+
+.projectCardLeft {
+  overflow: hidden; // to avoid the expanding image get out of the box
+  flex: 1 1 0; //fix sizing
+  text-align: right;
+}
+.projectPicture {
+  perspective: 1000px;
+  > img {
+    //style the img
+    border-radius: 2px;
+  }
+  &:hover {
+    > img {
+      transform: rotateX(12deg);
+      transition: transform 1000ms ease;
+    }
+    > .projectTech {
+      opacity: 0.85;
+      transition: opacity 200ms;
+    }
+  }
+  &:not(:hover) {
+    > img {
+      transition: transform 1000ms ease;
+    }
+    > .projectTech {
+      transition: opacity 3000ms;
+    }
+  }
+}
+
+.projectTech {
+  text-align: center;
+  position: relative;
+  opacity: 0;
+  top: -32px;
+  background: black;
+  > svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.projectCardRight {
+  flex: 1 1 0;
+  font-family: $SourceSansPro;
+  margin: 0.6rem 0 0 4.8rem;
+}
+
+.projectTitle {
+  font-size: 32px;
+  font-weight: 300;
+}
+.projectDescription {
+  margin: 1.2rem 0 2.4rem 0; //space between title, desc and url
+  font-size: 14.5px;
+  color: $grey;
+  word-break: break-word;
+  width: 50%;
+  background: black; //want this text cleared of stars
+}
+
+.projectUrl {
+  font-family: $Poppins;
+  font-size: 12.5px;
+  letter-spacing: 5px;
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+  font-weight: 600;
+  background: black; //want this text cleared of stars
+  &:hover {
+    color: $red;
+    transition: color 250ms ease-in;
+  }
+  &:not(:hover) {
+    transition: color 250ms ease-in;
+  }
+}
+
+.projectSeparator {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, #161616, $grey, #161616);
+}

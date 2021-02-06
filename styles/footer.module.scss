@@ -9,7 +9,6 @@
   letter-spacing: 2px;
   font-size: 14px;
   font-weight: 300;
-  text-align: center;
   background: linear-gradient(
     180deg,
     rgb(0, 0, 0, 0.45),
@@ -24,10 +23,13 @@
 }
 
 .footerLinks {
-  margin: 0 0 3.2rem 0;
+  margin: 0 24rem 3.2rem 24rem;
+  display: flex;
+  justify-content: space-around;
+ 
   > span {
     //this targets each link
-    padding: 0 2.4rem 0 2.4rem;
+    margin: 0 0;
     &:hover {
       cursor: pointer;
       color: $red;
@@ -45,13 +47,14 @@
 
 .footerContactInfo {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  
   > div,
   a {
     text-decoration: none;
     color: $grey;
-    display: grid; //make a grid
-
+    display: grid;
+     //make a grid
     > svg {
       margin: auto; //then center the svg
       @media (max-width: $desktop-breakpoint) {
