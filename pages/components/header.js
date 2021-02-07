@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Particles from './particles'
+import Particles from './Particles'
 import styles from '../../styles/header.module.scss'
 import { Hamburger } from '../../public/assets/svg/svg.js'
 import { useState } from 'react'
@@ -21,11 +21,7 @@ const Header = () => {
     <header>
       <Head>
         <title>Leo Polanco</title>
-        <link rel='icon' href='/assets/images/favicon.png' />
-        <link
-          href='https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap'
-          rel='stylesheet'
-        />
+        <link rel='icon' href='/assets/images/favicon.png'/>
         <meta
           name='viewport'
           content='width=device-width, height=device-height, initial-scale=1, minimum-scale=1'

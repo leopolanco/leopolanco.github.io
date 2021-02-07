@@ -5,11 +5,9 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`
 
 const AboutMe = () => (
-
-    <div className={styles.aboutMe}>
-      <div className={styles.aboutMeTitle}>About Me</div>
-        <div className={styles.aboutMeText}>{descriptiveText}</div>
-    </div>
-
+  <div className={styles.aboutMe}>
+    <div className={styles.aboutMeTitle}>About Me</div>
+    <div className={styles.aboutMeText}>{descriptiveText}</div>
+  </div>
 )
-export default AboutMe;
+export default AboutMe

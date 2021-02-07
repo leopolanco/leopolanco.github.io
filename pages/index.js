@@ -6,6 +6,7 @@ import Presentation from './components/Index/Presentation'
 - put more content in aboutme and langs comp
 - make the recent projects redirect to projects page when clicked
 - improve the footer
+-transition between pages
 -please clean the code before finishing.*/
 
 const Index = () => (

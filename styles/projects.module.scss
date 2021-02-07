@@ -16,40 +16,53 @@
 .projectsContent {
   margin: 12rem 0 0 0;
   color: white;
+  @media (max-width: $desktop-breakpoint) {
+    margin: 6.4rem 0;
+  }
 }
 
 .projectCard {
   margin: 4.8rem 0;
   display: flex;
+  @media (max-width: $desktop-breakpoint) {
+    display: grid;
+  }
 }
 
 .projectCardLeft {
   overflow: hidden; // to avoid the expanding image get out of the box
-  flex: 1 1 0; //fix sizing
+  flex: 1 1 0; //fix sizing in desktop
   text-align: right;
+  @media (max-width: $desktop-breakpoint) {
+    overflow: visible;
+  }
 }
 .projectPicture {
-  perspective: 1000px;
-  > img {
-    //style the img
-    border-radius: 2px;
-  }
-  &:hover {
+  > a {
     > img {
-      transform: rotateX(12deg);
-      transition: transform 1000ms ease;
+      //style the img
+      border-radius: 2px;
+      @media (max-width: $desktop-breakpoint) {
+        width: 100%;
+      }
     }
-    > .projectTech {
-      opacity: 0.85;
-      transition: opacity 200ms;
+    &:hover {
+      > img {
+        transform: scale(1.09);
+        transition: transform 700ms ease;
+      }
+      > .projectTech {
+        opacity: 0.85;
+        transition: opacity 200ms;
+      }
     }
-  }
-  &:not(:hover) {
-    > img {
-      transition: transform 1000ms ease;
-    }
-    > .projectTech {
-      transition: opacity 3000ms;
+    &:not(:hover) {
+      > img {
+        transition: transform 700ms ease;
+      }
+      > .projectTech {
+        transition: opacity 4000ms;
+      }
     }
   }
 }
@@ -58,11 +71,15 @@
   text-align: center;
   position: relative;
   opacity: 0;
-  top: -32px;
+  top: -26.5px;
   background: black;
   > svg {
     width: 28px;
     height: 28px;
+  }
+  @media (max-width: $desktop-breakpoint) {
+    opacity: 0.7;
+    top: -32px;
   }
 }
 
@@ -70,19 +87,30 @@
   flex: 1 1 0;
   font-family: $SourceSansPro;
   margin: 0.6rem 0 0 4.8rem;
+  @media (max-width: $desktop-breakpoint) {
+    margin: 1.4rem 0 0 0;
+  }
 }
 
 .projectTitle {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 300;
+  @media (max-width: $desktop-breakpoint) {
+    font-size: 30px;
+  }
 }
 .projectDescription {
   margin: 1.2rem 0 2.4rem 0; //space between title, desc and url
-  font-size: 14.5px;
+  font-size: 16px;
   color: $grey;
   word-break: break-word;
   width: 50%;
   background: black; //want this text cleared of stars
+  @media (max-width: $desktop-breakpoint) {
+    font-size: 12px;
+    text-align: left;
+    width: 100%;
+  }
 }
 
 .projectUrl {

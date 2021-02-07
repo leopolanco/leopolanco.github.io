@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 ::selection {
   background: hsla(0, 100%, 55%, 0.6);
@@ -23,7 +24,7 @@ canvas {
   background: black;
 }
 
-.contentContainer {
+ .contentContainer {
   margin: 0 auto;
   padding: 0 1.6rem;
   max-width: 80rem;
