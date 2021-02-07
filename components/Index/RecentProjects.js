@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from '../../../styles/index.module.scss'
+import styles from '../../styles/index.module.scss'
 import projectsArray from '../projects'
 
 const sizes = `(max-width: 45rem-0.1rem) 600px, 

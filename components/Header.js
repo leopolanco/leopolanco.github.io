@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Particles from './Particles'
-import styles from '../../styles/header.module.scss'
-import { Hamburger } from '../../public/assets/svg/svg.js'
+import styles from '../styles/header.module.scss'
+import { Hamburger } from '../public/assets/svg/svg.js'
 import { useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
 

@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import styles from '../../styles/footer.module.scss'
-import { Mail, Phone, Location } from '../../public/assets/svg/svg'
+import styles from '../styles/footer.module.scss'
+import { Mail, Phone, Location } from '../public/assets/svg/svg'
 
 const Footer = () => {
   return (

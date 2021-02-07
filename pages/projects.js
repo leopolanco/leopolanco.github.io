@@ -1,6 +1,6 @@
 import _JSXStyle from 'styled-jsx/style'
 import styles from '../styles/projects.module.scss'
-import projectsArray from './components/Projects'
+import projectsArray from '../components/projects'
 
 const sizes = `(max-width: 45rem-0.1rem) 680px, 
                (min-width: 45rem) 500px` //desktop size

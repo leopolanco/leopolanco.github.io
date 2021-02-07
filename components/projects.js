@@ -5,7 +5,7 @@ import {
     SassIcon,
     HTMLIcon,
     CSSIcon
-  } from '../../public/assets/svg/svg'
+  } from '../public/assets/svg/svg'
 
   //fill these manually.
 //don't need automation here as the projects will be sporadically added

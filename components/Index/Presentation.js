@@ -1,9 +1,9 @@
-import styles from '../../../styles/index.module.scss'
+import styles from '../../styles/index.module.scss'
 import {LinkedIn, 
     Mail, 
     GitHub, 
     MainImage
-} from '../../../public/assets/svg/svg'
+} from '../../public/assets/svg/svg'
 
 const greetings = 'Hello. I am Leo,'; 
 const description = 'fullstack developer';

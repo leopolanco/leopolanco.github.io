@@ -6,8 +6,8 @@ import {ReactIcon,
     GitIcon,
     JSIcon,
     AngularIcon
-    } from '../../../public/assets/svg/svg'
-import styles from '../../../styles/index.module.scss'
+    } from '../../public/assets/svg/svg'
+import styles from '../../styles/index.module.scss'
 
 const Langs = () => (
     <>
