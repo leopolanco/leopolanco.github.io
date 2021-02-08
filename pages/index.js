@@ -4,7 +4,6 @@ import AboutMe from '../components/Index/AboutMe'
 import Presentation from '../components/Index/Presentation'
 /*To do:
 - put more content in aboutme and langs comp
-- make the recent projects redirect to projects page when clicked
 - improve the footer
 -transition between pages
 -please clean the code before finishing.*/

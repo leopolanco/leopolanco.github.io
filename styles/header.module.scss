@@ -21,9 +21,25 @@
   }
 }
 
+.skipLink {
+  position: absolute;
+  left: -999px;
+  width:1px;
+  height: 1px;
+  top: auto;
+  &:focus {
+    color: white;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    position: static;
+    margin: auto;
+  }
+}
+
 .mainLink {
   font-family:$Marcellus;
-  font-size: 22px;
+  font-size: 21px;
   letter-spacing: 6.5px;
   font-weight: 500;
   border: solid 1px white;
@@ -69,7 +85,7 @@
   position: absolute;
   top: 0vh;
   width: 100%;
-  height: 75vh;
+  height: 32rem;
   padding-top: 6rem;
   color: black;
 }

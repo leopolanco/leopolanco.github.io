@@ -16,24 +16,23 @@ const projects = () => (
     `}</style>
     <div className={styles.projectsTitle}>Projects</div>
     <div className={styles.projectsContent}>
-      {projectsArray.map((project, index) => {
-        let alt = `Project${index + 1}`
-        return (
+      {projectsArray.map((project, index) =>  (
           <div key={`${project.title} ${index}`}>
-            <div className={styles.projectCard} id={alt}>
+            <div className={styles.projectCard} id={`Project${index + 1}`}>
               <div className={styles.projectCardLeft}>
                 <div className={styles.projectPicture}>
                   <a
                     target={project.url && '_blank'}
                     rel='noopener'
                     href={project.url ? project.url : null}
+                    aria-label={`${project.title} visit link in image`}
                   >
                     <img
                       width='420px'
                       srcSet={project.picture}
                       sizes={sizes}
                       loading='lazy'
-                      alt={alt}
+                      alt={`Project${index + 1}`}
                     />
                     <div className={styles.projectTech}>{project.tech}</div>
                   </a>
@@ -50,8 +49,9 @@ const projects = () => (
                     className={styles.projectUrl}
                     target='_blank'
                     rel='noopener'
-                    alt={alt}
+                    alt={`Project${index + 1}`}
                     href={project.url}
+                    aria-label={`${project.title} visit link`}
                   >
                     VISIT
                   </a>
@@ -63,7 +63,7 @@ const projects = () => (
             )}
           </div>
         )
-      })}
+      )}
     </div>
   </>
 )

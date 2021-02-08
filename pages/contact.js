@@ -120,6 +120,7 @@ const contact = () => {
             rel='noopener'
             alt='mail'
             href='mailto:leo@leopolanco.com'
+            aria-label="mail icom"
           >
             <Mail />
             leo@leopolanco.com
@@ -129,6 +130,7 @@ const contact = () => {
             rel='noopener'
             alt='whatsapp'
             href='https://wa.me/584246519234'
+            aria-label="whatsapp icon"
           >
             <WhatsApp /> +584246519234
           </a>
@@ -137,6 +139,7 @@ const contact = () => {
             rel='noopener'
             alt='telegram'
             href='https://t.me/Leopn'
+            aria-label="telegram icon"
           >
             <Telegram />
             @leopn

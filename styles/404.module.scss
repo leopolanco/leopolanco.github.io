@@ -1,0 +1,15 @@
+@import './settings.scss';
+@import './visibility.scss';
+
+.errorPage {
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding: 15rem;
+    font-family: $OpenSans;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    @media (max-width: $desktop-breakpoint) {
+        padding:5rem;
+    }
+}

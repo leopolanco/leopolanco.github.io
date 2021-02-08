@@ -16,6 +16,8 @@ const RecentProjects = () => {
             <div className={styles.recentProject} key={`${project.title} ${index}`}>
               <Link href={`/projects/#Project${index + 1}`}>
                 <img
+                width='auto'
+                height='auto'
                   srcSet={project.picture}
                   sizes={sizes}
                   loading='lazy'

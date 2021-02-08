@@ -1,11 +1,10 @@
-import Head from 'next/head'
 import Link from 'next/link'
+import { useState } from 'react'
+import { CSSTransition } from 'react-transition-group'
 import Particles from './Particles'
 import styles from '../styles/header.module.scss'
 import { Hamburger } from '../public/assets/svg/svg.js'
-import { useState } from 'react'
-import { CSSTransition } from 'react-transition-group'
-
+import Head from './Head'
 //Todo:
 // Optimize the header, make only one list of links.
 
@@ -19,17 +18,7 @@ const Header = () => {
   const mobileMenu = () => setShowMobileMenu(!showMobileMenu)
   return (
     <header>
-      <Head>
-        <title>Leo Polanco</title>
-        <link rel='icon' href='/assets/images/favicon.png'/>
-        <meta
-          name='viewport'
-          content='width=device-width, height=device-height, initial-scale=1, minimum-scale=1'
-        ></meta>
-        <meta name='Description' content="Leo's personal page"></meta>
-        <meta name='language' content='en_EN'></meta>
-      </Head>
-
+      <Head/>
       <Particles />
 
       <div className={styles.header}>
@@ -41,6 +30,7 @@ const Header = () => {
             Leo <span>Polanco</span>
           </span>
         </Link>
+        <a className={styles.skipLink} href="#main-content">Skip to main content</a>
         <div className={styles.showForDesktop}>
           <Link href='/projects'>
             <span className={styles.navlink}>PROJECTS</span>

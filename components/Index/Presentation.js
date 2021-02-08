@@ -20,9 +20,9 @@ const Presentation = () => (
         <div className={styles.rightContainer}>
           <div className={styles.showForDesktop}><MainImage/></div> {/*This image is called source code, it is a placeholder */}
           <div className={styles.icons}>
-            <a target="_blank" rel="noopener" alt='github' href='https://github.com/leopolanco'><GitHub/></a>
-            <a target="_blank" rel="noopener"  alt='linkedin' href='https://www.linkedin.com/in/leo-polanco-b7ba74144/'><LinkedIn/></a>
-            <a target="_blank" rel="noopener"  alt='mail' href='mailto:leo@leopolanco.com'><Mail/></a>
+            <a target="_blank" rel="noopener"  aria-label="github" alt='github' href='https://github.com/leopolanco'><GitHub/></a>
+            <a target="_blank" rel="noopener"  aria-label="linked in" alt='linkedin' href='https://www.linkedin.com/in/leo-polanco-b7ba74144/'><LinkedIn/></a>
+            <a target="_blank" rel="noopener"  aria-label="mail icon" alt='mail' href='mailto:leo@leopolanco.com'><Mail/></a>
           </div>
         </div>
       </div>

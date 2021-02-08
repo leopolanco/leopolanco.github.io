@@ -141,6 +141,8 @@
   font-family: $Poppins;
   font-weight: 300;
   font-size: 14px;
+  text-justify: inter-word;
+  width: auto;
   margin: 0 16rem 12rem 16rem; //separator between about me and langs
   @media (max-width: $desktop-breakpoint) {
     margin: 0 0 7.2rem 0;
@@ -241,6 +243,9 @@
   filter: grayscale(100%);
   opacity: 0.6;
   cursor: pointer;
+  >img {
+    aspect-ratio: attr(width) / attr(height);
+  }
   &:hover {
     filter: none;
     opacity: 1;
