@@ -3,7 +3,7 @@ import Head from 'next/head'
 //make these tags dynamic, changing content related to the current page
 const HeadTags = () => (
   <Head>
-    <meta charset='UTF-8'></meta>
+    <meta charSet='UTF-8'></meta>
     <meta
       name='viewport'
       content='width=device-width, height=device-height, initial-scale=1, minimum-scale=1'
