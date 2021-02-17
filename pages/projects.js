@@ -16,54 +16,52 @@ const projects = () => (
     `}</style>
     <div className={styles.projectsTitle}>Projects</div>
     <div className={styles.projectsContent}>
-      {projectsArray.map((project, index) =>  (
-          <div key={`${project.title} ${index}`}>
-            <div className={styles.projectCard} id={`Project${index + 1}`}>
-              <div className={styles.projectCardLeft}>
-                <div className={styles.projectPicture}>
-                  <a
-                    target={project.url && '_blank'}
-                    rel='noopener'
-                    href={project.url ? project.url : null}
-                    aria-label={`${project.title} visit link in image`}
-                  >
-                    <img
-                      width='420px'
-                      srcSet={project.picture}
-                      sizes={sizes}
-                      loading='lazy'
-                      alt={`Project${index + 1}`}
-                    />
-                    <div className={styles.projectTech}>{project.tech}</div>
-                  </a>
-                  
-                </div>
-              </div>
-              <div className={styles.projectCardRight}>
-                <div className={styles.projectTitle}>{project.title}</div>
-                <div className={styles.projectDescription}>
-                  {project.description}
-                </div>
-                {project.url && (
-                  <a
-                    className={styles.projectUrl}
-                    target='_blank'
-                    rel='noopener'
+      {projectsArray.map((project, index) => (
+        <div key={`${project.title} ${index}`}>
+          <div className={styles.projectCard} id={`Project${index + 1}`}>
+            <div className={styles.projectCardLeft}>
+              <div className={styles.projectPicture}>
+                <a
+                  target={project.url && '_blank'}
+                  rel='noopener'
+                  href={project.url ? project.url : null}
+                  aria-label={`${project.title} visit link in image`}
+                >
+                  <img
+                    width='420px'
+                    srcSet={project.picture}
+                    sizes={sizes}
+                    loading='lazy'
                     alt={`Project${index + 1}`}
-                    href={project.url}
-                    aria-label={`${project.title} visit link`}
-                  >
-                    VISIT
-                  </a>
-                )}
+                  />
+                  <div className={styles.projectTech}>{project.tech}</div>
+                </a>
               </div>
             </div>
-            {index + 1 != projectsArray.length && (
-              <hr className={styles.projectSeparator} />
-            )}
+            <div className={styles.projectCardRight}>
+              <div className={styles.projectTitle}>{project.title}</div>
+              <div className={styles.projectDescription}>
+                {project.description}
+              </div>
+              {project.url && (
+                <a
+                  className={styles.projectUrl}
+                  target='_blank'
+                  rel='noopener'
+                  alt={`Project${index + 1}`}
+                  href={project.url}
+                  aria-label={`${project.title} visit link`}
+                >
+                  VISIT
+                </a>
+              )}
+            </div>
           </div>
-        )
-      )}
+          {index + 1 != projectsArray.length && (
+            <hr className={styles.projectSeparator} />
+          )}
+        </div>
+      ))}
     </div>
   </>
 )

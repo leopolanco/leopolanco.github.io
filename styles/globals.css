@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 ::selection {
   background: hsla(0, 100%, 55%, 0.6);
@@ -19,12 +18,10 @@ html::-webkit-scrollbar-track {
   background: hsla(0, 0, 0, 0);
 }
 html::-webkit-scrollbar-thumb {
-  border-radius:4px;
-  background:white;
-  border:3px solid black
+  border-radius: 4px;
+  background: white;
+  border: 3px solid black;
 }
-
-
 
 /* don't like the writing cursor over texts */
 body:hover {
@@ -42,7 +39,7 @@ canvas {
   background: black;
 }
 
- .contentContainer {
+.contentContainer {
   margin: 0 auto;
   padding: 0 1.6rem;
   max-width: 80rem;

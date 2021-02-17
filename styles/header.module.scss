@@ -3,7 +3,6 @@
 
 //Mobile menu is z index 100, its button is z index 101 need the menu above everything
 
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -11,9 +10,9 @@
   padding: 3.2rem 1.6rem;
   max-width: 80rem;
   color: white;
-  font-family:$Poppins;
+  font-family: $Poppins;
   letter-spacing: 3.5px;
-  
+
   font-weight: 300;
   @media (max-width: $desktop-breakpoint) {
     //para separar las vistas, esta es especifica a movil
@@ -24,7 +23,7 @@
 .skipLink {
   position: absolute;
   left: -999px;
-  width:1px;
+  width: 1px;
   height: 1px;
   top: auto;
   &:focus {
@@ -38,7 +37,7 @@
 }
 
 .mainLink {
-  font-family:$Marcellus;
+  font-family: $Marcellus;
   font-size: 21px;
   letter-spacing: 6.5px;
   font-weight: 500;
