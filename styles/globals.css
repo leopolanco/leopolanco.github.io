@@ -8,6 +8,24 @@
   background: hsla(0, 100%, 55%, 0.6);
 }
 
+/* changing the scrollbar,
+works on chrome, edge */
+html::-webkit-scrollbar {
+  width: 12px;
+  background-color: black;
+}
+html::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: hsla(0, 0, 0, 0);
+}
+html::-webkit-scrollbar-thumb {
+  border-radius:4px;
+  background:white;
+  border:3px solid black
+}
+
+
+
 /* don't like the writing cursor over texts */
 body:hover {
   cursor: default;
