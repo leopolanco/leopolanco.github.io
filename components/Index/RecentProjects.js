@@ -3,7 +3,7 @@ import styles from '../../styles/index.module.scss'
 import projectsArray from '../projects'
 
 const sizes = `(max-width: 45rem-0.1rem) 600px, 
-               (min-width: 45rem) 500px` //desktop size
+               (min-width: 45rem) 540px` //desktop size
 
 const RecentProjects = () => {
   return (

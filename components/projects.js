@@ -39,14 +39,14 @@ const projectsArray = [
   },
   {
     title: 'React app test',
-    picture: `/assets/images/BudgetApp1280.webp 1920w,
-    /assets/images/BudgetApp760.webp 1920w`,
+    picture: `/assets/images/ClaroApp1280.webp 1920w,
+    /assets/images/ClaroApp760.webp 1920w`,
     tech: <>
     <ReactIcon/>
     <SassIcon/>
     </>,
     url: 'https://test-claro.vercel.app/',
-    description: `Application for budgeting. Can store, update and delete expenses, this was a course project`,
+    description: `Application for searching the nba api. Can show the players in a list, change quantity of results shown and more`,
     repo: 'https://github.com/leopolanco/test-claro'
   },
 ]

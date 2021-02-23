@@ -13,14 +13,12 @@
     flex-direction: column;
   }
 }
-
 .leftContainer {
   @media (max-width: $desktop-breakpoint) {
     margin: 4.8rem auto 0 auto;
     width: auto;
   }
 }
-
 .greetings {
   letter-spacing: 0.5px;
   font-size: 24px;
@@ -31,7 +29,6 @@
     font-size: 16px;
   }
 }
-
 .description {
   margin: 1.2rem 0 1.8rem 2.4rem;
   width: 32rem;
@@ -50,7 +47,6 @@
     }
   }
 }
-
 .smallDescription {
   width: 32rem;
   padding-left: 8rem;
@@ -61,7 +57,6 @@
     width: 16rem;
   }
 }
-
 .rightContainer {
   display: flex;
   justify-content: space-between;
@@ -70,7 +65,6 @@
     margin: 0 5rem 0 0;
   }
 }
-
 .icons {
   margin: 0 0 9rem 0;
   display: flex;
@@ -106,9 +100,7 @@
     }
   }
 }
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 .aboutMe {
   letter-spacing: 1px;
   color: white;
@@ -122,7 +114,6 @@
     flex-direction: column;
   }
 }
-
 .aboutMeTitle {
   margin: 0 0 3.2rem 0;
   font-weight: 700;
@@ -135,7 +126,6 @@
     font-size: 24px;
   }
 }
-
 .aboutMeText {
   font-family: $Poppins;
   font-weight: 300;
@@ -151,7 +141,6 @@
     background: none;
   }
 }
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .langs {
@@ -192,7 +181,6 @@
     margin: 0 0 8rem 0; //separator between langs and recent projects in mobile
   }
 }
-
 .langsTitle {
   margin: 0 0 3rem 3.6rem;
   color: white;
@@ -205,9 +193,7 @@
     font-size: 20px;
   }
 }
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
-
 .recentProjects {
   color: white;
   text-align: center;
@@ -216,7 +202,6 @@
     border-top: 1px solid $grey;
   }
 }
-
 .recentProjectsTitle {
   margin: 0 0 4.2rem 0;
   font-size: 28px;
@@ -229,7 +214,6 @@
     margin: 4.2rem 0;
   }
 }
-
 .recentProjectsContent {
   display: flex;
   flex-wrap: wrap;
@@ -238,7 +222,6 @@
     justify-content: space-around; //finally centered the projects
   }
 }
-
 .recentProject {
   flex-basis: 33%;
   filter: grayscale(100%);
