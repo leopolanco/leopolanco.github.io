@@ -6,9 +6,8 @@ import {ReactIcon,
     GitIcon,
     JSIcon
     } from '../../public/assets/svg/svg'
-import styles from '../../styles/index.module.scss'
 
-const Langs = () => (
+const Langs = ({styles}) => (
     <>
     <div className={styles.langsTitle}>Working with  </div>
     <div className={styles.langs}>

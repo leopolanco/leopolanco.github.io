@@ -1,5 +1,4 @@
 import Particle from 'react-particles-js'
-
 const Particles = () => (
   <Particle
     params={{
@@ -109,5 +108,4 @@ const Particles = () => (
     }}
   />
 )
-
 export default Particles

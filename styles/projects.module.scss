@@ -40,7 +40,8 @@
   > a {
     > img {
       //style the img
-      border-radius: 2px;
+      opacity: 0.85;
+      border-radius: 4px;
       @media (max-width: $desktop-breakpoint) {
         width: 100%;
       }

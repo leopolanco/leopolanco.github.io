@@ -13,8 +13,8 @@ import {
 const projectsArray = [
   {
     title: 'Proyectos Uptag',
-    picture: `/assets/images/Proyup1280.webp 1920w,
-    /assets/images/Proyup760.webp 1920w`,
+    picture: `/assets/images/Proyup760.webp 1280w,
+    /assets/images/Proyup1280.webp 1920w`,
     tech: <>
     <HTMLIcon/>
     <CSSIcon/>
@@ -27,8 +27,8 @@ const projectsArray = [
   },
   {
     title: 'Real estate landing page',
-    picture: `/assets/images/REMock1280.webp 1920w,
-    /assets/images/REMock760.webp 1920w`,
+    picture: `/assets/images/REMock760.webp 1280w,
+    /assets/images/REMock1280.webp 1920w`,
     tech: <>
     <HTMLIcon/>
     <CSSIcon/>
@@ -39,8 +39,8 @@ const projectsArray = [
   },
   {
     title: 'React app test',
-    picture: `/assets/images/ClaroApp1280.webp 1920w,
-    /assets/images/ClaroApp760.webp 1920w`,
+    picture: `/assets/images/ClaroApp760.webp 1280w,
+    /assets/images/ClaroApp1280.webp 1920w`,
     tech: <>
     <ReactIcon/>
     <SassIcon/>

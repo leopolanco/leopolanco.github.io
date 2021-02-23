@@ -1,4 +1,3 @@
-import styles from '../../styles/index.module.scss'
 import {LinkedIn, 
     Mail, 
     GitHub, 
@@ -9,7 +8,7 @@ const greetings = 'Hello. I am Leo,';
 const description = 'fullstack developer';
 const smallDescription = 'Specialized in creating experiences and quality products with attention to the minimum detail.';    
 
-const Presentation = () => (
+const Presentation = ({styles}) => (
 <div className={styles.mainDiv}>
       <div className={styles.leftContainer}>
         <div className={styles.greetings}>{greetings}</div>

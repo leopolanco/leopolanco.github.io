@@ -1,58 +1,27 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import React, { useState } from 'react'
 import _JSXStyle from 'styled-jsx/style'
 import {
   Loading,
-  DoneIcon,
   Telegram,
   WhatsApp,
   Mail,
-  ContactImage
+  ContactImage,
+  DoneIcon
 } from '../public/assets/svg/svg'
 import styles from '../styles/contact.module.scss'
+import sendFormToGoogleForms from '../actions/sendFormToGoogleForms'
 
 const contact = () => {
-  const [form, setForm] = useState({})
-  const [message, setMessage] = useState('')
-  const [email, setEmail] = useState('')
+  const [form, setForm] = useState({
+    email: '',
+    message: ''
+  })
   const [notification, setNotification] = useState('')
-
-  //we a use a loading part
-  //because we're sending the data through a third party proxy
-  //and it takes a bit to send it correctly and can fail for connection issues
-  //this is registered in usermesssage
-
-  const [error, setError] = useState('')
-
-  useEffect(() => {
-    setForm({
-      message,
-      email
-    })
-  }, [message, email])
-
-  const sendFormToGoogleForms = () => {
-    const formData = new FormData()
-
-    const GOOGLE_FORM_MESSAGE_ID = 'entry.973126710' //1st name
-    const GOOGLE_FORM_EMAIL_ID = 'entry.1358619410' //2nd name
-    const GOOGLE_FORM_ACTION_URL =
-      'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfGeTApRi1L42OiaHWdhYlLR20m5sgCgDRYZpfqGlKyoiOF2g/formResponse'
-    const CORS_PROXY = 'https://leopersonal-cors.herokuapp.com/'
-
-    formData.append(GOOGLE_FORM_MESSAGE_ID, form.message)
-    formData.append(GOOGLE_FORM_EMAIL_ID, form.email)
-    axios
-      .post(CORS_PROXY + GOOGLE_FORM_ACTION_URL, formData)
-      .then(() => {
-        setNotification(<DoneIcon />)
-      })
-      .catch((e) => {
-        setError('There was an error, please send your message again')
-      })
+  const { email, message } = form
+  const handleChange = e => {
+    setForm({ ...form, [e.target.name]: e.target.value })
   }
-
-  const onSubmit = (e) => {
+  const onSubmit = e => {
     e.preventDefault()
     //Validating
     if (
@@ -60,19 +29,25 @@ const contact = () => {
         email
       )
     ) {
-      return setError('Invalid email')
+      return setNotification('Invalid email')
     } else if (message.length < 1) {
-      return setError('Invalid message')
+      return setNotification('Invalid message')
     }
-    //Clearing fields
-    setError('')
-    setEmail('')
-    setMessage('')
-    //Sending
+    //cleaning fields
+    setForm({
+      email: '',
+      message: ''
+    })
+    //sending the message and setting notifications
     setNotification(<Loading />)
-    sendFormToGoogleForms()
+    sendFormToGoogleForms(form)
+      .then(() => {
+        setNotification(<DoneIcon />)
+      })
+      .catch(() => {
+        setNotification('There was an error, please send your message again')
+      })
   }
-
   return (
     <>
       <style global jsx>{`
@@ -91,7 +66,8 @@ const contact = () => {
             <div className={styles.emailInput}>
               <input
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                name='email'
+                onChange={handleChange}
                 required
               />
               <label className={styles.emailLabel}>Email</label>
@@ -99,14 +75,15 @@ const contact = () => {
             <div className={styles.messageInput}>
               <textarea
                 value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                name='message'
+                onChange={handleChange}
                 required
               ></textarea>
               <label className={styles.messageLabel}>Message</label>
             </div>
             <div className={styles.contactFormBottom}>
-              {error ? <span>{error}</span> : <span>{notification}</span>}
-              <button className={styles.button} type='submit'>
+              {notification ? <span>{notification}</span> : <span></span>}
+              <button className={styles.button} type='submit' onMouseDown={e => e.preventDefault()}>
                 Send
               </button>
             </div>
@@ -120,7 +97,7 @@ const contact = () => {
             rel='noopener'
             alt='mail'
             href='mailto:leo@leopolanco.com'
-            aria-label="mail icom"
+            aria-label='mail icom'
           >
             <Mail />
             leo@leopolanco.com
@@ -130,7 +107,7 @@ const contact = () => {
             rel='noopener'
             alt='whatsapp'
             href='https://wa.me/584246519234'
-            aria-label="whatsapp icon"
+            aria-label='whatsapp icon'
           >
             <WhatsApp /> +584246519234
           </a>
@@ -139,7 +116,7 @@ const contact = () => {
             rel='noopener'
             alt='telegram'
             href='https://t.me/Leopn'
-            aria-label="telegram icon"
+            aria-label='telegram icon'
           >
             <Telegram />
             @leopn

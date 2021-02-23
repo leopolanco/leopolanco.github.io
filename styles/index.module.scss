@@ -228,7 +228,8 @@
   opacity: 0.6;
   cursor: pointer;
   > img {
-    aspect-ratio: attr(width) / attr(height);
+    border:1px solid $red;
+    border-radius: 2px;
   }
   &:hover {
     filter: none;

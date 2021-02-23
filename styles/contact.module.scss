@@ -173,27 +173,29 @@
   }
 }
 .button {
-  padding: 15px 32px;
+  padding: 12px 32px;
   border-radius: 4px;
   text-align: center;
   border: 1px solid $red;
-  box-shadow: 0 0 8px 0 $red;
+  box-shadow: 0 0 6px 0 $red;
   color: white;
-  opacity: 0.6;
   background: transparent;
   cursor: pointer;
   letter-spacing: 1px;
   &:hover {
-    opacity: 1;
-    transition: opacity 200ms ease-in;
+    box-shadow: 0 0 9px 0 $red;
+    transition: box-shadow 200ms ease-in;
   }
   &:not(:hover) {
-    transition: opacity 200ms ease-in;
+    transition: box-shadow 200ms ease-in;
   }
-  &:focus {
-    opacity: 1;
+  &:active {
+    box-shadow: 0 0 14px 0 $red;
+    padding: 12.3px 32.3px;
     outline: none;
+    transition: none;
   }
+
   @media (max-width: $desktop-breakpoint) {
     width: auto;
     margin: 0 0 1.6rem 0;
