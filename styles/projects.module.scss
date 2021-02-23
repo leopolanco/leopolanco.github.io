@@ -10,7 +10,7 @@
   font-weight: 300;
   @media (max-width: $desktop-breakpoint) {
     font-size: 32px;
-    margin: 3.2rem 0;
+    margin: 2.4rem 0;
   }
 }
 .projectsContent {
@@ -68,10 +68,11 @@
 }
 
 .projectTech {
+  padding: 0.15rem 0;
   text-align: center;
   position: relative;
   opacity: 0;
-  top: -26.5px;
+  top: -27.5px;
   background: black;
   > svg {
     width: 28px;
@@ -79,7 +80,7 @@
   }
   @media (max-width: $desktop-breakpoint) {
     opacity: 0.7;
-    top: -32px;
+    top: -35px;
   }
 }
 
@@ -101,16 +102,25 @@
 }
 .projectDescription {
   font-family: $Poppins;
-  margin: 1.2rem 0 2.4rem 0; //space between title, desc and url
-  font-size: 16px;
+  margin: 1.2rem 0 1.8rem 0; //space between title, desc and url
+  font-size: 14px;
   color: $grey;
   word-break: break-word;
-  width: 50%;
+  width: 65%;
   background: black; //want this text cleared of stars
   @media (max-width: $desktop-breakpoint) {
-    font-size: 14px;
     text-align: left;
     width: 100%;
+  }
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  @media (max-width: $desktop-breakpoint) {
+    width: 100%;
+    justify-content: space-around;
   }
 }
 
@@ -125,6 +135,17 @@
   background: black; //want this text cleared of stars
   &:hover {
     color: $red;
+    transition: color 250ms ease-in;
+  }
+  &:not(:hover) {
+    transition: color 250ms ease-in;
+  }
+}
+
+.projectRepo {
+  @extend .projectUrl;
+  &:hover {
+    color: rgb(140, 0, 255);
     transition: color 250ms ease-in;
   }
   &:not(:hover) {

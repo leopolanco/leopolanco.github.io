@@ -44,6 +44,7 @@ const projects = () => (
                 {project.description}
               </div>
               {project.url && (
+                <div className={styles.projectLinks}>
                 <a
                   className={styles.projectUrl}
                   target='_blank'
@@ -54,6 +55,17 @@ const projects = () => (
                 >
                   VISIT
                 </a>
+                <a
+                className={styles.projectRepo}
+                target='_blank'
+                rel='noopener'
+                alt={`Project${index + 1}`}
+                href={project.repo}
+                aria-label={`${project.repo} visit link`}
+              >
+                REPO
+              </a>
+              </div>
               )}
             </div>
           </div>

@@ -1,11 +1,10 @@
 import Link from 'next/link'
 import styles from '../styles/footer.module.scss'
 import { Mail, Phone, Location } from '../public/assets/svg/svg'
-
-const Footer = () => {
-  return (
-    <div className={styles.footer}>
-      <div className={styles.footerLinks}>
+const {footer, footerLinks, footerContactInfo} = styles
+const Footer = () => (
+    <div className={footer}>
+      <div className={footerLinks}>
         <Link href='/projects'>
           <span>PROJECTS</span>
         </Link>
@@ -13,7 +12,7 @@ const Footer = () => {
           <span>CONTACT</span>
         </Link>
       </div>
-      <div className={styles.footerContactInfo}>
+      <div className={footerContactInfo}>
         <a target='_blank' rel='noopener' href='mailto:leo@leopolanco.com'>
           <Mail />
           <span>leo@leopolanco.com</span>
@@ -29,6 +28,5 @@ const Footer = () => {
       </div>
     </div>
   )
-}
 
 export default Footer

@@ -22,7 +22,8 @@ const projectsArray = [
     <MongoIcon/>
           </>,
     url: 'https://proyectosuptag.herokuapp.com',
-    description: `Application to store and review final projects, made for the uptag engineering departments`
+    description: `Application to store and review final projects, made for the uptag engineering departments`,
+    repo: 'https://github.com/leopolanco/proyectosuptag'
   },
   {
     title: 'Real estate landing page',
@@ -33,18 +34,20 @@ const projectsArray = [
     <CSSIcon/>
     </>,
     url: '',
-    description: `Mockup page for a real estate company, made for general testing purposes`
+    description: `Mockup page for a real estate company, made for general testing purposes`,
+    repo:''
   },
   {
-    title: 'React test project',
+    title: 'React app test',
     picture: `/assets/images/BudgetApp1280.webp 1920w,
     /assets/images/BudgetApp760.webp 1920w`,
     tech: <>
     <ReactIcon/>
     <SassIcon/>
     </>,
-    url: 'http://leo-react-project.herokuapp.com/',
-    description: `Application for budgeting. Can store, update and delete expenses, this was a course project`
+    url: 'https://test-claro.vercel.app/',
+    description: `Application for budgeting. Can store, update and delete expenses, this was a course project`,
+    repo: 'https://github.com/leopolanco/test-claro'
   },
 ]
 
