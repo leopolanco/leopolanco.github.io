@@ -1,5 +1,4 @@
-@import './settings.scss';
-@import './visibility.scss';
+@use './settings.scss' as *;
 
 .contactTitle {
   font-family: $OpenSans;

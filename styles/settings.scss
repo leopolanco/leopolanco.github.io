@@ -1,7 +1,7 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap&text=);
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap&text=);
-@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap&text=);
-@import url(https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap&text=Leo+Polanco);
+// @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap&text=);
+// @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap&text=);
+// @import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap&text=);
+// @import url(https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap&text=Leo+Polanco);
 
 //fonts
 $OpenSans: 'Open Sans', sans-serif; //titles
@@ -23,3 +23,16 @@ $border: 1px solid white;
 //sizes
 $desktop-breakpoint: 45rem;
 //this is used with @media(max-width: $desktop-breakpoint){} to set styling for mobile
+
+.showForMobile {
+  @media (min-width: $desktop-breakpoint) {
+    display: none;
+  }
+}
+
+.showForDesktop {
+  @media (max-width: $desktop-breakpoint - 0.01rem) {
+    display: none;
+  }
+}
+

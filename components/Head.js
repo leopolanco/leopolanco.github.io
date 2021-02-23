@@ -27,6 +27,10 @@ const HeadTags = () => (
     ></meta>
     <title>Leo Polanco</title>
     <link rel='icon' href='/assets/images/favicon.png' />
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap&text=Leo+Polanco"  rel="preconnect" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap&text="  rel="preconnect" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap&text="  rel="preconnect" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap&text="  rel="preconnect" rel="stylesheet"/>
   </Head>
 )
 

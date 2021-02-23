@@ -1,5 +1,4 @@
-@import './settings.scss';
-@import './visibility.scss';
+@use './settings.scss' as *;
 
 //Mobile menu is z index 100, its button is z index 101 need the menu above everything
 
