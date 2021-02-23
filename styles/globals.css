@@ -7,10 +7,6 @@
   background: hsla(0, 100%, 55%, 0.6);
 }
 
-.Loading {
-  background: pink;
-}
-
 /* changing the scrollbar,
 works on chrome, edge */
 html::-webkit-scrollbar {

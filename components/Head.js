@@ -26,7 +26,7 @@ const HeadTags = () => (
       content="Leo Polanco's showcasing and presentation page"
     ></meta>
     <title>Leo Polanco</title>
-    <link rel='icon' rel="preconnect" href='/assets/images/favicon.png' />
+    <link rel='icon' href='/assets/images/favicon.png' />
   </Head>
 )
 
