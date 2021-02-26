@@ -6,8 +6,8 @@ import styles from '../styles/index.module.scss'
 /*To do:
 - improve the footer
 -transition between pages
-- fix every spacing issue
--please clean the code before finishing.*/
+-change 2nd project
+*/
 const Index = () => (
   <>
     <Presentation styles={styles} />;<AboutMe styles={styles} />;
