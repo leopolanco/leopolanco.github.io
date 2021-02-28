@@ -9,8 +9,10 @@ import styles from '../styles/index.module.scss'
 */
 const Index = () => (
   <>
-    <Presentation styles={styles} />;<AboutMe styles={styles} />;
-    <Langs styles={styles} />;<RecentProjects styles={styles} />;
+    <Presentation styles={styles} />
+    <AboutMe styles={styles} />
+    <Langs styles={styles} />
+    <RecentProjects styles={styles} />
   </>
 )
 export default Index
