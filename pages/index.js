@@ -6,7 +6,6 @@ import styles from '../styles/index.module.scss'
 /*To do:
 - improve the footer
 -transition between pages
--change 2nd project
 */
 const Index = () => (
   <>
