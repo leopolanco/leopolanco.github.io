@@ -1,4 +1,5 @@
 import Particle from 'react-particles-js'
+
 const Particles = () => (
   <Particle
     params={{

@@ -3,9 +3,9 @@ import { useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
 import Particles from './Particles'
 import styles from '../styles/header.module.scss'
-import { Hamburger } from '../public/assets/svg/svg.js'
+import { Hamburger } from '../public/assets/svg/svg'
 import Head from './Head'
-//Todo:
+// Todo:
 // Optimize the header, make only one list of links.
 
 const Header = () => {
@@ -18,19 +18,24 @@ const Header = () => {
   const mobileMenu = () => setShowMobileMenu(!showMobileMenu)
   return (
     <header>
-      <Head/>
+      <Head />
       <Particles />
 
       <div className={styles.header}>
-        <Link href='/' exact={true}>
+        <Link href='/' exact>
           <span
+            role='link'
+            tabIndex={-1}
             className={styles.mainLink}
             onClick={() => setShowMobileMenu(false)}
+            onKeyDown={() => setShowMobileMenu(false)}
           >
             Leo <span>Polanco</span>
           </span>
         </Link>
-        <a className={styles.skipLink} href="#main-content">Skip to main content</a>
+        <a className={styles.skipLink} href='#main-content'>
+          Skip to main content
+        </a>
         <div className={styles.showForDesktop}>
           <Link href='/projects'>
             <span className={styles.navlink}>PROJECTS</span>
@@ -70,21 +75,39 @@ const Header = () => {
             <ul className={styles.mobileLinks}>
               <li>
                 <Link href='/projects'>
-                  <span onClick={mobileMenu} className={styles.mobileLink}>
+                  <span
+                    role='link'
+                    tabIndex={-1}
+                    onClick={mobileMenu}
+                    onKeyDown={mobileMenu}
+                    className={styles.mobileLink}
+                  >
                     PROJECTS
                   </span>
                 </Link>
               </li>
               <li>
                 <Link href='/contact'>
-                  <span onClick={mobileMenu} className={styles.mobileLink}>
+                  <span
+                    role='link'
+                    tabIndex={-1}
+                    onClick={mobileMenu}
+                    onKeyDown={mobileMenu}
+                    className={styles.mobileLink}
+                  >
                     CONTACT
                   </span>
                 </Link>
               </li>
             </ul>
           </CSSTransition>
-          <div className={styles.mobileMenuButton} onClick={mobileMenu}>
+          <div
+            role='link'
+            tabIndex={-1}
+            onKeyDown={mobileMenu}
+            onClick={mobileMenu}
+            className={styles.mobileMenuButton}
+          >
             {mobileMenuButton}
           </div>
         </div>

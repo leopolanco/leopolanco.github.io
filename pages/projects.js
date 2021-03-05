@@ -3,7 +3,7 @@ import styles from '../styles/projects.module.scss'
 import projectsArray from '../components/projects'
 
 const sizes = `(max-width: 480px) 480px, 
-                600px` //desktop size
+                600px` // desktop size
 
 const projects = () => (
   <>
@@ -17,7 +17,7 @@ const projects = () => (
     <div className={styles.projectsTitle}>Projects</div>
     <div className={styles.projectsContent}>
       {projectsArray.map((project, index) => (
-        <div key={`${project.title} ${index}`}>
+        <div key={project.title}>
           <div className={styles.projectCard} id={`Project${index + 1}`}>
             <div className={styles.projectCardLeft}>
               <div className={styles.projectPicture}>
@@ -45,31 +45,31 @@ const projects = () => (
               </div>
               {project.url && (
                 <div className={styles.projectLinks}>
-                <a
-                  className={styles.projectUrl}
-                  target='_blank'
-                  rel='noopener'
-                  alt={`Project${index + 1}`}
-                  href={project.url}
-                  aria-label={`${project.title} visit link`}
-                >
-                  VISIT
-                </a>
-                <a
-                className={styles.projectRepo}
-                target='_blank'
-                rel='noopener'
-                alt={`Project${index + 1}`}
-                href={project.repo}
-                aria-label={`${project.repo} visit link`}
-              >
-                REPO
-              </a>
-              </div>
+                  <a
+                    className={styles.projectUrl}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    alt={`Project${index + 1}`}
+                    href={project.url}
+                    aria-label={`${project.title} visit link`}
+                  >
+                    VISIT
+                  </a>
+                  <a
+                    className={styles.projectRepo}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    alt={`Project${index + 1}`}
+                    href={project.repo}
+                    aria-label={`${project.repo} visit link`}
+                  >
+                    REPO
+                  </a>
+                </div>
               )}
             </div>
           </div>
-          {index + 1 != projectsArray.length && (
+          {index + 1 !== projectsArray.length && (
             <hr className={styles.projectSeparator} />
           )}
         </div>

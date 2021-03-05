@@ -1,0 +1,33 @@
+{
+  "extends": ["airbnb","plugin:react/recommended", "prettier"],
+  "parser": "babel-eslint",
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true
+  },
+  "plugins":["react-hooks"],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "semi": ["error", "never"],
+    "linebreak-style":0,
+    "jsx-quotes": ["error", "prefer-single"],
+    "no-console": "off",
+    //dont need to import react in everyfile when using next, nextjs does it automatically
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types":0
+  }
+}

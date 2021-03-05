@@ -7,7 +7,7 @@ import {ReactIcon,
     JSIcon
     } from '../../public/assets/svg/svg'
 
-const Langs = ({styles}) => (
+const Langs = ({ styles }) => (
     <>
     <div className={styles.langsTitle}>Working with  </div>
     <div className={styles.langs}>

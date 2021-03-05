@@ -18,27 +18,28 @@ const contact = () => {
   })
   const [notification, setNotification] = useState('')
   const { email, message } = form
-  const handleChange = e => {
+  const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
-  const onSubmit = e => {
+  const onSubmit = (e) => {
     e.preventDefault()
-    //Validating
+    // Validating
     if (
       !/(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/.test(
         email
       )
     ) {
       return setNotification('Invalid email')
-    } else if (message.length < 1) {
+    }  
+    if (message.length < 1) {
       return setNotification('Invalid message')
     }
-    //cleaning fields
+    // cleaning fields
     setForm({
       email: '',
       message: ''
     })
-    //sending the message and setting notifications
+    // sending the message and setting notifications
     setNotification(<Loading />)
     sendFormToGoogleForms(form)
       .then(() => {
@@ -65,25 +66,31 @@ const contact = () => {
           <form onSubmit={onSubmit} method='GET'>
             <div className={styles.emailInput}>
               <input
+              id='emailInput'
                 value={email}
                 name='email'
                 onChange={handleChange}
                 required
               />
-              <label className={styles.emailLabel}>Email</label>
+              <label className={styles.emailLabel} htmlFor='emailInput'>Email</label>
             </div>
             <div className={styles.messageInput}>
               <textarea
+                id='messageInput' 
                 value={message}
                 name='message'
                 onChange={handleChange}
                 required
-              ></textarea>
-              <label className={styles.messageLabel}>Message</label>
+              />
+              <label className={styles.messageLabel} htmlFor='messageInput'>Message</label>
             </div>
             <div className={styles.contactFormBottom}>
-              {notification ? <span>{notification}</span> : <span></span>}
-              <button className={styles.button} type='submit' onMouseDown={e => e.preventDefault()}>
+              {notification ? <span>{notification}</span> : <span />}
+              <button
+                className={styles.button}
+                type='submit'
+                onMouseDown={(e) => e.preventDefault()}
+              >
                 Send
               </button>
             </div>
@@ -94,7 +101,7 @@ const contact = () => {
           {/*  Placeholder image */}
           <a
             target='_blank'
-            rel='noopener'
+            rel='noopener noreferrer'
             alt='mail'
             href='mailto:leo@leopolanco.com'
             aria-label='mail icom'
@@ -104,7 +111,7 @@ const contact = () => {
           </a>
           <a
             target='_blank'
-            rel='noopener'
+            rel='noopener noreferrer'
             alt='whatsapp'
             href='https://wa.me/584246519234'
             aria-label='whatsapp icon'
@@ -113,7 +120,7 @@ const contact = () => {
           </a>
           <a
             target='_blank'
-            rel='noopener'
+            rel='noopener noreferrer'
             alt='telegram'
             href='https://t.me/Leopn'
             aria-label='telegram icon'

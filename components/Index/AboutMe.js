@@ -1,12 +1,15 @@
 const descriptiveText = `I am a Coro based developer, I'm 22 years old and I have a degree in IT from the UPTAG. 
 I have been working with people all over the world in creating pages, apps and software.
-Passionate about programming and fitness, currently looking for a next challenge `  
+Passionate about programming and fitness, currently looking for a next challenge `
 const farewell = `I hope you enjoy my page, Greetings.`
 
-const AboutMe = ({styles}) => (
+const AboutMe = ({ styles }) => (
   <div className={styles.aboutMe}>
     <div className={styles.aboutMeTitle}>About Me</div>
-    <div className={styles.aboutMeText}>{descriptiveText} <br/> {farewell}</div>
+    <div className={styles.aboutMeText}>
+      {descriptiveText} <br /> {farewell}
+    </div>
   </div>
 )
+
 export default AboutMe
