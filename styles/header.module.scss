@@ -1,7 +1,6 @@
 @use './settings.scss' as *;
 
 //Mobile menu is z index 100, its button is z index 101 need the menu above everything
-//x
 .header {
   display: flex;
   justify-content: space-between;
