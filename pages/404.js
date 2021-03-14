@@ -7,4 +7,5 @@ const Custom404 = () => (
     <Link href='/'>Go Home</Link>
   </div>
 )
+//asdas
 export default Custom404
