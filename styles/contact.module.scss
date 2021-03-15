@@ -51,108 +51,114 @@
     font-size: 16px;
   }
 }
-.emailInput {
+
+.emailForm {
   display: flex;
   flex-direction: column;
-  .emailLabel {
-    font-family: $OpenSans;
-    color: white;
-    background: black;
-    position: relative;
-    left: 28px;
-    top: -76px;
-    width: 14%;
-    text-align: center; //center in itself
-    letter-spacing: 1px;
-    font-size: 12.5px;
-    @media (max-width: $desktop-breakpoint) {
-      width: 22%;
+  height: 5rem;
+}
+.emailInput {
+  margin: 0 0 1.6rem 0;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-family: $Poppins;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  border: 1px solid $grey;
+  color: $white;
+  outline: none;
+  background: black;
+  &:focus {
+    border: 1px solid $red;
+    transition: border 200ms ease-in;
+    & ~ .emailLabel {
+      color: $red;
+      left: 12px;
+      top: -80px;
+      font-size: 13px;
+      transition: 200ms ease all;
     }
   }
-  > input {
-    font-size: 12.5px;
-    font-family: $Poppins;
-    letter-spacing: 1px;
-    border-radius: 2px;
-    border: 1px solid $grey;
-    color: white;
-    outline: none;
-    margin: 0 0 1.6rem 0;
-    background: transparent;
-    padding: 12px 16px;
-    &:focus {
-      border: 1px solid $red;
-      & ~ .emailLabel {
-        //color the label when the input is focused
-      transition:color 200ms ease-in;
-      color: red;
-      }
-      transition:border 200ms ease-in;
+  &:not(:focus) {
+    transition: border 200ms ease-in;
+    & ~ .emailLabel {
+      transition: 200ms ease all;
     }
-    &:not(:focus) {
-      transition:border 200ms ease-in;
-      & ~ .emailLabel {
-      transition:color 200ms ease-in;
-      }
+    &:valid ~ .emailLabel {
+      // input:not(:focus):valid ~ .emailLabel
+      // style stay when user types something, when not, it doesn't
+      left: 12px;
+      top: -80px;
+      font-size: 13px;
+      transition: 200ms ease all;
     }
-    @media (max-width: $desktop-breakpoint) {
-      border-radius: 4px;
-    }
+  }
+  @media (max-width: $desktop-breakpoint) {
+    border-radius: 4px;
+  }
+}
+.emailLabel {
+  font-family: $OpenSans;
+  color: $grey;
+  background: black;
+  pointer-events: none;
+  position: relative;
+  left: 14px;
+  top: -60px;
+  width: 14%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 15px;
+  @media (max-width: $desktop-breakpoint) {
+    width: 22%;
   }
 }
 
+.messageForm {
+  @extend .emailForm;
+  height: 16rem;
+}
 .messageInput {
-  display: flex;
-  flex-direction: column;
-  .messageLabel {
-    font-family: $OpenSans;
-    border: none;
-    background: black;
-    position: relative;
-    top: -234px;
-    left: 28px;
-    width: 20%;
-    text-align: center; //center in itself
-    letter-spacing: 1.5px;
-    font-size: 12.5px;
-    @media (max-width: $desktop-breakpoint) {
-      width: 32%;
+  @extend .emailInput;
+  height: 200px;
+  padding: 16px 14px;
+  resize: none;
+  &:focus {
+    border: 1px solid $red;
+    transition: border 200ms ease-in;
+    & ~ .messageLabel {
+      color: $red;
+      left: 12px;
       top: -234px;
+      font-size: 13px;
+      transition: 200ms ease all;
     }
   }
-  > textarea {
-    font-family: $Poppins;
-    font-size: 12.5px;
-    letter-spacing: 1px;
-    border-radius: 2px;
-    border: 1px solid $grey;
-    color: white;
-    outline: none;
-    margin: 0 0 1.6rem 0;
-    background: transparent;
-    padding: 24px 18px;
-    height: 200px;
-    resize: none;
-    &:focus {
-      border: 1px solid $red;
-      & ~ .messageLabel {
-        //color the label when the input is focused
-      transition:color 200ms ease-in;
-      color: red;
-      }
-      transition:border 200ms ease-in;
+  &:not(:focus) {
+    transition: border 200ms ease-in;
+    & ~ .messageLabel {
+      transition: 200ms ease all;
     }
-    &:not(:focus) {
-      transition:border 200ms ease-in;
-      & ~ .messageLabel {
-      transition:color 200ms ease-in;
-      }
+    &:valid ~ .emailLabel {
+      left: 12px;
+      top: -234px;
+      font-size: 13px;
+      transition: 200ms ease all;
     }
-    @media (max-width: $desktop-breakpoint) {
-      border-radius: 4px;
-    }
+  }
+  @media (max-width: $desktop-breakpoint) {
+    border-radius: 4px;
   }
 }
+.messageLabel {
+  @extend .emailLabel;
+  top: -210px;
+  width: 20%;
+  @media (max-width: $desktop-breakpoint) {
+    width: 32%;
+  }
+}
+
 .contactFormBottom {
   display: flex;
   justify-content: space-between;

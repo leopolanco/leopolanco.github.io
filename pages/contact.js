@@ -30,7 +30,7 @@ const contact = () => {
       )
     ) {
       return setNotification('Invalid email')
-    }  
+    }
     if (message.length < 1) {
       return setNotification('Invalid message')
     }
@@ -64,25 +64,26 @@ const contact = () => {
         <div className={styles.contactForm}>
           <span className={styles.contactFormTitle}>Send a message</span>
           <form onSubmit={onSubmit} method='GET'>
-            <div className={styles.emailInput}>
+            <div className={styles.emailForm}>
               <input
-              id='emailInput'
+                className={styles.emailInput}
                 value={email}
                 name='email'
                 onChange={handleChange}
                 required
               />
-              <label className={styles.emailLabel} htmlFor='emailInput'>Email</label>
+              <span className={styles.emailLabel}>Email</span>
             </div>
-            <div className={styles.messageInput}>
+
+            <div className={styles.messageForm}>
               <textarea
-                id='messageInput' 
+                className={styles.messageInput}
                 value={message}
                 name='message'
                 onChange={handleChange}
                 required
               />
-              <label className={styles.messageLabel} htmlFor='messageInput'>Message</label>
+              <span className={styles.messageLabel}>Message</span>
             </div>
             <div className={styles.contactFormBottom}>
               {notification ? <span>{notification}</span> : <span />}

@@ -144,8 +144,9 @@
 
 .projectRepo {
   @extend .projectUrl;
+  letter-spacing: 4px;
   &:hover {
-    color: rgb(140, 0, 255);
+    color: #6e87f8;
     transition: color 250ms ease-in;
   }
   &:not(:hover) {
