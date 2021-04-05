@@ -9,7 +9,7 @@ import {ReactIcon,
 
 const Langs = ({ styles }) => (
     <>
-    <div className={styles.langsTitle}>Working with  </div>
+    <div className={styles.langsTitle}>Skills </div>
     <div className={styles.langs}>
           <div><NodeIcon/><div>NODEJS</div></div>
           <div><ReactIcon/><div>REACT</div></div>
