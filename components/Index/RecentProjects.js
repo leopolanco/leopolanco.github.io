@@ -2,7 +2,7 @@ import Link from 'next/link'
 import projectsArray from '../projects'
 
 const sizes = `(max-width: 480px) 480px, 
-                600px` //desktop size
+                600px` // desktop size
 
 const RecentProjects = ({ styles }) => (
   <div className={styles.recentProjects}>

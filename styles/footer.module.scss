@@ -24,9 +24,9 @@
   margin: 0 24rem 3.2rem 24rem;
   display: flex;
   justify-content: space-around;
- 
+
   > span {
-    //this targets each link
+    // this targets each link
     margin: 0 0;
     &:hover {
       cursor: pointer;
@@ -34,7 +34,7 @@
       transition: color 300ms ease-in;
     }
     &:not(:hover) {
-      //for when you stop hovering
+      // for when you stop hovering
       transition: color 250ms ease-in;
     }
   }
@@ -46,28 +46,28 @@
 .footerContactInfo {
   display: flex;
   justify-content: space-evenly;
-  
+
   > div,
   a {
     text-decoration: none;
     color: $grey;
     display: grid;
-     //make a grid
+    // make a grid
     > svg {
-      margin: auto; //then center the svg
+      margin: auto; // then center the svg
       @media (max-width: $desktop-breakpoint) {
-        display: none; //no icons on mobile, would like to keep experimenting with this
+        display: none; // no icons on mobile, would like to keep experimenting with this
       }
     }
     > span {
       margin: 1rem 0 0 0;
       text-align: center;
       @media (max-width: $desktop-breakpoint) {
-        margin: 1.6rem 0 0 0; //no icons on mobile, would like to keep experimenting with this
+        margin: 1.6rem 0 0 0;
       }
     }
   }
   @media (max-width: $desktop-breakpoint) {
-    display: inline; //negates the display flex from desktop
+    display: inline;
   }
 }

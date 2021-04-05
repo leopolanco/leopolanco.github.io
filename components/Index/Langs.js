@@ -9,7 +9,7 @@ import {ReactIcon,
 
 const Langs = ({ styles }) => (
     <>
-    <div className={styles.langsTitle}>Skills </div>
+    <div className={styles.langsTitle}>Specializing in</div>
     <div className={styles.langs}>
           <div><NodeIcon/><div>NODEJS</div></div>
           <div><ReactIcon/><div>REACT</div></div>
@@ -21,4 +21,4 @@ const Langs = ({ styles }) => (
     </div>
     </>
 )
-export default Langs;
+export default Langs

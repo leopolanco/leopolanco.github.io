@@ -1,9 +1,9 @@
 import { LinkedIn, Mail, GitHub, MainImage } from '../../public/assets/svg/svg'
 
 const greetings = 'Hello. I am Leo,'
-const description = 'fullstack developer'
+const description = 'web developer'
 const smallDescription =
-  'Specialized in creating experiences and quality products with attention to the minimum detail.'
+  'I specialize in creating experiences and quality products with attention to the minute detail.'
 
 const Presentation = ({ styles }) => (
   <div className={styles.mainDiv}>
