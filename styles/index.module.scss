@@ -1,4 +1,5 @@
 @use './settings.scss' as *;
+
 .mainDiv {
   display: flex;
   justify-content: space-between;
@@ -216,7 +217,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   @media (max-width: $desktop-breakpoint) {
-    justify-content: space-around; //finally centered the projects
+    justify-content: space-around;
   }
 }
 .recentProject {
@@ -225,8 +226,7 @@
   opacity: 0.6;
   cursor: pointer;
   > img {
-    border:1px solid $red;
-    border-radius: 2px;
+    border-radius: 3px;
   }
   &:hover {
     filter: none;

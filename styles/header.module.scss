@@ -37,7 +37,6 @@
   font-family: $Marcellus;
   font-size: 21px;
   letter-spacing: 6.5px;
-  font-weight: 500;
   border: solid 1px white;
   padding-left: 6px;
   @media (max-width: $desktop-breakpoint) {
@@ -92,7 +91,7 @@
 }
 
 .mobileLink {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   display: flex;
   flex-wrap: wrap;
