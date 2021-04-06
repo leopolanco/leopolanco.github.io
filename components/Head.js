@@ -26,7 +26,6 @@ const HeadTags = () => (
     <meta name='twitter:description' content="Leo Polanco's portfolio page" />=
     <title>Leo Polanco</title>
     <link rel='icon' href='/assets/images/favicon.png' />
-    <link rel='preconnect' href='https://fonts.gstatic.com' />
   </Head>
 )
 

@@ -5,7 +5,7 @@ import AboutMe from '../components/Index/AboutMe'
 import styles from '../styles/index.module.scss'
 /* To do:
 - improve the footer
--transition between pages
+- transition between pages
 */
 const Index = () => (
   <>
