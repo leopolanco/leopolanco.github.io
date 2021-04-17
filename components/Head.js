@@ -10,7 +10,7 @@ const HeadTags = () => (
     />
     <meta
       name='description'
-      content={`Leo Polanco is Fullstack Developer from Venezuela who has been 
+      content={`Leo Polanco is a Fullstack Developer from Venezuela who has been 
         working with people from all over the world, solving tech related problems and creating fully functional web sites`}
     />
     <meta name='language' content='en' />
