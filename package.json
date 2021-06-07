@@ -9,13 +9,14 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "next": "^10.1.1",
+    "next": "^10.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-particles-js": "^3.4.1",
     "react-transition-group": "^4.4.1",
     "sass": "^1.32.4",
-    "styled-jsx": "^3.4.1"
+    "styled-jsx": "^3.4.1",
+    "three": "^0.127.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

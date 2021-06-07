@@ -59,10 +59,6 @@
 .rightContainer {
   display: flex;
   justify-content: space-between;
-  > div:nth-child(1) {
-    //Image in presentation
-    margin: 0 5rem 0 0;
-  }
 }
 .icons {
   margin: 0 0 9rem 0;

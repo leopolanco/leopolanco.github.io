@@ -1,1 +1,57 @@
-*{margin:0;padding:0;box-sizing:border-box}::selection{background:hsla(0,100%,55%,.6)}html::-webkit-scrollbar{width:6px;background-color:#000}html::-webkit-scrollbar-track{border-radius:3px;background:hsla(0,0%,0%,0)}html::-webkit-scrollbar-thumb{border-radius:4px;background:rgb(168, 168, 168);border:3px solid #000}body:hover{cursor:default}canvas{position:fixed;height:100vh;width:100vw;z-index:-10;background:#000}.contentContainer{margin:0 auto;padding:0 1.6rem;max-width:80rem}a,button,div,input,select,span,textarea{-webkit-tap-highlight-color:transparent}ul{list-style-type:none}a{text-decoration:none}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection {
+  background: hsla(0, 100%, 55%, 0.6);
+}
+html::-webkit-scrollbar {
+  width: 6px;
+  background-color: #000;
+}
+html::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: hsla(0, 0%, 0%, 0);
+}
+html::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: rgb(168, 168, 168);
+  border: 3px solid #000;
+}
+body:hover {
+  cursor: default;
+}
+canvas {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -10;
+  background: #000;
+}
+.figure > canvas {
+  position: static;
+  background: transparent;
+  margin-top: -100px;
+}
+
+.contentContainer {
+  margin: 0 auto;
+  padding: 0 1.6rem;
+  max-width: 80rem;
+}
+a,
+button,
+div,
+input,
+select,
+span,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
