@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react'
 import fragment from '../Shader/fragment.glsl'
 import vertex from '../Shader/vertex.glsl'
 
-// Borrowed from https://threejs.org/examples/#webgl_buffergeometry
+// Credits to yuri artyukh and richardmattka
 const Figure = () => {
   const container = useRef()
 
@@ -14,12 +14,12 @@ const Figure = () => {
     let uniforms
 
     function init() {
-      camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.001, 1000)
+      camera = new THREE.PerspectiveCamera(70, 720 / 480, 0.001, 1000)
 
       camera.position.set(0, 0, 2)
       scene = new THREE.Scene()
 
-      const geometry = new THREE.BoxGeometry(1, 1)
+      const geometry = new THREE.BoxGeometry()
       uniforms = {
         time: { type: 'f', value: 0 },
         resolution: { type: 'v4', value: new THREE.Vector4() },
@@ -44,30 +44,21 @@ const Figure = () => {
       container.current.appendChild(renderer.domElement)
 
       renderer.setSize(720, 480)
-      const width = container.offsetWidth
-      const height = container.offsetHeight
-      const imageAspect = 1
-      let a1
-      let a2
-
-      if (height / width > imageAspect) {
-        a1 = (width / height) * imageAspect
-        a2 = 1
-      } else {
-        a2 = (width / height) * imageAspect
-        a1 = 1
-      }
-
-      uniforms.resolution.value.x = width
-      uniforms.resolution.value.y = height
-      uniforms.resolution.value.z = a1
-      uniforms.resolution.value.w = a2
       camera.fov = 2 * (180 / Math.PI) * Math.atan(1.1 / (2 * camera.position.z))
       camera.updateProjectionMatrix()
     }
 
     init()
+    function mouseEvents() {
+      const mouse = new THREE.Vector2()
+      function onMouseMove(event) {
+        mouse.x = (event.clientX / window.innerWidth) * 2 - 1
+        mouse.y = -(event.clientY / window.innerHeight) * 2 + 1
+        uniforms.mouse.value = mouse
 
+      }
+      window.addEventListener('mousemove', onMouseMove, false)
+    }
     function animate() {
       requestAnimationFrame(animate)
       uniforms.time.value += 0.05
@@ -75,6 +66,7 @@ const Figure = () => {
     }
 
     animate()
+    mouseEvents()
   }, [])
 
   return <div ref={container} className='figure' />

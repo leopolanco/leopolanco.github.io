@@ -62,10 +62,10 @@ vec3 GetColorAmount(vec3 p) {
 void main() {    
     vec2 p = vUv - vec2(0.5);
 
-    p.x+=mouse.x*0.1;
-    p.y+=mouse.y*0.1;
+    p.x+=mouse.x*0.05;
+    p.y+=mouse.y*0.05;
 
-    vec3 camPos = vec3(0.,0.,2.+0.5*sin(time/4.));
+    vec3 camPos = vec3(0.,0.,2.+0.4*sin(time/6.));
 
     vec3 ray = normalize(vec3(p,-1.));
 
@@ -78,7 +78,7 @@ void main() {
     
     vec3 color = vec3(0.);
 
-    for(int i = 0;i<=64;i++) {
+    for(int i = 0;i<=128;i++) {
         curDist = scene(rayPos);
         rayLen += 0.6*curDist;
         rayPos = camPos + ray*rayLen;
@@ -94,5 +94,5 @@ void main() {
     }
 
     gl_FragColor = vec4(color,1.);
-    gl_FragColor.r -= abs(mouse.x)*0.1;
+    gl_FragColor.r -= abs(mouse.x)*0.5;
 }
