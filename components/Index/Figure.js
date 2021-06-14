@@ -13,10 +13,6 @@ const Figure = () => {
     let renderer
     let uniforms
 
-    function onWindowResize() {
-      renderer.setSize(window.innerWidth, window.innerHeight)
-    }
-
     function init() {
       camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.001, 1000)
 
@@ -24,14 +20,10 @@ const Figure = () => {
       scene = new THREE.Scene()
 
       const geometry = new THREE.BoxGeometry(1, 1)
-
       uniforms = {
         time: { type: 'f', value: 0 },
         resolution: { type: 'v4', value: new THREE.Vector4() },
-        mouse: { type: 'v2', value: new THREE.Vector2(0, 0) },
-        uvRate1: {
-          value: new THREE.Vector2(1, 1)
-        }
+        mouse: { type: 'v2', value: new THREE.Vector2(0, 0) }
       }
       const material = new THREE.ShaderMaterial({
         extensions: {
@@ -47,21 +39,35 @@ const Figure = () => {
       const mesh = new THREE.Mesh(geometry, material)
       scene.add(mesh)
 
-      renderer = new THREE.WebGLRenderer()
-      renderer.setPixelRatio(window.devicePixelRatio)
+      renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
+      renderer.setPixelRatio(window.devicePixelRatio * 2)
       container.current.appendChild(renderer.domElement)
 
-      onWindowResize()
+      renderer.setSize(720, 480)
+      const width = container.offsetWidth
+      const height = container.offsetHeight
+      const imageAspect = 1
+      let a1
+      let a2
 
-      window.addEventListener('resize', onWindowResize)
-    }
+      if (height / width > imageAspect) {
+        a1 = (width / height) * imageAspect
+        a2 = 1
+      } else {
+        a2 = (width / height) * imageAspect
+        a1 = 1
+      }
 
-    function resize() {
-      camera.fov = 2 * (180 / Math.PI) * Math.atan(.7 / (2 * camera.position.z))
-
+      uniforms.resolution.value.x = width
+      uniforms.resolution.value.y = height
+      uniforms.resolution.value.z = a1
+      uniforms.resolution.value.w = a2
+      camera.fov = 2 * (180 / Math.PI) * Math.atan(1.1 / (2 * camera.position.z))
       camera.updateProjectionMatrix()
     }
+
     init()
+
     function animate() {
       requestAnimationFrame(animate)
       uniforms.time.value += 0.05
@@ -69,8 +75,6 @@ const Figure = () => {
     }
 
     animate()
-    resize()
-    console.log(container)
   }, [])
 
   return <div ref={container} className='figure' />
