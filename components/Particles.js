@@ -1,4 +1,4 @@
-import Particle from 'react-particles-js'
+import Particle from 'react-tsparticles'
 
 const Particles = () => (
   <Particle
