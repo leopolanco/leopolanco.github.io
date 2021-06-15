@@ -1,5 +1,7 @@
+import dynamic from 'next/dynamic'
 import { LinkedIn, Mail, GitHub } from '../../public/assets/svg/svg'
-import Figure from './Figure'
+// import Figure from './Figure'
+const Figure = dynamic(() => import('./Figure'))
 
 const greetings = 'Hello. I am Leo,'
 const description = 'web developer'

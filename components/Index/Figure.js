@@ -1,4 +1,13 @@
-import * as THREE from 'three'
+import {
+  PerspectiveCamera,
+  Scene,
+  CircleGeometry,
+  Vector2,
+  Vector4,
+  ShaderMaterial,
+  Mesh,
+  WebGLRenderer
+} from 'three'
 import React, { useEffect, useRef } from 'react'
 import fragment from '../Shader/fragment.glsl'
 import vertex from '../Shader/vertex.glsl'
@@ -14,28 +23,28 @@ const Figure = () => {
     let uniforms
 
     function init() {
-      camera = new THREE.PerspectiveCamera(70, 720 / 480, 0.001, 500)
+      camera = new PerspectiveCamera(70, 720 / 480, 0.001, 500)
 
       camera.position.set(0, 0, 2)
-      scene = new THREE.Scene()
+      scene = new Scene()
 
-      const geometry = new THREE.CircleGeometry(.55,64)
+      const geometry = new CircleGeometry(0.55, 64)
       uniforms = {
         time: { type: 'f', value: 0 },
-        resolution: { type: 'v4', value: new THREE.Vector4() },
-        mouse: { type: 'v2', value: new THREE.Vector2(0, 0) }
+        resolution: { type: 'v4', value: new Vector4() },
+        mouse: { type: 'v2', value: new Vector2(0, 0) }
       }
-      const material = new THREE.ShaderMaterial({
+      const material = new ShaderMaterial({
         uniforms,
         transparent: true,
         vertexShader: vertex,
         fragmentShader: fragment
       })
 
-      const mesh = new THREE.Mesh(geometry, material)
+      const mesh = new Mesh(geometry, material)
       scene.add(mesh)
 
-      renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
+      renderer = new WebGLRenderer({ antialias: true, alpha: true })
       renderer.setPixelRatio(window.devicePixelRatio * 2)
       container.current.appendChild(renderer.domElement)
 
@@ -45,15 +54,13 @@ const Figure = () => {
     }
 
     init()
-    function mouseEvents() {
-      const mouse = new THREE.Vector2()
-      function onMouseMove(event) {
-        mouse.x = (event.clientX / window.innerWidth) * 2 - 1
-        mouse.y = -(event.clientY / window.innerHeight) * 2 + 1
-        uniforms.mouse.value = mouse
+    const onMouseMove = (event) => {
+      uniforms.mouse.value = {
+        x: (event.clientX / window.innerWidth) * 2 - 1,
+        y: -(event.clientY / window.innerHeight) * 2 + 1
       }
-      window.addEventListener('mousemove', onMouseMove, false)
     }
+    window.addEventListener('mousemove', onMouseMove)
     function animate() {
       requestAnimationFrame(animate)
       uniforms.time.value += 0.05
@@ -61,7 +68,7 @@ const Figure = () => {
     }
 
     animate()
-    mouseEvents()
+    return () => window.removeEventListener('mousemove', onMouseMove)
   }, [])
 
   return <div ref={container} className='figure' />

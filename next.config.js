@@ -5,5 +5,8 @@ module.exports = {
       loader: 'webpack-glsl-loader'
     })
     return config
+  },
+  future: {
+    webpack5: true
   }
 }

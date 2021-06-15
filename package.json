@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@babel/eslint-parser": "^7.14.5",
     "axios": "^0.21.1",
     "next": "^10.2.3",
     "react": "^17.0.2",
@@ -20,7 +21,6 @@
     "webpack-glsl-loader": "^1.0.1"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
     "eslint": "^7.21.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.1.0",
