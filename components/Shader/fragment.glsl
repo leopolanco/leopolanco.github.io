@@ -30,7 +30,7 @@ float SineCrazy(vec3 p) {
 }
 
 float scene(vec3 p) {
-    vec3 p1 = rotate(p, vec3(1.,1.,1.), time/10.);
+    vec3 p1 = rotate(p, vec3(1.,1.,1.), time/12.);
     float scale = 10. + 20.*sin(time/12.);
     return max( sphere(p1), (0.85 - SineCrazy(p1*scale))/scale);
 }
@@ -47,12 +47,6 @@ vec3 getNormal(vec3 p){
 	);
 }
 
-
-vec3 GetColor(float amount) {
-    vec3 col = 0.5 + 0.5 * cos(6.28319 * (vec3(0.2,0.0,0.0) + amount * vec3(1.0, 1.0, 0.5)));
-    return col * amount;
-}
-
 vec3 GetColorAmount(vec3 p) {
     float amount = clamp((1.5-length(p))/2.,0.,1.);
     vec3 col = 0.5 + 0.5 * cos(6.28319 * (vec3(0.2,0.0,0.0) + amount * vec3(1.0, 1.0, 0.5)));
@@ -65,7 +59,7 @@ void main() {
     p.x+=mouse.x*0.05;
     p.y+=mouse.y*0.05;
 
-    vec3 camPos = vec3(0.,0.,2.+0.4*sin(time/6.));
+    vec3 camPos = vec3(0.,0.,3.04+0.3*sin(time/8.));
 
     vec3 ray = normalize(vec3(p,-1.));
 
@@ -80,14 +74,12 @@ void main() {
 
     for(int i = 0;i<=128;i++) {
         curDist = scene(rayPos);
-        rayLen += 0.6*curDist;
+        rayLen += 0.5*curDist;
         rayPos = camPos + ray*rayLen;
 
         if(abs(curDist)<0.001 || rayLen>10.){
             vec3 n = getNormal(rayPos);
-
             float diff = dot(n, light);
-
             break;
         }
         color += 0.04*GetColorAmount(rayPos);

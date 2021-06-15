@@ -14,22 +14,18 @@ const Figure = () => {
     let uniforms
 
     function init() {
-      camera = new THREE.PerspectiveCamera(70, 720 / 480, 0.001, 1000)
+      camera = new THREE.PerspectiveCamera(70, 720 / 480, 0.001, 500)
 
       camera.position.set(0, 0, 2)
       scene = new THREE.Scene()
 
-      const geometry = new THREE.BoxGeometry()
+      const geometry = new THREE.CircleGeometry(.55,64)
       uniforms = {
         time: { type: 'f', value: 0 },
         resolution: { type: 'v4', value: new THREE.Vector4() },
         mouse: { type: 'v2', value: new THREE.Vector2(0, 0) }
       }
       const material = new THREE.ShaderMaterial({
-        extensions: {
-          derivatives: '#extension GL_OES_standard_derivative : enable'
-        },
-        side: THREE.DoubleSide,
         uniforms,
         transparent: true,
         vertexShader: vertex,
@@ -55,7 +51,6 @@ const Figure = () => {
         mouse.x = (event.clientX / window.innerWidth) * 2 - 1
         mouse.y = -(event.clientY / window.innerHeight) * 2 + 1
         uniforms.mouse.value = mouse
-
       }
       window.addEventListener('mousemove', onMouseMove, false)
     }
