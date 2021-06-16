@@ -32,7 +32,7 @@ canvas {
 .figure > canvas {
   position: static;
   background: transparent;
-  margin-top: -100px;
+  margin-top: -90px;
 }
 
 .contentContainer {

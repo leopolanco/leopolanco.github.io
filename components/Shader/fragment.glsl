@@ -26,6 +26,7 @@ float sphere(vec3 p) {
 }
 
 float SineCrazy(vec3 p) {
+    //Shape of spaces inside the ball
     return 1. - (sin(p.x) + sin(p.y) + sin(p.z))/3.;
 }
 

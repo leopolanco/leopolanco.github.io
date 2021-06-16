@@ -22,13 +22,13 @@ const Figure = () => {
     let renderer
     let uniforms
 
-    function init() {
+    const init = () => {
       camera = new PerspectiveCamera(70, 720 / 480, 0.001, 500)
 
       camera.position.set(0, 0, 2)
       scene = new Scene()
 
-      const geometry = new CircleGeometry(0.55, 64)
+      const geometry = new CircleGeometry(0.55, 16)
       uniforms = {
         time: { type: 'f', value: 0 },
         resolution: { type: 'v4', value: new Vector4() },
@@ -61,17 +61,20 @@ const Figure = () => {
       }
     }
     window.addEventListener('mousemove', onMouseMove)
-    function animate() {
+    const animate = () => {
       requestAnimationFrame(animate)
       uniforms.time.value += 0.05
       renderer.render(scene, camera)
     }
-
     animate()
-    return () => window.removeEventListener('mousemove', onMouseMove)
+    return () => {
+      window.removeEventListener('mousemove', onMouseMove)
+      // Make the entity disappear when component unmounts
+      renderer.setPixelRatio(0)
+    }
   }, [])
 
-  return <div ref={container} className='figure' />
+  return <div ref={container} className='figure'  />
 }
 
 export default Figure
