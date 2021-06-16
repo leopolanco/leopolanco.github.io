@@ -45,7 +45,7 @@ const Figure = () => {
       scene.add(mesh)
 
       renderer = new WebGLRenderer({ antialias: true, alpha: true })
-      renderer.setPixelRatio(window.devicePixelRatio * 1.5)
+      renderer.setPixelRatio(window.devicePixelRatio * 2)
       container.current.appendChild(renderer.domElement)
 
       renderer.setSize(800, 600)
@@ -56,7 +56,7 @@ const Figure = () => {
     init()
     const onMouseMove = (event) => {
       uniforms.mouse.value = {
-        x: (event.clientX / window.innerWidth) * 2 - 1,
+        x: (event.clientX / (window.innerWidth + 450)) * 2 - 1,
         y: -(event.clientY / window.innerHeight) * 2 + 1
       }
     }
