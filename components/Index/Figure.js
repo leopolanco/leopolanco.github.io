@@ -45,7 +45,7 @@ const Figure = () => {
       scene.add(mesh)
 
       renderer = new WebGLRenderer({ antialias: true, alpha: true })
-      renderer.setPixelRatio(window.devicePixelRatio * 2)
+      renderer.setPixelRatio(window.devicePixelRatio * 1.5)
       container.current.appendChild(renderer.domElement)
 
       renderer.setSize(800, 600)
