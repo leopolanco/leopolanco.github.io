@@ -57,10 +57,10 @@ vec3 GetColorAmount(vec3 p) {
 void main() {    
     vec2 p = vUv - vec2(0.5);
 
-    p.x+=mouse.x*0.05;
-    p.y+=mouse.y*0.05;
+    p.x+=mouse.x*0.03;
+    p.y+=mouse.y*0.03;
 
-    vec3 camPos = vec3(0.,0.,3.04+0.3*sin(time/8.));
+    vec3 camPos = vec3(0.,0.,3.2+0.3*sin(time/8.));
 
     vec3 ray = normalize(vec3(p,-1.));
 
