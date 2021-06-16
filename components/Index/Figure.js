@@ -23,7 +23,7 @@ const Figure = () => {
     let uniforms
 
     const init = () => {
-      camera = new PerspectiveCamera(70, 720 / 480, 0.001, 500)
+      camera = new PerspectiveCamera(70, 800 / 600, 0.001, 500)
 
       camera.position.set(0, 0, 2)
       scene = new Scene()
@@ -48,7 +48,7 @@ const Figure = () => {
       renderer.setPixelRatio(window.devicePixelRatio * 2)
       container.current.appendChild(renderer.domElement)
 
-      renderer.setSize(720, 480)
+      renderer.setSize(800, 600)
       camera.fov = 2 * (180 / Math.PI) * Math.atan(1.1 / (2 * camera.position.z))
       camera.updateProjectionMatrix()
     }
