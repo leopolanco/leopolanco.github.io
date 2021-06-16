@@ -11,14 +11,7 @@ const smallDescription =
 const Presentation = ({ styles }) => {
   const [mediaHandler, setMediaHandler] = useState(true)
   useEffect(() => {
-    const matchMedia = window.matchMedia('(max-width: 767px)')
-    setMediaHandler(matchMedia.matches)
-    const handler = (e) => setMediaHandler(e.matches)
-    matchMedia.addEventListener('change', handler)
-
-    // This is going to kill the listener which means the state won't change 
-    // with the usage of devtools (setting mobile view and desktop view in the same device)
-    return matchMedia.removeEventListener('change', handler)
+    setMediaHandler(window.matchMedia('(max-width: 767px)').matches)
   }, [])
   return (
     <div className={styles.mainDiv}>
