@@ -1,4 +1,7 @@
-import { LinkedIn, Mail, GitHub, MainImage } from '../../public/assets/svg/svg'
+import dynamic from 'next/dynamic'
+import { LinkedIn, Mail, GitHub } from '../../public/assets/svg/svg'
+// import Figure from './Figure'
+const Figure = dynamic(() => import('./Figure'))
 
 const greetings = 'Hello. I am Leo,'
 const description = 'web developer'
@@ -17,9 +20,8 @@ const Presentation = ({ styles }) => (
     <div>
       <div className={styles.rightContainer}>
         <div className={styles.showForDesktop}>
-          <MainImage />
+          <Figure />
         </div>{' '}
-        {/* This image is called source code, it is a placeholder */}
         <div className={styles.icons}>
           <a
             target='_blank'

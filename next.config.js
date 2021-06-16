@@ -1,5 +1,12 @@
 module.exports = {
-    future: {
-      webpack5: true
-    }
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.glsl$/,
+      loader: 'webpack-glsl-loader'
+    })
+    return config
+  },
+  eslint: {
+    ignoreDuringBuilds: true
   }
+}
