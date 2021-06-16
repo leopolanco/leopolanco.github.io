@@ -5,5 +5,8 @@ module.exports = {
       loader: 'webpack-glsl-loader'
     })
     return config
+  },
+  eslint: {
+    ignoreDuringBuilds: true
   }
 }
