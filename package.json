@@ -16,7 +16,7 @@
     "react-tsparticles": "^1.37.4",
     "sass": "^1.43.4",
     "styled-jsx": "^3.4.1",
-    "three": "^0.134.0",
+    "three": "^0.137.1",
     "webpack-glsl-loader": "^1.0.1"
   },
   "devDependencies": {
