@@ -23,7 +23,6 @@
 }
 .contactForm {
   margin: 0 0 0 3.2rem;
-  font-family: tahoma;
   background: black;
   width: 35%;
   border: 1px solid $grey;
@@ -174,6 +173,7 @@
   }
 }
 .button {
+  color: white;
   padding: 12px 32px;
   border-radius: 4px;
   text-align: center;
