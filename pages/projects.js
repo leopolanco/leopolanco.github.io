@@ -1,4 +1,3 @@
-import _JSXStyle from 'styled-jsx/style'
 import styles from '../styles/projects.module.scss'
 import projectsArray from '../components/projects'
 
@@ -7,13 +6,6 @@ const sizes = `(max-width: 480px) 480px,
 
 const projects = () => (
   <>
-    <style global jsx>{`
-      .header_navlink__1wJsj:nth-of-type(1),
-      li:nth-child(1),
-      .footer_footerLinks__3_Agy > span:nth-child(1) {
-        color: #ff2020;
-      }
-    `}</style>
     <div className={styles.projectsTitle}>Projects</div>
     <div className={styles.projectsContent}>
       {projectsArray.map((project, index) => (

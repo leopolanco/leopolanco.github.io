@@ -1,11 +1,9 @@
 @use './settings.scss' as *;
 
 .errorPage {
-    color: white;
     margin: auto;
     text-align: center;
     padding: 15rem;
-    font-family: $OpenSans;
     font-size: 3rem;
     letter-spacing: 1px;
     @media (max-width: $desktop-breakpoint) {

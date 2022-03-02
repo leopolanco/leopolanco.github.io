@@ -3,9 +3,7 @@
 .mainDiv {
   display: flex;
   justify-content: space-between;
-  font-family: $OpenSans;
   margin: 3.2rem 3.2rem 0 1.2rem;
-  color: white;
   @media (max-width: $desktop-breakpoint) {
     margin: 0;
     display: flex;
@@ -101,7 +99,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 .aboutMe {
   letter-spacing: 1px;
-  color: white;
   max-width: 80rem;
   text-align: center;
   margin: 6rem auto 0 auto; //separator between presentation and aboutme
@@ -115,7 +112,6 @@
 .aboutMeTitle {
   margin: 0 0 3.2rem 0;
   font-weight: 700;
-  font-family: $OpenSans;
   font-size: 36px;
   @media (max-width: $desktop-breakpoint) {
     border-top: 1px solid $grey;
@@ -156,7 +152,6 @@
     text-align: center;
     flex-basis: 25%;
     opacity: 0.6;
-    color: white;
     &:hover {
       opacity: 1;
       transition: opacity 300ms ease-in;
@@ -180,8 +175,6 @@
 }
 .langsTitle {
   margin: 0 0 3rem 3.6rem;
-  color: white;
-  font-family: $OpenSans;
   font-weight: 700;
   letter-spacing: 2px;
   font-size: 24px;
@@ -192,7 +185,6 @@
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 .recentProjects {
-  color: white;
   text-align: center;
 
   @media (max-width: $desktop-breakpoint) {
@@ -204,7 +196,6 @@
   font-size: 28px;
   font-weight: 600;
   letter-spacing: 1px;
-  font-family: $OpenSans;
 
   @media (max-width: $desktop-breakpoint) {
     font-size: 24px;

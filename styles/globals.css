@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
 ::selection {
   background: hsla(0, 100%, 55%, 0.6);
 }
@@ -22,7 +26,7 @@ html::-webkit-scrollbar-thumb {
 body:hover {
   cursor: default;
 }
-canvas {
+#tsparticles > canvas {
   position: fixed;
   z-index: -10!important;
   background: rgb(0, 0, 0);
@@ -51,5 +55,6 @@ ul {
   list-style-type: none;
 }
 a {
+  color: white;
   text-decoration: none;
 }

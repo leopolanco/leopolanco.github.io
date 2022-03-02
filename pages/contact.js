@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import _JSXStyle from 'styled-jsx/style'
 import {
   Loading,
   Telegram,
@@ -51,13 +50,6 @@ const contact = () => {
   }
   return (
     <>
-      <style global jsx>{`
-        .header_navlink__1wJsj:nth-of-type(2),
-        li:nth-child(2),
-        .footer_footerLinks__3_Agy > span:nth-child(2) {
-          color: #ff2020;
-        }
-      `}</style>
       <h3 className={styles.contactTitle}>Contact </h3>
 
       <div className={styles.contactContent}>

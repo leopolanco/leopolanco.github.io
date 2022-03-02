@@ -1,8 +1,6 @@
 @use './settings.scss' as *;
 
 .contactTitle {
-  font-family: $OpenSans;
-  color: white;
   text-align: center;
   margin: 1.2rem 0;
   font-size: 36px;
@@ -15,7 +13,6 @@
 
 .contactContent {
   margin: 6.4rem 0;
-  color: white;
   display: flex;
   justify-content: space-around;
   @media (max-width: $desktop-breakpoint) {
@@ -45,7 +42,6 @@
 }
 .contactFormTitle {
   font-size: 20px;
-  font-family: $OpenSans;
   letter-spacing: 1px;
   @media (max-width: $desktop-breakpoint) {
     font-size: 16px;
@@ -98,7 +94,6 @@
   }
 }
 .emailLabel {
-  font-family: $OpenSans;
   color: $grey;
   background: black;
   pointer-events: none;
@@ -184,7 +179,6 @@
   text-align: center;
   border: 1px solid $red;
   box-shadow: 0 0 6px 0 $red;
-  color: white;
   background: transparent;
   cursor: pointer;
   letter-spacing: 1px;
@@ -222,7 +216,6 @@
   }
   > a {
     border-left: 2px solid $red;
-    color: white;
     margin: 1.6rem 0;
     padding: 0 0 0 1.2rem;
     font-family: tahoma;

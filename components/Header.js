@@ -40,6 +40,9 @@ const Header = () => {
           <Link href='/projects'>
             <span className={styles.navlink}>PROJECTS</span>
           </Link>
+          {/* <Link href='/work'>
+            <span className={styles.navlink}>WORK</span>
+          </Link> */}
           <Link href='/contact'>
             <span className={styles.navlink}> CONTACT </span>
           </Link>
@@ -86,6 +89,19 @@ const Header = () => {
                   </span>
                 </Link>
               </li>
+              {/* <li>
+                <Link href='/work'>
+                  <span
+                    role='link'
+                    tabIndex={-1}
+                    onClick={mobileMenu}
+                    onKeyDown={mobileMenu}
+                    className={styles.mobileLink}
+                  >
+                    WORK
+                  </span>
+                </Link>
+              </li> */}
               <li>
                 <Link href='/contact'>
                   <span

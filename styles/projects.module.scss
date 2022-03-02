@@ -1,8 +1,6 @@
 @use './settings.scss' as *;
 
 .projectsTitle {
-  font-family: $OpenSans;
-  color: white;
   text-align: center;
   margin: 1.2rem 0;
   font-size: 36px;
@@ -14,7 +12,6 @@
 }
 .projectsContent {
   margin: 12rem 0 0 0;
-  color: white;
   @media (max-width: $desktop-breakpoint) {
     margin: 6.4rem 0;
   }
@@ -129,7 +126,6 @@
   font-size: 12.5px;
   letter-spacing: 5px;
   text-decoration: none;
-  color: white;
   opacity: 0.8;
   font-weight: 600;
   background: black; //want this text cleared of stars
