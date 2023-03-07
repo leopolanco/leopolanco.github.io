@@ -102,16 +102,6 @@ const contact = () => {
             <Mail />
             leo@leopolanco.com
           </a>
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
-            alt='telegram'
-            href='https://t.me/Leopn'
-            aria-label='telegram icon'
-          >
-            <Telegram />
-            @leopn
-          </a>
         </div>
       </div>
     </>
