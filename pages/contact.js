@@ -105,15 +105,6 @@ const contact = () => {
           <a
             target='_blank'
             rel='noopener noreferrer'
-            alt='whatsapp'
-            href='https://wa.me/584246519234'
-            aria-label='whatsapp icon'
-          >
-            <WhatsApp /> +584246519234
-          </a>
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
             alt='telegram'
             href='https://t.me/Leopn'
             aria-label='telegram icon'
