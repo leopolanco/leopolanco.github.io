@@ -24,7 +24,7 @@ const Footer = () => (
       </a>
       <div>
         <Location />
-        <span>Pavilion, NY</span>
+        <span>New York City</span>
       </div>
     </div>
   </div>
