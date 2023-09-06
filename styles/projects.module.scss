@@ -4,7 +4,7 @@
   text-align: center;
   margin: 1.2rem 0;
   font-size: 36px;
-  font-weight: 300;
+  font-weight: 400;
   @media (max-width: $desktop-breakpoint) {
     font-size: 32px;
     margin: 2.4rem 0;
@@ -86,7 +86,7 @@
 
 .projectTitle {
   font-size: 36px;
-  font-weight: 300;
+  font-weight: 400;
   @media (max-width: $desktop-breakpoint) {
     font-size: 30px;
   }
@@ -94,7 +94,7 @@
 .projectDescription {
   font-family: $Poppins;
   margin: 1.2rem 0 1.8rem 0; //space between title, desc and url
-  font-size: 14px;
+  font-size: 16px;
   color: $grey;
   word-break: break-word;
   width: 65%;

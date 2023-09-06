@@ -1,8 +1,8 @@
-import styles from '../styles/projects.module.scss'
-import projectsArray from '../components/projects'
+import styles from '../styles/projects.module.scss';
+import projectsArray from '../components/projects';
 
 const sizes = `(max-width: 480px) 480px, 
-                600px` // desktop size
+                600px`; // desktop size
 
 const projects = () => (
   <>
@@ -15,15 +15,14 @@ const projects = () => (
               <div className={styles.projectPicture}>
                 <a
                   target={project.url && '_blank'}
-                  rel='noopener'
+                  rel="noopener"
                   href={project.url ? project.url : null}
-                  aria-label={`${project.title} visit link in image`}
-                >
+                  aria-label={`${project.title} visit link in image`}>
                   <img
-                    width='420px'
+                    width="420px"
                     srcSet={project.picture}
                     sizes={sizes}
-                    loading='lazy'
+                    loading="lazy"
                     alt={`Project${index + 1}`}
                   />
                   <div className={styles.projectTech}>{project.tech}</div>
@@ -39,25 +38,25 @@ const projects = () => (
                 <div className={styles.projectLinks}>
                   <a
                     className={styles.projectUrl}
-                    target='_blank'
-                    rel='noopener noreferrer'
+                    target="_blank"
+                    rel="noopener noreferrer"
                     alt={`Project${index + 1}`}
                     href={project.url}
-                    aria-label={`${project.title} visit link`}
-                  >
+                    aria-label={`${project.title} visit link`}>
                     VISIT
                   </a>
-                  <a
-                    className={styles.projectRepo}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    alt={`Project${index + 1}`}
-                    href={project.repo}
-                    aria-label={`${project.repo} visit link`}
-                  >
-                    REPO
-                  </a>
                 </div>
+              )}
+              {project.repo && (
+                <a
+                  className={styles.projectRepo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  alt={`Project${index + 1}`}
+                  href={project.repo}
+                  aria-label={`${project.repo} visit link`}>
+                  REPO
+                </a>
               )}
             </div>
           </div>
@@ -68,6 +67,6 @@ const projects = () => (
       ))}
     </div>
   </>
-)
+);
 
-export default projects
+export default projects;

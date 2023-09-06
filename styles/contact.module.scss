@@ -4,7 +4,7 @@
   text-align: center;
   margin: 1.2rem 0;
   font-size: 36px;
-  font-weight: 300;
+  font-weight: 400;
   @media (max-width: $desktop-breakpoint) {
     font-size: 32px;
     margin: 2.4rem 0;
@@ -55,7 +55,7 @@
 .emailInput {
   margin: 0 0 1.6rem 0;
   padding: 12px 14px;
-  font-size: 14px;
+  font-size: 16px;
   font-family: $Poppins;
   letter-spacing: 1px;
   border-radius: 2px;
@@ -158,8 +158,8 @@
   justify-content: space-between;
   > span {
     //targetting the sending message, too lazy to make another className
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 400;
     font-family: $Poppins;
     width: 70%;
     @media (max-width: $desktop-breakpoint) {

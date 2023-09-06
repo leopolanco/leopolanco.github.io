@@ -3,10 +3,10 @@ import dynamic from 'next/dynamic'
 import { LinkedIn, Mail, GitHub } from '../../public/assets/svg/svg'
 const Figure = dynamic(() => import('./Figure'))
 
-const greetings = 'Hello. I am Leo,'
+const greetings = 'Hello. I am Leo, a'
 const description = 'web developer'
 const smallDescription =
-  'I specialize in creating experiences and quality products with attention to the minute detail.'
+  'I have a knack for crafting detailed, high-quality experiences and products, paying meticulous attention to every detail.'
 
 const Presentation = ({ styles }) => {
   const [mediaHandler, setMediaHandler] = useState(true)
@@ -18,7 +18,7 @@ const Presentation = ({ styles }) => {
       <div className={styles.leftContainer}>
         <div className={styles.greetings}>{greetings}</div>
         <div className={styles.description}>
-          <span>a</span> {description}
+          {description}
         </div>
         <div className={styles.smallDescription}>{smallDescription}</div>
       </div>
