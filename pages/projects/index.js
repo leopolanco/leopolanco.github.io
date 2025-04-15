@@ -18,17 +18,17 @@ export default function Projects({ projects }) {
     <>
       <Container>
         <Head>
-          <title>Abdul Rahman - Software Engineer</title>
-          <meta content="Abdul Rahman - Software Engineer" name="title" />
+          <title>Leo Polanco - Software Engineer</title>
+          <meta content="Leo Polanco - Software Engineer" name="title" />
           <meta
             content="Software Engineer based in Indonesia, an undergraduate student at Universitas Negeri Surabaya."
             name="description"
           />
 
           <meta content="website" property="og:type" />
-          <meta content="https://abdulrahman.id/projects" property="og:url" />
+          <meta content="https://leopolanco.com/projects" property="og:url" />
           <meta
-            content="Abdul Rahman - Software Engineer"
+            content="Leo Polanco - Software Engineer"
             property="og:title"
           />
           <meta
@@ -42,11 +42,11 @@ export default function Projects({ projects }) {
 
           <meta content="summary_large_image" property="twitter:card" />
           <meta
-            content="https://abdulrahman.id/projects"
+            content="https://leopolanco.com/projects"
             property="twitter:url"
           />
           <meta
-            content="Abdul Rahman - Software Engineer"
+            content="Leo Polanco - Software Engineer"
             property="twitter:title"
           />
           <meta
@@ -111,12 +111,12 @@ export default function Projects({ projects }) {
 
 export async function getStaticProps() {
   const blog = new GithubBlog({
-    repo: 'abdulrcs/abdulrahman.id',
+    repo: 'leopolanco/leopolanco.github.io',
     token: process.env.GITHUB_TOKEN,
   })
   const projects = await blog.getPosts({
     query: {
-      author: 'abdulrcs',
+      author: 'leo',
       type: 'project',
       state: 'published',
     },

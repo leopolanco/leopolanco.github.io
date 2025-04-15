@@ -27,7 +27,7 @@ import { SiChakraui, SiNextdotjs } from 'react-icons/si'
 import useMediaQuery from '../hook/useMediaQuery'
 import Image from 'next/image'
 
-export default function Cards({ imageURL, title, slug, desc, tag }) {
+export default function Cards({ imageURL, title, slug, desc, tag = [] }) {
   const getTag = (tag) => {
     let values = []
     if (tag == 'React') {

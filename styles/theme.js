@@ -10,7 +10,7 @@ import { createBreakpoints } from '@chakra-ui/theme-tools'
 //         ZZ = Minimum font-size stated in REM
 
 const config = {
-  initialColorMode: 'dark',
+  initialColorMode: 'light',
   useSystemColorMode: false,
 }
 
@@ -22,15 +22,18 @@ const fluidType = (minFont, maxFont) => {
 }
 
 const colors = {
-  background: '#000000',
+  background: '#FFFFFF',
   secondary: '#080808',
   complement: '#FA934F',
-  displayColor: '#FFFFFF',
-  textPrimary: '#D1D5DB',
-  textSecondary: '#8F9094',
-  button1: '#3CCF91',
+  displayColor: '#2e2e2e',
+  textPrimary: '#282828',
+  textSecondary: '#1c1c1c',
+  // Purple
+  button1: '#5132BF',
+  // Orange
   button2: '#F6A20E',
-  button3: '#5132BF',
+  // Blue
+  button3: '#1c7ee5',
   borderColor: '#111111',
   logoGrey: '#8F9094',
 }
@@ -51,7 +54,7 @@ const breakpoints = createBreakpoints({
 
 const Link = {
   baseStyle: {
-    color: '#3CCF91',
+    color: '#5132BF',
     _hover: { textDecoration: 'none' },
     _focus: { boxShadow: 'none' },
   },

@@ -62,7 +62,7 @@ export default function Introduction({ introduction }) {
           lineHeight={'95%'}
           letterSpacing={{ sm: '-1.2px', md: '-1.8px' }}
         >
-          Abdul Rahman.
+          Leo Polanco.
         </Heading>
       </SlideFade>
 
@@ -124,34 +124,34 @@ export default function Introduction({ introduction }) {
         in={true}
       >
         <Stack isInline spacing={4}>
-          <Link href="https://github.com/abdulrcs" isExternal>
+          <Link href="https://github.com/leo" isExternal>
             <Button
               pos="static"
               color="white"
-              leftIcon={<FaGithub color="#3CCF91" />}
+              leftIcon={<FaGithub color="#5132BF" />}
               onClick={() => handleClick('introduction_github')}
               size={isLargerThan800 ? 'md' : 'sm'}
             >
               Github
             </Button>
           </Link>
-          <Link href="https://linkedin.com/in/abdulrcs" isExternal>
+          <Link href="https://linkedin.com/in/leo" isExternal>
             <Button
               pos="static"
               color="white"
-              leftIcon={<FaLinkedin color="#3CCF91" />}
+              leftIcon={<FaLinkedin color="#5132BF" />}
               onClick={() => handleClick('introduction_linkedin')}
               size={isLargerThan800 ? 'md' : 'sm'}
             >
               LinkedIn
             </Button>
           </Link>
-          <Link href="mailto:abdulrcs1@gmail.com" isExternal>
+          <Link href="mailto:leo1@gmail.com" isExternal>
             <Button
               pos="static"
               color="white"
               transition="0.3s"
-              leftIcon={<FaEnvelope fill="#3CCF91" />}
+              leftIcon={<FaEnvelope fill="#5132BF" />}
               onClick={() => handleClick('introduction_email')}
               size={isLargerThan800 ? 'md' : 'sm'}
             >

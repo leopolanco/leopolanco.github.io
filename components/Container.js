@@ -6,7 +6,7 @@ import Navbar from './Navbar'
 const Container = ({ enableTransition, children }) => {
   const [mounted, setMounted] = useState(false)
   useEffect(() => {
-    ReactGA.initialize(process.env.NEXT_PUBLIC_UA_CODE)
+    ReactGA.initialize(process.env.NEXT_PUBLIC_GA4_CODE)
   }, [])
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Container = ({ enableTransition, children }) => {
         </Flex>
         <Stack alignItems="center" mt={10} mb={5}>
           <Text fontSize="sm" textAlign="center">
-            Designed and Developed by Abdul Rahman.
+            Designed and Developed by Leo Polanco.
             <br />
             Built with{' '}
             <chakra.span color="button1" fontWeight="semibold">

@@ -20,7 +20,7 @@ const GlobalStyle = ({ children }) => {
             min-width: 356px;
           }
           body {
-            background: #000;
+            background: #e5e4de;
           }
           #__next {
             display: flex;

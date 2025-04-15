@@ -17,7 +17,7 @@ export default function useUtterances(commentNodeId, title) {
       const script = document.createElement('script')
       script.src = 'https://utteranc.es/client.js'
       script.async = true
-      script.setAttribute('repo', 'abdulrcs/abdulrahman.id')
+      script.setAttribute('repo', 'leopolanco/leopolanco.github.io')
       script.setAttribute('issue-term', title)
       script.setAttribute('theme', 'icy-dark')
       script.crossOrigin = 'anonymous'

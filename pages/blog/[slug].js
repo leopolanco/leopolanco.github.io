@@ -114,13 +114,13 @@ export default function Post({ metadata, publishedDate, source, toc }) {
               <Stack alignItems="center" isInline>
                 <Avatar
                   border="1px solid textPrimary"
-                  name="Abdul Rahman"
+                  name="Leo Polanco"
                   size="xs"
                   src="https://i.imgur.com/jk8NmSx.jpeg"
                 />
 
                 <Text color="textPrimary" fontSize={['xs', 'xs', 'sm', 'sm']}>
-                  Abdul Rahman /{' '}
+                  Leo Polanco /{' '}
                   {dateFormat(Date.parse(publishedDate), 'dd mmm yyyy')}
                 </Text>
               </Stack>
@@ -193,13 +193,13 @@ export default function Post({ metadata, publishedDate, source, toc }) {
 
 export async function getStaticPaths() {
   const blog = new GithubBlog({
-    repo: 'abdulrcs/abdulrahman.id',
+    repo: 'leopolanco/leopolanco.github.io',
     token: process.env.GITHUB_TOKEN,
   })
 
   const data = await blog.getPosts({
     query: {
-      author: 'abdulrcs',
+      author: 'leo',
       type: 'post',
       state: 'published',
     },
@@ -216,12 +216,12 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const blog = new GithubBlog({
-    repo: 'abdulrcs/abdulrahman.id',
+    repo: 'leopolanco/leopolanco.github.io',
     token: process.env.GITHUB_TOKEN,
   })
   const data = await blog.getPost({
     query: {
-      author: 'abdulrcs',
+      author: 'leo',
       search: params.slug,
     },
   })

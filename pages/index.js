@@ -14,18 +14,18 @@ export default function Index({ introduction, projects, articles, contactMe }) {
     <>
       <Container enableTransition={true}>
         <Head>
-          <title>Abdul Rahman - Software Engineer</title>
-          <meta content="Abdul Rahman - Software Engineer" name="title" />
-          <meta content="abdulrcs, abdulrcs website" name="keywords" />
+          <title>Leo Polanco - Software Engineer</title>
+          <meta content="Leo Polanco - Software Engineer" name="title" />
+          <meta content="leo, leo website" name="keywords" />
           <meta
             content="Software Engineer based in Indonesia, an undergraduate student at Universitas Negeri Surabaya."
             name="description"
           />
 
           <meta content="website" property="og:type" />
-          <meta content="https://abdulrahman.id" property="og:url" />
+          <meta content="https://leopolanco.com" property="og:url" />
           <meta
-            content="Abdul Rahman - Software Engineer"
+            content="Leo Polanco - Software Engineer"
             property="og:title"
           />
           <meta
@@ -38,9 +38,9 @@ export default function Index({ introduction, projects, articles, contactMe }) {
           />
 
           <meta content="summary_large_image" property="twitter:card" />
-          <meta content="https://abdulrahman.id/" property="twitter:url" />
+          <meta content="https://leopolanco.com/" property="twitter:url" />
           <meta
-            content="Abdul Rahman - Software Engineer"
+            content="Leo Polanco - Software Engineer"
             property="twitter:title"
           />
           <meta
@@ -84,12 +84,12 @@ export async function getStaticProps() {
   })
 
   const blog = new GithubBlog({
-    repo: 'abdulrcs/abdulrahman.id',
+    repo: 'leopolanco/leopolanco.github.io',
     token: process.env.GITHUB_TOKEN,
   })
   let data2 = await blog.getPosts({
     query: {
-      author: 'abdulrcs',
+      author: 'leo',
       type: 'post',
       state: 'published',
     },

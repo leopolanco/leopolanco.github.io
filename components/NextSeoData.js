@@ -10,7 +10,7 @@ const NextSeoData = ({ slug, metadata, publishedDate }) => {
           { property: 'twitter:card', content: 'summary_large_image' },
           {
             property: 'twitter:url',
-            content: `https://abdulrahman.id/blog/${slug}`,
+            content: `https://leopolanco.com/blog/${slug}`,
           },
           { property: 'twitter:title', content: metadata.title },
           {
@@ -19,16 +19,16 @@ const NextSeoData = ({ slug, metadata, publishedDate }) => {
           },
           { property: 'twitter:image', content: metadata.frontmatter.image },
         ]}
-        canonical={`https://abdulrahman.id/blog/${slug}`}
+        canonical={`https://leopolanco.com/blog/${slug}`}
         description={metadata.frontmatter.summary}
         openGraph={{
-          url: `https://abdulrahman.id/blog/${slug}`,
-          site_name: 'Abdul Rahman',
+          url: `https://leopolanco.com/blog/${slug}`,
+          site_name: 'Leo Polanco',
           title: metadata.title,
           description: metadata.frontmatter.summary,
           type: 'article',
           article: {
-            authors: ['Abdul Rahman'],
+            authors: ['Leo Polanco'],
             publishedTime: publishedDate,
             modifiedTime: publishedDate,
             tags: ['Programming', 'Web Development', 'Software Engineering'],
@@ -43,15 +43,14 @@ const NextSeoData = ({ slug, metadata, publishedDate }) => {
         title={metadata.title}
       />
       <ArticleJsonLd
-        authorName="Abdul Rahman"
+        authorName="Leo Polanco"
         dateModified={publishedDate}
         datePublished={publishedDate}
         description={metadata.frontmatter.summary}
         images={[metadata.frontmatter.image]}
-        publisherLogo="https://imagizer.imageshack.com/a/img923/7612/A5tDeP.png"
-        publisherName="Abdul Rahman"
+        publisherName="Leo Polanco"
         title={metadata.title}
-        url={`https://abdulrahman.id/blog/${slug}`}
+        url={`https://leopolanco.com/blog/${slug}`}
       />
     </>
   )

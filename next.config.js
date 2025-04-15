@@ -7,6 +7,8 @@ module.exports = {
       'media.giphy.com',
       'cdn-images-1.medium.com',
       'github.com',
+      'leopolanco.com',
+      'cipmnigeria.org.ng'
     ],
   },
 }

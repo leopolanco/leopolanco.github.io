@@ -39,21 +39,21 @@ export default function ContactMe({ contactMe }) {
       <SlideUpWhenVisible>
         <Stack isInline spacing={4}>
           <Link
-            href="https://linkedin.com/in/abdulrcs"
+            href="https://linkedin.com/in/leo"
             isExternal
             onClick={() => handleClick('contact_linkedin')}
           >
             <Button
               pos="static"
               color="white"
-              leftIcon={<FaLinkedin fill="#3CCF91" />}
+              leftIcon={<FaLinkedin fill="#5132BF" />}
               size={isLargerThan800 ? 'md' : 'sm'}
             >
               LinkedIn
             </Button>
           </Link>
           <Link
-            href="mailto:abdulrcs1@gmail.com"
+            href="mailto:leo1@gmail.com"
             isExternal
             onClick={() => handleClick('contact_email')}
           >
@@ -61,7 +61,7 @@ export default function ContactMe({ contactMe }) {
               pos="static"
               color="white"
               transition="0.3s"
-              leftIcon={<FaEnvelope fill="#3CCF91" />}
+              leftIcon={<FaEnvelope fill="#5132BF" />}
               size={isLargerThan800 ? 'md' : 'sm'}
             >
               Email
@@ -75,7 +75,7 @@ export default function ContactMe({ contactMe }) {
             <Button
               pos="static"
               color="white"
-              leftIcon={<FaFileAlt fill="#3CCF91" />}
+              leftIcon={<FaFileAlt fill="#5132BF" />}
               size={isLargerThan800 ? 'md' : 'sm'}
             >
               Resume

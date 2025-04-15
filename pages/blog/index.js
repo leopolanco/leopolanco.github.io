@@ -18,16 +18,16 @@ export default function Index({ posts }) {
   return (
     <Container>
       <Head>
-        <title>Blog - Abdul Rahman</title>
-        <meta content="Blog - Abdul Rahman" name="title" />
+        <title>Blog - Leo Polanco</title>
+        <meta content="Blog - Leo Polanco" name="title" />
         <meta
           content="Writings on programming, tutorials, and my experiences."
           name="description"
         />
 
         <meta content="website" property="og:type" />
-        <meta content="https://abdulrahman.id/blog" property="og:url" />
-        <meta content="Blog - Abdul Rahman" property="og:title" />
+        <meta content="https://leopolanco.com/blog" property="og:url" />
+        <meta content="Blog - Leo Polanco" property="og:title" />
         <meta
           content="Writings on programming, tutorials, and my experiences."
           property="og:description"
@@ -38,8 +38,8 @@ export default function Index({ posts }) {
         />
 
         <meta content="summary_large_image" property="twitter:card" />
-        <meta content="https://abdulrahman.id/" property="twitter:url" />
-        <meta content="Blog - Abdul Rahman" property="twitter:title" />
+        <meta content="https://leopolanco.com/" property="twitter:url" />
+        <meta content="Blog - Leo Polanco" property="twitter:title" />
         <meta
           content="Writings on programming, tutorials, and my experiences."
           property="twitter:description"
@@ -139,12 +139,12 @@ export default function Index({ posts }) {
 
 export async function getStaticProps() {
   const blog = new GithubBlog({
-    repo: 'abdulrcs/abdulrahman.id',
+    repo: 'leopolanco/leopolanco.github.io',
     token: process.env.GITHUB_TOKEN,
   })
   const posts = await blog.getPosts({
     query: {
-      author: 'abdulrcs',
+      author: 'leo',
       type: 'post',
       state: 'published',
     },
